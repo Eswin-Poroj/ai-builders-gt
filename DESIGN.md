@@ -1,6 +1,6 @@
 ---
 name: AI Builders GT
-description: Umbral cívico de Xela — foto del anillo vacío, campo noche, una sola puerta teal.
+description: Umbral cívico de Xela — foto noche del kiosco, invitación en el vano, una sola puerta teal.
 colors:
   ink: "#0f0a1e"
   paper: "#ffffff"
@@ -107,18 +107,18 @@ components:
 
 **Creative North Star: "El umbral del arco"**
 
-El sistema es el umbral cívico de Xela: una foto real del kiosco del Parque Centroamérica mira al cielo a través del anillo de piedra; la invitación se lee en el panel, nunca dentro del anillo. El campo es noche (`ink`). El papel y un solo teal de acción abren la puerta. Seed `4c2d6d65`.
+El sistema es el umbral cívico de Xela: una foto real del kiosco del Parque Centroamérica de noche; la invitación se lee en la sombra de las columnas. El campo es noche (`ink`). El papel y un solo teal de acción abren la puerta. Seed `4c2d6d65`.
 
 Una sola sans geométrica (Poppins 400–700) sostiene títulos y cuerpo. Los muros se distinguen por tinte de brand sobre ink, no por grano, no por hojas despegadas. Quien llega ve el lugar, la fecha y que es gratis, y sale a Luma.
 
-Rechazos visuales confirmados: afiche gritón recortado, wood-type condensado, chamfer a 45°, hero SaaS con orbes, tipo o logo dentro del anillo de piedra.
+Rechazos visuales confirmados: afiche gritón recortado, wood-type condensado, chamfer a 45°, hero SaaS con orbes.
 
 **Key Characteristics:**
 
-- Foto del templo mirando arriba; anillo sin tipo
+- Foto noche del kiosco; invitación centrada en el vano
 - Campo noche, papel blanco, brand que tintea, teal como única puerta
 - Poppins 400–700, títulos en caja de frase, tracking −0.03em
-- CTA banda teal, radio 4px, hover `translateY(-2px)`
+- CTA banda teal, radio 4px, hover `translateY(-2px)`, resplandor con offset
 - Cifras de día que se apagan; FAQ que invierte a papel al abrir
 
 ## Colors
@@ -154,7 +154,7 @@ Noche como suelo, brand como tinte, un teal que solo abre.
 
 ### Hierarchy
 
-- **Display** (700, clamp 1.8rem–3.2rem, line-height 1.12, letter-spacing −0.03em): título del hero y cierre. «Xela 2026» en el hero va en action.
+- **Display** (700, clamp 1.8rem–3.2rem, line-height 1.12, letter-spacing −0.03em): título del hero y cierre. En el hero, «Xela» va en brand aclarado y «2026» en action.
 - **Headline** (700, clamp 1.8rem–2.4rem, line-height 1.15): títulos de muro.
 - **Title** (700, clamp 1.35rem–2rem): títulos de día y valores de stat. Nombres de speaker, tracks y lockup del pie bajan a 1.15rem.
 - **Body** (400, 1.05rem, line-height 1.5, máx. 36rem en el sub del hero y 42rem en ledes/FAQ): lectura. Strong 600 paper. Meta y fecha del hero 500–600 a 1.05rem.
@@ -162,17 +162,17 @@ Noche como suelo, brand como tinte, un teal que solo abre.
 
 **La regla de la geometría.** Una cara, Poppins. Títulos 700 en caja de frase. No hay segunda familia de display.
 
-**La regla del anillo vacío.** Ningún tipo, logo ni CTA entra en la foto del templo. La invitación vive en el panel.
+**La regla del vano.** Logo, título, fecha, sede, badge y CTA se leen en la sombra de las columnas, sobre la foto real. El velo es ink + brand, no un recorte geométrico del kiosco.
 
 ## Layout
 
 Pila vertical a todo el ancho sobre ink. Sin `max-width` de sitio. Canto 1.15rem en móvil; 8vw desde 800px. Muros: padding 3.2rem / 3.4rem (4.2rem / 4.6rem desde 800px). Lede y FAQ a 42rem.
 
-Hero a 100svh. En móvil: columna — foto (mín. 42svh, `object-position: center 28%`) y panel debajo. Desde 800px: grilla `1.15fr 0.85fr`, foto a 100svh, panel a la derecha alineado al centro. Logo knockout 3rem en el panel, no sobre la piedra. El CTA de mitad no es un muro: es la banda con padding horizontal.
+Hero a 100svh, una sola escena. Foto de noche a todo el campo (`object-fit: cover`). Invitación absoluta, centrada, con velo radial. Logo knockout ~3.4rem (4rem desde 800px). El CTA de mitad no es un muro: es la banda con padding horizontal.
 
 Días a dos columnas desde 800px. Stats, speakers y listas se apilan con hairline paper al 16%.
 
-**La regla del umbral.** Móvil apila foto / panel; desde 800px la foto toma 1.15fr y el panel 0.85fr. El anillo permanece sin tipo.
+**La regla del umbral.** El kiosco es el marco fotográfico; el cartel vive en su vano en móvil y en escritorio.
 
 ## Elevation & Depth
 
@@ -180,6 +180,7 @@ Sin sombras de card. La profundidad es tonal: mixes de ink + brand, inversión d
 
 ### Shadow Vocabulary
 
+- **Puerta** (`box-shadow: 0 10px 28px color-mix(in oklab, #0f766e 48%, transparent)`): resplandor del CTA del hero, con offset. No es halo a 0px.
 - **Dintel** (`box-shadow: inset 0 1px 0 color-mix(in oklab, #c4b49a 55%, transparent)`): filo superior de cada muro.
 - **Junta** (`border-top: 1px solid color-mix(in oklab, #c4b49a 28%, transparent)`): entre muros consecutivos.
 
@@ -233,7 +234,7 @@ El panel del hero entra con `rise`: solo `translateY(12px)` → reposo, 0.55s `c
 
 ### Do:
 
-- **Do** dejar la foto del templo sin tipo; leer la invitación en el panel (abajo en móvil, a la derecha desde 800px).
+- **Do** leer la invitación en el vano del kiosco, sobre la foto real de noche.
 - **Do** usar la banda teal de 4px como única puerta; el label canónico es «Regístrate gratis».
 - **Do** tintear muros con ink + brand; usar stone solo en hairlines.
 - **Do** invertir el FAQ al abrir (paper sobre ink).
@@ -241,7 +242,6 @@ El panel del hero entra con `rise`: solo `translateY(12px)` → reposo, 0.55s `c
 
 ### Don't:
 
-- **Don't** poner tipo, logo ni CTA dentro del anillo de piedra.
 - **Don't** recortar a 45°, usar `clip-path` de chamfer, ni madera condensada.
 - **Don't** armar un hero SaaS con orbes, glass cards o CTA en píldora.
 - **Don't** inventar avatares de iniciales cuando no hay foto.

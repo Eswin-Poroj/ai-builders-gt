@@ -232,14 +232,18 @@ export const event: EventContent = {
         tier: "ally",
         // ALLY LINK: URL oficial pendiente
         href: null,
-        logoSrc: null,
+        logoSrc: "/sponsors/smops.png",
+        logoWidth: 493,
+        logoHeight: 136,
       },
       {
         id: "creabot",
         name: "CREABOT",
         tier: "ally",
         href: "https://www.creabot.us/",
-        logoSrc: null,
+        logoSrc: "/sponsors/creabot.png",
+        logoWidth: 834,
+        logoHeight: 175,
       },
       {
         id: "mesoamericana",

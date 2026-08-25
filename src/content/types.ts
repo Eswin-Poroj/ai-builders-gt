@@ -58,6 +58,8 @@ export type Sponsor = {
   tier: SponsorTier
   href: string | null
   logoSrc: string | null
+  logoWidth?: number
+  logoHeight?: number
 }
 
 export type FaqItem = {

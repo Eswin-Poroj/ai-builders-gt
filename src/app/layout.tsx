@@ -41,11 +41,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           hidden
           dangerouslySetInnerHTML={{
             __html: `<!--
-THESIS: El home es el umbral del arco de Xela: la foto del templo mira al cielo vacío; la invitación se lee abajo, nunca dentro del anillo. Rehúsa el afiche gritón recortado y el hero SaaS con orbes.
-OWN-WORLD: Foto real del kiosco; campo #0F0A1E; blanco; morado #5B21B6; teal #0F766E como única puerta. Sans geométrica Poppins.
+THESIS: El kiosco de noche es el umbral: la invitación se lee en la sombra de las columnas, sobre la plaza real de Xela. Rehúsa el afiche gritón recortado y el hero SaaS con orbes.
+OWN-WORLD: Foto real del kiosco; campo #0F0A1E; blanco; morado #5B21B6; teal #0F766E como única puerta. Sans geométrica Poppins. Radio 4px.
 STORY: Quien llega de Instagram ve el lugar, la fecha y que es gratis, y se registra en Luma.
-FIRST VIEWPORT: Foto mirando arriba, anillo sin tipo. Panel: logo, AI Builders Xela 2026, 19–20 sept 2026, Mesoamericana · Quetzaltenango, 100% Gratis, CTA Regístrate gratis.
-FORM: Arco cívico de Xela (Parque Centroamérica / Templo a Minerva); seed 4c2d6d65; composición A revisada (tipo fuera del anillo).
+FIRST VIEWPORT: Foto noche del Parque Centroamérica a 100svh. Logo, AI Builders, Xela (brand) 2026 (teal), fecha, sede, 100% Gratis y CTA centrados en el vano, con velo de ink.
+FORM: Arco cívico de Xela (Parque Centroamérica / kiosco); seed 4c2d6d65; composición de cartel en el vano, fotos del organizador.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->`,
           }}

@@ -39,8 +39,8 @@ function SponsorPlaque({ sponsor }: { sponsor: Sponsor }) {
           <Image
             src={sponsor.logoSrc}
             alt=""
-            width={160}
-            height={48}
+            width={sponsor.logoWidth ?? 160}
+            height={sponsor.logoHeight ?? 48}
           />
         </span>
       ) : null}

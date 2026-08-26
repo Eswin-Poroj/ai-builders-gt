@@ -210,7 +210,9 @@ export const event: EventContent = {
         name: "Arduino Guatemala",
         tier: "community",
         href: "https://www.facebook.com/ArduinoGuatemala",
-        logoSrc: null,
+        logoSrc: "/sponsors/arduino-gt.png",
+        logoWidth: 720,
+        logoHeight: 593,
       },
       {
         id: "python-gt",
@@ -242,8 +244,8 @@ export const event: EventContent = {
         tier: "ally",
         href: "https://www.creabot.us/",
         logoSrc: "/sponsors/creabot.png",
-        logoWidth: 834,
-        logoHeight: 175,
+        logoWidth: 1024,
+        logoHeight: 157,
       },
       {
         id: "mesoamericana",

@@ -41,6 +41,7 @@ function SponsorPlaque({ sponsor }: { sponsor: Sponsor }) {
             alt=""
             width={sponsor.logoWidth ?? 160}
             height={sponsor.logoHeight ?? 48}
+            sizes="16rem"
           />
         </span>
       ) : null}

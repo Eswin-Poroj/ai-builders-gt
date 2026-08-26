@@ -82,6 +82,7 @@ img {
 .hero-photo-img {
   object-fit: cover;
   object-position: 42% 58%;
+  image-rendering: auto;
 }
 
 .hero-veil {
@@ -531,7 +532,7 @@ a.speaker:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 8.5rem;
+  min-height: 10.5rem;
   height: 100%;
   padding: 1.15rem 1rem 1.05rem;
   border: 1px solid color-mix(in oklab, var(--paper) 28%, transparent);
@@ -549,14 +550,14 @@ a.speaker:focus-visible {
 .ally-logo {
   display: flex;
   align-items: center;
-  height: 2.4rem;
   margin-bottom: 0.85rem;
 }
 
 .ally-logo img {
-  height: 2.4rem;
-  width: auto;
+  max-height: 4.8rem;
   max-width: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
   object-position: left center;
 }

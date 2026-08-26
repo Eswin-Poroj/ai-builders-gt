@@ -17,6 +17,7 @@ export function HeroSection() {
           alt="Kiosco del Parque Centroamérica, Quetzaltenango, de noche"
           fill
           priority
+          quality={90}
           sizes="100vw"
           className="hero-photo-img"
         />

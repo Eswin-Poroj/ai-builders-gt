@@ -38,11 +38,11 @@ export function AllyRail({ children }: { children: ReactNode }) {
     let settle = 0
     let carry = 0
 
-    function measure() {
+    const measure = () => {
       setWidth = set.offsetWidth
     }
 
-    function writeScroll(next: number) {
+    const writeScroll = (next: number) => {
       ignoreScroll += 1
       scroller.scrollLeft = next
       requestAnimationFrame(() => {
@@ -50,13 +50,13 @@ export function AllyRail({ children }: { children: ReactNode }) {
       })
     }
 
-    function wrap() {
+    const wrap = () => {
       if (setWidth <= 0) return
       const x = scroller.scrollLeft
       if (x >= setWidth) writeScroll(x - setWidth)
     }
 
-    function markUserScroll() {
+    const markUserScroll = () => {
       userScroll = true
       window.clearTimeout(settle)
       settle = window.setTimeout(() => {
@@ -64,7 +64,7 @@ export function AllyRail({ children }: { children: ReactNode }) {
       }, SETTLE_MS)
     }
 
-    function canDrift() {
+    const canDrift = () => {
       return (
         !reduce.matches &&
         !document.hidden &&
@@ -76,7 +76,7 @@ export function AllyRail({ children }: { children: ReactNode }) {
       )
     }
 
-    function tick(ts: number) {
+    const tick = (ts: number) => {
       if (!lastTs) lastTs = ts
       const dt = Math.min(ts - lastTs, 64)
       lastTs = ts
@@ -92,7 +92,7 @@ export function AllyRail({ children }: { children: ReactNode }) {
       raf = requestAnimationFrame(tick)
     }
 
-    function onScroll() {
+    const onScroll = () => {
       if (ignoreScroll > 0) {
         wrap()
         return
@@ -101,11 +101,11 @@ export function AllyRail({ children }: { children: ReactNode }) {
       wrap()
     }
 
-    function onWheel() {
+    const onWheel = () => {
       markUserScroll()
     }
 
-    function onPointerDown(event: PointerEvent) {
+    const onPointerDown = (event: PointerEvent) => {
       if (event.pointerType === "mouse" && event.button !== 0) return
       pointerDown = true
       startX = event.clientX
@@ -113,7 +113,7 @@ export function AllyRail({ children }: { children: ReactNode }) {
       suppressClick = false
     }
 
-    function onPointerUp(event: PointerEvent) {
+    const onPointerUp = (event: PointerEvent) => {
       if (!pointerDown) return
       pointerDown = false
       const moved =
@@ -125,20 +125,20 @@ export function AllyRail({ children }: { children: ReactNode }) {
       }
     }
 
-    function onClick(event: MouseEvent) {
+    const onClick = (event: MouseEvent) => {
       if (!suppressClick) return
       event.preventDefault()
       event.stopPropagation()
       suppressClick = false
     }
 
-    function onKeyDown(event: KeyboardEvent) {
+    const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Tab" || event.key.startsWith("Arrow")) {
         viaKeyboard = true
       }
     }
 
-    function onFocusIn(event: FocusEvent) {
+    const onFocusIn = (event: FocusEvent) => {
       const target = event.target
       const fromKeys = viaKeyboard
       viaKeyboard = false
@@ -155,13 +155,13 @@ export function AllyRail({ children }: { children: ReactNode }) {
       }
     }
 
-    function onFocusOut(event: FocusEvent) {
+    const onFocusOut = (event: FocusEvent) => {
       const next = event.relatedTarget
       if (next instanceof Node && scroller.contains(next)) return
       keyFocus = false
     }
 
-    function onVis() {
+    const onVis = () => {
       lastTs = 0
     }
 

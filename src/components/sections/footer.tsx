@@ -22,7 +22,6 @@ export function FooterSection() {
         <a href={`mailto:${event.footer.contactEmail}`}>
           {event.footer.contactEmail}
         </a>
-        <a href={event.footer.the502Url}>{event.footer.the502Label}</a>
       </div>
       <p className="foot-copy">{event.footer.copyright}</p>
     </footer>

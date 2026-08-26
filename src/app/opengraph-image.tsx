@@ -18,11 +18,12 @@ export default function OpengraphImage() {
           background: "#0F0A1E",
           color: "#EDEBEE",
           padding: 72,
-          fontFamily: "Arial Narrow, sans-serif",
+          fontFamily: "Poppins, ui-sans-serif, sans-serif",
         }}
       >
         <div
           style={{
+            display: "flex",
             fontSize: 28,
             fontWeight: 600,
             color: "#0F766E",
@@ -44,8 +45,15 @@ export default function OpengraphImage() {
           <span>AI Builders</span>
           <span style={{ color: "#0F766E" }}>Xela 2026</span>
         </div>
-        <div style={{ fontSize: 28, marginTop: 22, color: "#EDEBEE" }}>
-          {event.dates.display} · {event.venue.city}
+        <div
+          style={{
+            display: "flex",
+            fontSize: 28,
+            marginTop: 22,
+            color: "#EDEBEE",
+          }}
+        >
+          {`${event.dates.display} · ${event.venue.city}`}
         </div>
         <div
           style={{

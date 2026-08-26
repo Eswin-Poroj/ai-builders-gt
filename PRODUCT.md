@@ -36,7 +36,7 @@ AI Builders GT es la comunidad; Xela 2026 es la prueba de que el occidente de Gu
 - Registro: redirección a Luma (URL pendiente; placeholder de código `[LINK_LUMA]`).
 - Fecha y lugar: 19–20 de septiembre 2026, Universidad Mesoamericana, sede Quetzaltenango.
 - Formato: Día 1 Summit (sábado 19) + Día 2 Cursor Hackathon (domingo 20).
-- Comunidad: AI Builders GT. Coorganiza Universidad Mesoamericana. The502Project (the502project.com) aparece en el pie.
+- Comunidad: AI Builders GT. Coorganiza Universidad Mesoamericana.
 - Contacto: eswinstuardporojcastro@gmail.com. Instagram: @aibuilders.gt.
 - Copy en español de Guatemala, tono directo y cercano, no corporativo.
 

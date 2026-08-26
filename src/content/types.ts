@@ -124,8 +124,6 @@ export type EventContent = {
     contactEmail: string
     instagramHandle: string
     instagramUrl: string
-    the502Label: string
-    the502Url: string
     copyright: string
   }
   ctas: EventCta[]

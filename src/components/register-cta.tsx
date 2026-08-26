@@ -15,11 +15,15 @@ export function RegisterCta({
   leading,
 }: Props) {
   const luma = getLumaUrl()
+  const external = luma.startsWith("http")
   return (
     <a
       className={className}
       href={luma}
       data-cta={placement}
+      {...(external
+        ? { target: "_blank", rel: "noreferrer" }
+        : {})}
     >
       {leading}
       {label}

@@ -301,8 +301,6 @@ export const event: EventContent = {
     contactEmail: "eswinstuardporojcastro@gmail.com",
     instagramHandle: "@aibuilders.gt",
     instagramUrl: "https://instagram.com/aibuilders.gt",
-    the502Label: "The502Project",
-    the502Url: "https://the502project.com",
     copyright: "© 2026 AI Builders GT",
   },
   ctas: [

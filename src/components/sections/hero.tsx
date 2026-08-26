@@ -31,34 +31,40 @@ export function HeroSection() {
             height={93}
             priority
           />
-          <h1 id="hero-title">
-            AI Builders
-            <span className="hero-edition">
-              <span className="hero-xela">Xela</span>{" "}
-              <span className="hero-year">2026</span>
-            </span>
-          </h1>
-          <hr className="hero-rule" />
-          <p className="hero-date">
-            <CalendarMark className="hero-mark hero-mark-brand" />
-            {event.dates.display}
-          </p>
-          <p className="hero-meta">
-            <PinMark className="hero-mark hero-mark-action" />
-            <span className="hero-place">
-              {event.venue.name}
-              <span className="hero-city">{event.venue.city}</span>
-            </span>
-          </p>
-          <p className="hero-badge">
-            <GiftMark className="hero-mark hero-mark-action" />
-            {event.badge}
-          </p>
-          <RegisterCta
-            placement="hero"
-            className="band band-hero"
-            leading={<PersonMark />}
-          />
+
+          {/* Three-line poster title — each word on its own line at maximum scale */}
+          <div className="hero-title-block">
+            <h1 id="hero-title">
+              <span>{event.hero.lines[0]}</span>
+              <span>{event.hero.lines[1]}</span>
+              <span className="hero-xela">{event.hero.lines[2]}</span>
+            </h1>
+          </div>
+
+          {/* Info bar: date/venue left, badge+CTA right */}
+          <div className="hero-meta-row">
+            <div className="hero-info">
+              <p className="hero-date">
+                <CalendarMark className="hero-mark hero-mark-brand" />
+                {event.dates.display}
+              </p>
+              <p className="hero-venue">
+                <PinMark className="hero-mark hero-mark-action" />
+                {event.venue.display}
+              </p>
+            </div>
+            <div className="hero-actions">
+              <p className="hero-badge">
+                <GiftMark className="hero-mark hero-mark-action" />
+                {event.badge}
+              </p>
+              <RegisterCta
+                placement="hero"
+                className="band band-hero"
+                leading={<PersonMark />}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -3,15 +3,14 @@ import { event } from "@/content/event"
 export function FormatSection() {
   return (
     <section className="wall wall-deep" id="formato" aria-labelledby="formato-title">
-      <h2 id="formato-title" className="wall-title shout">
+      <h2 id="formato-title" className="wall-title">
         {event.format.heading}
       </h2>
       <div className="days">
-        {event.format.days.map((day, index) => (
-          <article key={day.id} className="day" data-day={String(index + 1)}>
-            <h3 className="day-title shout">
-              {day.subtitle} — {day.title}
-            </h3>
+        {event.format.days.map((day) => (
+          <article key={day.id} className="day">
+            <p className="day-eyebrow">{day.subtitle}</p>
+            <h3 className="day-title">{day.title}</h3>
             <p className="day-date">{day.dateLabel}</p>
             <ul>
               {day.bullets.map((item) => (

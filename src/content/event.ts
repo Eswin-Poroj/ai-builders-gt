@@ -191,7 +191,7 @@ export const event: EventContent = {
     heading: "Aliados",
     items: [
       // SPONSOR LOGOS: poner logoSrc → /sponsors/{id}.png cuando lleguen archivos oficiales a public/sponsors/
-      {
+      /* {
         id: "cursor",
         name: "Cursor",
         tier: "naming",
@@ -204,7 +204,7 @@ export const event: EventContent = {
         tier: "tool",
         href: "https://www.notion.com",
         logoSrc: null,
-      },
+      }, */
       {
         id: "arduino-gt",
         name: "Arduino Guatemala",
@@ -214,7 +214,7 @@ export const event: EventContent = {
         logoWidth: 720,
         logoHeight: 593,
       },
-      {
+      /* {
         id: "python-gt",
         name: "Python Guatemala",
         tier: "community",
@@ -227,7 +227,7 @@ export const event: EventContent = {
         tier: "community",
         href: "https://gdg.community.dev/gdg-xela/",
         logoSrc: null,
-      },
+      }, */
       {
         id: "smops",
         name: "SMOPS",

@@ -12,14 +12,18 @@ export function HeroSection() {
   return (
     <section className="hero" id="registro" aria-labelledby="hero-title">
       <div className="hero-stage">
-        <Image
-          src="/hero/kiosco-noche.jpg"
+        <img
+          src="/hero/kiosco-svg-noche.svg"
           alt="Kiosco del Parque Centroamérica, Quetzaltenango, de noche"
-          fill
-          priority
-          quality={90}
-          sizes="100vw"
           className="hero-photo-img"
+          fetchPriority="high"
+          decoding="async"
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+          }}
         />
         <div className="hero-veil" />
         <div className="hero-invite">

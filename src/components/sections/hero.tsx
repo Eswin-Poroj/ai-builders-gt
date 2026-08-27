@@ -12,19 +12,21 @@ export function HeroSection() {
   return (
     <section className="hero" id="registro" aria-labelledby="hero-title">
       <div className="hero-stage">
-        <img
-          src="/hero/kiosco-svg-noche.svg"
-          alt="Kiosco del Parque Centroamérica, Quetzaltenango, de noche"
-          className="hero-photo-img"
-          fetchPriority="high"
-          decoding="async"
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-          }}
-        />
+        <div className="hero-reel" aria-hidden="true">
+          <img
+            src="/hero/kiosco-svg-noche.svg"
+            alt=""
+            className="hero-slide hero-slide--1"
+            fetchPriority="high"
+            decoding="async"
+          />
+          <img
+            src="/hero/parque-centroamerica-noche.svg"
+            alt=""
+            className="hero-slide hero-slide--2"
+            decoding="async"
+          />
+        </div>
         <div className="hero-veil" />
         <div className="hero-invite">
           <Image

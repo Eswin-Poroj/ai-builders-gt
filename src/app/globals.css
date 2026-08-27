@@ -83,6 +83,8 @@ img { max-width: 100%; height: auto; }
 .hero-reel {
   position: absolute;
   inset: 0;
+  /* Fade the reel in so images have ~0.8 s to load before they're visible */
+  animation: hero-reel-in 0.8s ease-out both;
 }
 
 .hero-slide {
@@ -803,6 +805,11 @@ a.speaker:focus-visible {
 }
 
 /* === ANIMATIONS === */
+@keyframes hero-reel-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 @keyframes hero-ken {
   0%   { opacity: 1; transform: scale(1.00); }
   16%  { opacity: 1; transform: scale(1.06); }
@@ -874,6 +881,10 @@ a.speaker:focus-visible {
 /* === REDUCED MOTION === */
 @media (prefers-reduced-motion: reduce) {
   .hero-invite {
+    animation: none;
+  }
+
+  .hero-reel {
     animation: none;
   }
 

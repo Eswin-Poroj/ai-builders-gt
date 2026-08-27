@@ -1,3 +1,4 @@
+import ReactDOM from "react-dom"
 import Image from "next/image"
 import { event } from "@/content/event"
 import { RegisterCta } from "@/components/register-cta"
@@ -9,6 +10,8 @@ import {
 } from "@/components/hero-marks"
 
 export function HeroSection() {
+  ReactDOM.preload("/hero/kiosco-svg-noche.svg", { as: "image", type: "image/svg+xml" })
+
   return (
     <section className="hero" id="registro" aria-labelledby="hero-title">
       <div className="hero-stage">

@@ -26,6 +26,24 @@ export function HeroSection() {
             className="hero-slide hero-slide--2"
             decoding="async"
           />
+          <img
+            src="/hero/parque-centroamerica-dia.svg"
+            alt=""
+            className="hero-slide hero-slide--3"
+            decoding="async"
+          />
+          <img
+            src="/hero/parque-dia.svg"
+            alt=""
+            className="hero-slide hero-slide--4"
+            decoding="async"
+          />
+          <img
+            src="/hero/templo-minerva.svg"
+            alt=""
+            className="hero-slide hero-slide--5"
+            decoding="async"
+          />
         </div>
         <div className="hero-veil" />
         <div className="hero-invite">

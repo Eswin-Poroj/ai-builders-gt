@@ -95,14 +95,34 @@ img { max-width: 100%; height: auto; }
   will-change: opacity, transform;
 }
 
+/* 5 slides × 5 s each = 25 s total cycle.
+   Visible window: 0-16% (4 s), fade out 16-20% (1 s), hidden 20-96%, fade in 96-100%.
+   Delay formula: -(N-1) * 5s so each slide enters at its own window.
+   Image 1 → 0 s,  Image 2 → -20 s,  Image 3 → -15 s,
+   Image 4 → -10 s, Image 5 → -5 s                       */
 .hero-slide--1 {
-  animation: hero-ken 14s ease-in-out infinite;
+  animation: hero-ken 25s ease-in-out infinite;
+  object-position: 42% 58%;
 }
-
 .hero-slide--2 {
-  animation: hero-ken 14s ease-in-out infinite;
-  animation-delay: -7s;
-  object-position: 55% 52%;
+  animation: hero-ken 25s ease-in-out infinite;
+  animation-delay: -20s;
+  object-position: 52% 50%;
+}
+.hero-slide--3 {
+  animation: hero-ken 25s ease-in-out infinite;
+  animation-delay: -15s;
+  object-position: 50% 45%;
+}
+.hero-slide--4 {
+  animation: hero-ken 25s ease-in-out infinite;
+  animation-delay: -10s;
+  object-position: 48% 55%;
+}
+.hero-slide--5 {
+  animation: hero-ken 25s ease-in-out infinite;
+  animation-delay: -5s;
+  object-position: 50% 60%;
 }
 
 .hero-veil {
@@ -784,26 +804,11 @@ a.speaker:focus-visible {
 
 /* === ANIMATIONS === */
 @keyframes hero-ken {
-  0% {
-    opacity: 1;
-    transform: scale(1.04) translate(0%, 0%);
-  }
-  40% {
-    opacity: 1;
-    transform: scale(1.08) translate(-1.2%, 0.6%);
-  }
-  50% {
-    opacity: 0;
-    transform: scale(1.08) translate(-1.2%, 0.6%);
-  }
-  90% {
-    opacity: 0;
-    transform: scale(1.04) translate(0%, 0%);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1.04) translate(0%, 0%);
-  }
+  0%   { opacity: 1; transform: scale(1.00); }
+  16%  { opacity: 1; transform: scale(1.06); }
+  20%  { opacity: 0; transform: scale(1.06); }
+  96%  { opacity: 0; transform: scale(1.00); }
+  100% { opacity: 1; transform: scale(1.00); }
 }
 
 @keyframes rise {
@@ -823,9 +828,11 @@ a.speaker:focus-visible {
     --wall-x: 8vw;
   }
 
-  .hero-slide--1 {
-    object-position: 40% 50%;
-  }
+  .hero-slide--1 { object-position: 40% 50%; }
+  .hero-slide--2 { object-position: 50% 48%; }
+  .hero-slide--3 { object-position: 50% 42%; }
+  .hero-slide--4 { object-position: 46% 52%; }
+  .hero-slide--5 { object-position: 50% 55%; }
 
   .hero-invite {
     padding-bottom: 4rem;
@@ -871,13 +878,17 @@ a.speaker:focus-visible {
   }
 
   .hero-slide--1,
-  .hero-slide--2 {
+  .hero-slide--2,
+  .hero-slide--3,
+  .hero-slide--4,
+  .hero-slide--5 {
     animation: none;
     transform: none;
+    opacity: 0;
   }
 
-  .hero-slide--2 {
-    opacity: 0;
+  .hero-slide--1 {
+    opacity: 1;
   }
 
   .band,

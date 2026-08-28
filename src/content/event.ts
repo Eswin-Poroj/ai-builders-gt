@@ -74,7 +74,7 @@ export const event: EventContent = {
       {
         id: "day-2",
         dateLabel: "Domingo 20 sept",
-        title: "Cursor Hackathon",
+        title: "Grokbot Meetup - Guatemala (Xela)",
         subtitle: "Día 2",
         bullets: [
           "Presentado por Cursor como naming sponsor",

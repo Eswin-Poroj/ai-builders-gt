@@ -8,6 +8,7 @@ import { HeroSection } from "@/components/sections/hero"
 import { MidCtaSection } from "@/components/sections/mid-cta"
 import { SpeakersSection } from "@/components/sections/speakers"
 import { TracksSection } from "@/components/sections/tracks"
+import { VenueSection } from "@/components/sections/venue"
 
 export const dynamic = "force-static"
 
@@ -21,6 +22,7 @@ export default function Home() {
       <TracksSection />
       <MidCtaSection />
       <AlliesSection />
+      <VenueSection />
       <FaqSection />
       <FinalCtaSection />
       <FooterSection />

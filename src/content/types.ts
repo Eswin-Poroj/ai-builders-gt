@@ -82,6 +82,7 @@ export type EventContent = {
     name: string
     city: string
     display: string
+    mapEmbedSrc?: string
   }
   seo: {
     title: string

@@ -11,14 +11,15 @@ export const event: EventContent = {
     shout: "19–20 SEPT 2026",
   },
   venue: {
-    name: "Universidad Mesoamericana",
+    name: "Facultad de Ingeniería, Universidad Mesoamericana",
     city: "Quetzaltenango",
-    display: "Universidad Mesoamericana, Quetzaltenango",
+    display: "Facultad de Ingeniería, Universidad Mesoamericana, Quetzaltenango",
+    mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6628.659181363057!2d-91.54277412306315!3d14.843519185672095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e9821d5d018bf%3A0xb35fd953c69529a9!2sFacultad%20de%20Ingenier%C3%ADa%20Universidad%20Mesoamericana!5e1!3m2!1ses!2sgt!4v1787904151989!5m2!1ses!2sgt",
   },
   seo: {
     title: "AI Builders Xela 2026 — Hackathon de IA en Guatemala",
     description:
-      "19–20 de septiembre 2026 en la Universidad Mesoamericana, Quetzaltenango. El primer hackathon de IA del occidente de Guatemala. 100% gratis.",
+      "19–20 de septiembre 2026 en la Facultad de Ingeniería, Universidad Mesoamericana, Quetzaltenango. El primer hackathon de IA del occidente de Guatemala. 100% gratis.",
   },
   hero: {
     lines: ["AI", "BUILDERS", "XELA"],
@@ -191,14 +192,16 @@ export const event: EventContent = {
     heading: "Aliados",
     items: [
       // SPONSOR LOGOS: poner logoSrc → /sponsors/{id}.png cuando lleguen archivos oficiales a public/sponsors/
-      /* {
-        id: "cursor",
-        name: "Cursor",
+      {
+        id: "grokbot-meetup",
+        name: "Grokbot Meetup - Guatemala (Xela)",
         tier: "naming",
         href: "https://cursor.com",
-        logoSrc: null,
+        logoSrc: "/sponsors/grokbot-meetup.png",
+        logoWidth: 400,
+        logoHeight: 400,
       },
-      {
+      /* {
         id: "notion",
         name: "Notion",
         tier: "tool",
@@ -214,14 +217,16 @@ export const event: EventContent = {
         logoWidth: 720,
         logoHeight: 593,
       },
-      /* {
+      {
         id: "python-gt",
         name: "Python Guatemala",
         tier: "community",
         href: "https://www.meetup.com/python-guatemala/",
-        logoSrc: null,
+        logoSrc: "/sponsors/python-gt.png",
+        logoWidth: 385,
+        logoHeight: 399,
       },
-      {
+      /* {
         id: "gdg-xela",
         name: "GDG Xela",
         tier: "community",
@@ -294,7 +299,7 @@ export const event: EventContent = {
       {
         id: "donde",
         question: "¿Dónde es el evento?",
-        answer: "Universidad Mesoamericana, sede Quetzaltenango.",
+        answer: "Facultad de Ingeniería, Universidad Mesoamericana, Quetzaltenango.",
       },
     ],
   },
@@ -316,7 +321,7 @@ export const event: EventContent = {
 }
 
 export const tierLabels: Record<EventContent["allies"]["items"][number]["tier"], string> = {
-  naming: "Naming sponsor del hackathon",
+  naming: "Presentado por Cursor Guatemala",
   tool: "Tool partner",
   community: "Community partners",
   ally: "Aliados",

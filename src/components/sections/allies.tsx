@@ -5,6 +5,7 @@ import type { Sponsor, SponsorTier } from "@/content/types"
 
 const order: SponsorTier[] = [
   "naming",
+  "sponsor",
   "tool",
   "community",
   "ally",
@@ -43,6 +44,7 @@ function SponsorPlaque({ sponsor }: { sponsor: Sponsor }) {
             height={sponsor.logoHeight ?? 48}
             sizes="(max-width: 420px) 78vw, 16rem"
             loading="eager"
+            unoptimized={sponsor.logoSrc.endsWith(".svg")}
           />
         </span>
       ) : null}

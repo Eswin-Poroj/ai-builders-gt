@@ -78,6 +78,7 @@ export const event: EventContent = {
         subtitle: "Día 2",
         bullets: [
           "Presentado por Cursor como naming sponsor",
+          "Charla sobre el uso de Grokbot Meetup",
           "3 bloques de construcción con mentoring",
           "Demo Day ante jurado",
           "Premiación y cierre",
@@ -201,6 +202,24 @@ export const event: EventContent = {
         logoWidth: 400,
         logoHeight: 400,
       },
+      {
+        id: "spacex",
+        name: "SpaceX",
+        tier: "sponsor",
+        href: "https://www.spacex.com",
+        logoSrc: "/hero/spacex-com-brandmark-dark.svg",
+        logoWidth: 147,
+        logoHeight: 19,
+      },
+      {
+        id: "codekids",
+        name: "CodeKids",
+        tier: "sponsor",
+        href: "https://www.facebook.com/share/19MH8mxPd6/",
+        logoSrc: "/hero/codekids.svg",
+        logoWidth: 1080,
+        logoHeight: 1107,
+      },
       /* {
         id: "notion",
         name: "Notion",
@@ -322,6 +341,7 @@ export const event: EventContent = {
 
 export const tierLabels: Record<EventContent["allies"]["items"][number]["tier"], string> = {
   naming: "Presentado por Cursor Guatemala",
+  sponsor: "Patrocinador",
   tool: "Tool partner",
   community: "Community partners",
   ally: "Aliados",

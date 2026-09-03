@@ -46,6 +46,7 @@ export type Track = {
 
 export type SponsorTier =
   | "naming"
+  | "sponsor"
   | "tool"
   | "community"
   | "ally"

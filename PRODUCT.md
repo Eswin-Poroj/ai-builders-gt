@@ -53,7 +53,7 @@ AI Builders GT es la comunidad; Xela 2026 es la prueba de que el occidente de Gu
 
 Abierto:
 - URL real de Luma.
-- Logos finales de patrocinadores (Cursor, Notion, Arduino Guatemala, Python Guatemala, GDG Xela, SMOPS, CREABOT, Universidad Mesoamericana, La Voz de Xela).
+- Logos finales de patrocinadores (Cursor, Arduino Guatemala, Python Guatemala, GDG Xela, SMOPS, CREABOT, Universidad Mesoamericana, La Voz de Xela).
 - Fotos de speakers.
 - Redes extra (Facebook, WhatsApp) cuando existan.
 - Cuál de los 4 tracks se oculta.
@@ -75,9 +75,9 @@ Logos oficiales en `brand/`: ícono, lockup claro, comparación claro/oscuro.
 
 Speakers confirmados (sin foto): Giovanni Castillo; Carlos Sosa; Boris Lemus (Cooperativas MICOPE); Cristian Lavarreda (Ajexport); Yeffri Salazar (Arduino Guatemala). Espacio para 1–2 «por confirmar».
 
-Aliados nombrados, sin logos reales: Cursor (naming sponsor del hackathon), Notion (tool partner), Arduino Guatemala / Python Guatemala / GDG Xela (community), SMOPS / CREABOT (aliados), Universidad Mesoamericana (coorganiza), La Voz de Xela (media partner).
+Aliados nombrados, sin logos reales: Cursor (naming sponsor del hackathon), Arduino Guatemala / Python Guatemala / GDG Xela (community), SMOPS / CREABOT (aliados), Universidad Mesoamericana (coorganiza), La Voz de Xela (media partner).
 
-Stats del brief (no son métricas medidas): 80–150 participantes esperados; premios en efectivo + créditos de Cursor y Notion; 2 días; evento gratuito.
+Stats del brief (no son métricas medidas): 80–150 participantes esperados; premios en efectivo + créditos de Cursor; 2 días; evento gratuito.
 
 No hay testimonios, fotos de ediciones anteriores, ni URL de Luma. No inventar quotes, métricas de asistencia pasada, ni logotipos oficiales de terceros.
 

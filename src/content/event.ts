@@ -42,7 +42,7 @@ export const event: EventContent = {
       {
         id: "prize",
         value: "Premios",
-        label: "en efectivo + créditos de Cursor y Notion",
+        label: "en efectivo + créditos de Cursor",
       },
       {
         id: "days",
@@ -274,13 +274,6 @@ export const event: EventContent = {
         logoWidth: 1080,
         logoHeight: 1107,
       },
-      /* {
-        id: "notion",
-        name: "Notion",
-        tier: "tool",
-        href: "https://www.notion.com",
-        logoSrc: null,
-      }, */
       {
         id: "arduino-gt",
         name: "Arduino Guatemala",

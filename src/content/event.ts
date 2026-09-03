@@ -98,6 +98,7 @@ export const event: EventContent = {
         photoSrc: null,
         href: null,
         confirmed: true,
+        bio: "Especialista en sistemas embebidos y edge AI. Explora cómo llevar la inteligencia artificial al hardware de bajo costo en entornos de conectividad limitada.",
       },
       {
         id: "carlos-sosa",
@@ -107,6 +108,7 @@ export const event: EventContent = {
         photoSrc: null,
         href: null,
         confirmed: true,
+        bio: "Desarrollador e investigador enfocado en aplicaciones prácticas de inteligencia artificial para el contexto latinoamericano.",
       },
       {
         id: "boris-lemus",
@@ -116,6 +118,8 @@ export const event: EventContent = {
         photoSrc: null,
         href: "https://www.linkedin.com/in/borislemusv",
         confirmed: true,
+        bio: "Gerente de tecnología en Cooperativas MICOPE. Lidera procesos de transformación digital y adopción tecnológica en el sector cooperativo guatemalteco.",
+        socials: { linkedin: "https://www.linkedin.com/in/borislemusv" },
       },
       {
         id: "cristian-lavarreda",
@@ -125,6 +129,11 @@ export const event: EventContent = {
         photoSrc: "/speakers/cristian-lavarreda.png",
         href: "https://www.linkedin.com/in/lavarreda",
         confirmed: true,
+        bio: "Socio fundador de Esource Capital. Ha ayudado a más de 4,000 empresas en Latinoamérica a adoptar tecnología de nube e inteligencia artificial.",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/lavarreda",
+          website: "https://www.esourcecapital.com",
+        },
       },
       {
         id: "yeffri-salazar",
@@ -134,6 +143,8 @@ export const event: EventContent = {
         photoSrc: null,
         href: "https://www.linkedin.com/in/yeffrimic",
         confirmed: true,
+        bio: "Líder de Arduino Guatemala y entusiasta de la mecatrónica. Conecta el hardware con soluciones de IA aplicadas a proyectos de automatización local.",
+        socials: { linkedin: "https://www.linkedin.com/in/yeffrimic" },
       },
       {
         id: "carlos-escobar",
@@ -143,6 +154,13 @@ export const event: EventContent = {
         photoSrc: "/speakers/carlos-escobar.jpg",
         href: "https://www.linkedin.com/in/carloshugoeg",
         confirmed: true,
+        bio: "Fundador de Koi Software y becado de Fundación Juan Bautista Gutiérrez. Construye software a la medida para negocios reales en Guatemala usando IA de forma central en el proceso.",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/carloshugoeg",
+          instagram: "https://www.instagram.com/carloshugoeg",
+          twitter: "https://x.com/carloshugoeg",
+          website: "https://koisoftware.com",
+        },
       },
       {
         id: "edwin-sac",
@@ -152,6 +170,8 @@ export const event: EventContent = {
         photoSrc: "/speakers/edwin-sac.png",
         href: "https://www.instagram.com/edwinsacrecinos",
         confirmed: true,
+        bio: "Ingeniero en sistemas, arquitecto de soluciones y escritor. Especialista en backend, IA e infraestructuras modulares. Encargado de desarrollo de sistemas de información geográfica en GisystemsInt.",
+        socials: { instagram: "https://www.instagram.com/edwinsacrecinos" },
       },
       {
         id: "diego-cum",
@@ -161,6 +181,13 @@ export const event: EventContent = {
         photoSrc: "/speakers/diego-cum.jpg",
         href: "https://www.linkedin.com/in/diegodevgt",
         confirmed: true,
+        bio: "AI Architect, desarrollador y creador de contenido. Cursor Ambassador en Guatemala, Claude Certified Architect y cofundador de DDR Innova, donde impulsa soluciones de IA para negocios y productos digitales.",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/diegodevgt",
+          instagram: "https://www.instagram.com/diegodevgt",
+          twitter: "https://x.com/diegodevgt",
+          website: "https://diegodevgt.com",
+        },
       },
       {
         id: "tba-1",

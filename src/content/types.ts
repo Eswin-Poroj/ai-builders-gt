@@ -21,6 +21,14 @@ export type EventDay = {
   bullets: string[]
 }
 
+export type SpeakerSocials = {
+  linkedin?: string
+  instagram?: string
+  github?: string
+  twitter?: string
+  website?: string
+}
+
 export type Speaker = {
   id: string
   name: string
@@ -29,6 +37,8 @@ export type Speaker = {
   photoSrc: string | null
   href: string | null
   confirmed: boolean
+  bio?: string
+  socials?: SpeakerSocials
 }
 
 export type TrackId =

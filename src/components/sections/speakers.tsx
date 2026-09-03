@@ -22,7 +22,13 @@ function SpeakerBay({ speaker }: { speaker: Speaker }) {
     <>
       <div className="speaker-mark" aria-hidden="true">
         {speaker.photoSrc ? (
-          <Image src={speaker.photoSrc} alt="" width={96} height={96} />
+          <Image
+            src={speaker.photoSrc}
+            alt=""
+            width={96}
+            height={96}
+            sizes="4.5rem"
+          />
         ) : null}
       </div>
       <div>

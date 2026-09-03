@@ -36,7 +36,14 @@ function SponsorPlaque({ sponsor }: { sponsor: Sponsor }) {
   const inner = (
     <>
       {sponsor.logoSrc ? (
-        <span className="ally-logo">
+        <span
+          className="ally-logo"
+          style={
+            sponsor.id === "codekids"
+              ? { minHeight: "6rem" }
+              : undefined
+          }
+        >
           <Image
             src={sponsor.logoSrc}
             alt=""
@@ -45,6 +52,11 @@ function SponsorPlaque({ sponsor }: { sponsor: Sponsor }) {
             sizes="(max-width: 420px) 78vw, 16rem"
             loading="eager"
             unoptimized={sponsor.logoSrc.endsWith(".svg")}
+            style={
+              sponsor.id === "codekids"
+                ? { maxHeight: "6rem" }
+                : undefined
+            }
           />
         </span>
       ) : null}

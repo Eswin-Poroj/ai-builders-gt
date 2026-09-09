@@ -73,7 +73,7 @@ Abierto:
 
 Logos oficiales en `brand/`: ícono, lockup claro, comparación claro/oscuro.
 
-Speakers confirmados (sin foto): Giovanni Castillo; Carlos Sosa; Boris Lemus (Cooperativas MICOPE); Cristian Lavarreda (Ajexport); Yeffri Salazar (Arduino Guatemala). Espacio para 1–2 «por confirmar».
+Speakers confirmados (sin foto): Giovanni Castillo; Carlos Sosa; Cristian Lavarreda (Ajexport); Yeffri Salazar (Arduino Guatemala). Espacio para 1–2 «por confirmar».
 
 Aliados nombrados, sin logos reales: Cursor (naming sponsor del hackathon), Arduino Guatemala / Python Guatemala / GDG Xela (community), SMOPS / CREABOT (aliados), Universidad Mesoamericana (coorganiza), La Voz de Xela (media partner).
 

@@ -111,17 +111,6 @@ export const event: EventContent = {
         bio: "Desarrollador e investigador enfocado en aplicaciones prácticas de inteligencia artificial para el contexto latinoamericano.",
       },
       {
-        id: "boris-lemus",
-        name: "Boris Lemus",
-        role: "Cooperativas MICOPE",
-        topic: "Innovación tecnológica y transformación digital",
-        photoSrc: null,
-        href: "https://www.linkedin.com/in/borislemusv",
-        confirmed: true,
-        bio: "Gerente de tecnología en Cooperativas MICOPE. Lidera procesos de transformación digital y adopción tecnológica en el sector cooperativo guatemalteco.",
-        socials: { linkedin: "https://www.linkedin.com/in/borislemusv" },
-      },
-      {
         id: "cristian-lavarreda",
         name: "Cristian Lavarreda",
         role: "Esource Capital",

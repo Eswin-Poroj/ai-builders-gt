@@ -13,12 +13,18 @@ export type EventStat = {
 
 export type EventDayId = "day-1" | "day-2"
 
+export type EventSlot = {
+  time: string
+  label: string
+}
+
 export type EventDay = {
   id: EventDayId
   dateLabel: string
   title: string
   subtitle: string
   bullets: string[]
+  schedule?: EventSlot[]
 }
 
 export type SpeakerSocials = {
@@ -77,6 +83,10 @@ export type FaqItem = {
   id: string
   question: string
   answer: string
+  href?: string
+  linkLabel?: string
+  imageSrc?: string
+  imageAlt?: string
 }
 
 export type EventContent = {
@@ -136,6 +146,9 @@ export type EventContent = {
     contactEmail: string
     instagramHandle: string
     instagramUrl: string
+    whatsappLabel: string
+    whatsappUrl: string
+    whatsappQrSrc: string
     copyright: string
   }
   ctas: EventCta[]

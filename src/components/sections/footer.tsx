@@ -18,11 +18,37 @@ export function FooterSection() {
         </span>
       </a>
       <div className="foot-links">
+        <a href={event.footer.whatsappUrl} rel="noreferrer" target="_blank">
+          {event.footer.whatsappLabel}
+        </a>
         <a href={event.footer.instagramUrl}>{event.footer.instagramHandle}</a>
         <a href={`mailto:${event.footer.contactEmail}`}>
           {event.footer.contactEmail}
         </a>
       </div>
+      <a
+        href={event.footer.whatsappUrl}
+        rel="noreferrer"
+        target="_blank"
+        aria-label="Escanear para unirse al grupo de WhatsApp"
+        style={{
+          display: "block",
+          width: "6.5rem",
+          margin: "0 0 1.2rem",
+          padding: "0.4rem",
+          background: "var(--paper)",
+          borderRadius: 4,
+        }}
+      >
+        <Image
+          src={event.footer.whatsappQrSrc}
+          alt=""
+          width={450}
+          height={450}
+          sizes="6.5rem"
+          style={{ display: "block", width: "100%", height: "auto" }}
+        />
+      </a>
       <p className="foot-copy">{event.footer.copyright}</p>
     </footer>
   )

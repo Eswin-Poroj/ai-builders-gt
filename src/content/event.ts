@@ -70,6 +70,13 @@ export const event: EventContent = {
           "Presentación oficial de los retos del hackathon",
           "Workshop de formación de equipos",
         ],
+        schedule: [
+          { time: "8:00", label: "Check-in e inauguración" },
+          { time: "Mañana", label: "Charlas y paneles en 3 aulas" },
+          { time: "Mediodía", label: "Café" },
+          { time: "Tarde", label: "Retos del hackathon y formación de equipos" },
+          { time: "17:00", label: "Cierre del summit" },
+        ],
       },
       {
         id: "day-2",
@@ -82,6 +89,12 @@ export const event: EventContent = {
           "3 bloques de construcción con mentoring",
           "Demo Day ante jurado",
           "Premiación y cierre",
+        ],
+        schedule: [
+          { time: "8:00", label: "Check-in" },
+          { time: "9:00", label: "Arranque y GrokBot in Action" },
+          { time: "Día", label: "Construcción con mentoring" },
+          { time: "15:00", label: "Demo Day, premiación y cierre" },
         ],
       },
     ],
@@ -411,14 +424,42 @@ export const event: EventContent = {
         answer: "Sí, hay un workshop de formación de equipos el Día 1.",
       },
       {
+        id: "horario",
+        question: "¿A qué hora llego?",
+        answer:
+          "Sábado 19: check-in e inauguración desde las 8:00, cierre a las 17:00. Domingo 20: check-in desde las 8:00, arranque a las 9:00 y cierre a las 15:00. Llegá con tiempo el primer día.",
+      },
+      {
         id: "llevar",
         question: "¿Qué necesito llevar?",
-        answer: "Tu laptop y muchas ganas de construir.",
+        answer:
+          "Registrate en Luma antes de llegar y llevá el QR de confirmación. Laptop, cargador y, si tenés, una extensión. El evento es gratis.",
+      },
+      {
+        id: "parqueo",
+        question: "¿Hay parqueo?",
+        answer: "Sí, hay parqueo en la Universidad Mesoamericana.",
+      },
+      {
+        id: "comida",
+        question: "¿Hay comida?",
+        answer:
+          "Hay estación de café. Si hay almuerzo u otros cambios, los avisamos en el grupo de WhatsApp.",
       },
       {
         id: "donde",
         question: "¿Dónde es el evento?",
         answer: "Facultad de Ingeniería, Universidad Mesoamericana, Quetzaltenango.",
+      },
+      {
+        id: "avisos",
+        question: "¿Dónde me entero de cambios?",
+        answer:
+          "En el grupo de WhatsApp de la comunidad. Ahí van avisos de último minuto, horarios y lo que vaya saliendo.",
+        href: "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t",
+        linkLabel: "Entrá al grupo",
+        imageSrc: "/community/whatsapp-qr.png",
+        imageAlt: "Código QR para unirse al grupo de WhatsApp de AI Builders GT",
       },
     ],
   },
@@ -429,6 +470,9 @@ export const event: EventContent = {
     contactEmail: "eswinstuardporojcastro@gmail.com",
     instagramHandle: "@aibuilders.gt_",
     instagramUrl: "https://instagram.com/aibuilders.gt_",
+    whatsappLabel: "WhatsApp",
+    whatsappUrl: "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t",
+    whatsappQrSrc: "/community/whatsapp-qr.png",
     copyright: "© 2026 AI Builders GT",
   },
   ctas: [

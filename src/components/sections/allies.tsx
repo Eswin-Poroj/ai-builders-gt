@@ -32,6 +32,8 @@ export function AlliesSection() {
   )
 }
 
+const paperLogos = new Set(["voz-xela"])
+
 function SponsorPlaque({ sponsor }: { sponsor: Sponsor }) {
   const inner = (
     <>
@@ -41,7 +43,14 @@ function SponsorPlaque({ sponsor }: { sponsor: Sponsor }) {
           style={
             sponsor.id === "codekids"
               ? { minHeight: "6rem" }
-              : undefined
+              : paperLogos.has(sponsor.id)
+                ? {
+                    alignSelf: "flex-start",
+                    padding: "0.45rem",
+                    background: "var(--paper)",
+                    borderRadius: 4,
+                  }
+                : undefined
           }
         >
           <Image

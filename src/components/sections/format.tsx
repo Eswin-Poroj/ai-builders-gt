@@ -18,8 +18,8 @@ export function FormatSection() {
               <h3 className="day-title">{day.title}</h3>
               <p className="day-date">{day.dateLabel}</p>
               <ul>
-                {rows.map((item) => (
-                  <li key={item}>{item}</li>
+                {rows.map((item, index) => (
+                  <li key={`${day.id}-${index}`}>{item}</li>
                 ))}
               </ul>
             </article>

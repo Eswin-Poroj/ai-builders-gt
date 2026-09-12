@@ -73,7 +73,7 @@ export const event: EventContent = {
         schedule: [
           { time: "8:00", label: "Check-in e inauguración" },
           { time: "Mañana", label: "Charlas y paneles en 3 aulas" },
-          { time: "Mediodía", label: "Café" },
+          { time: "Mediodía", label: "Café, pizza y bebida" },
           { time: "Tarde", label: "Retos del hackathon y formación de equipos" },
           { time: "17:00", label: "Cierre del summit" },
         ],
@@ -369,11 +369,10 @@ export const event: EventContent = {
         id: "smops",
         name: "SMOPS",
         tier: "ally",
-        // ALLY LINK: URL oficial pendiente
-        href: null,
-        logoSrc: "/sponsors/smops.png",
-        logoWidth: 493,
-        logoHeight: 136,
+        href: "https://smops.ai/",
+        logoSrc: "/sponsors/smops.svg",
+        logoWidth: 1213,
+        logoHeight: 265,
       },
       {
         id: "creabot",
@@ -444,7 +443,7 @@ export const event: EventContent = {
         id: "comida",
         question: "¿Hay comida?",
         answer:
-          "Hay estación de café. Si hay almuerzo u otros cambios, los avisamos en el grupo de WhatsApp.",
+          "Sí. Hay café, pizza y bebida. Si hay cambios, los avisamos en el grupo de WhatsApp.",
       },
       {
         id: "donde",

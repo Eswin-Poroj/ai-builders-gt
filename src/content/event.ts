@@ -264,6 +264,17 @@ export const event: EventContent = {
           website: "https://convoflow.ai",
         },
       },
+      {
+        id: "jennifer-zelada",
+        name: "Jennifer Sucely Zelada de León",
+        role: "Universidad Mesoamericana",
+        topic:
+          "¿La IA realmente programa bien? Cómo evaluar el código generado por Inteligencia Artificial",
+        photoSrc: "/speakers/jennifer-zelada.jpg",
+        href: null,
+        confirmed: true,
+        bio: "Ingeniera en Sistemas, Informática y Ciencias de la Computación y Magíster en Docencia Superior. Docente en la Facultad de Ingeniería de Universidad Mesoamericana; integra tecnología, innovación y educación en la formación de futuros profesionales.",
+      },
     ],
   },
   tracks: {

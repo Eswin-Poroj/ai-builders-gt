@@ -129,7 +129,7 @@ export const event: EventContent = {
         name: "Yeffri Salazar",
         role: "Arduino Guatemala",
         topic: "IA local y humanoides",
-        photoSrc: null,
+        photoSrc: "/speakers/yeffri-salazar.jpg",
         href: "https://www.linkedin.com/in/yeffrimic",
         confirmed: true,
         bio: "Maker, ingeniero en electrónica y seleccionado nacional de eSports. Construye robots y organiza eventos de tecnología.",
@@ -237,6 +237,20 @@ export const event: EventContent = {
           linkedin: "https://www.linkedin.com/in/cristina-coutiño-9408201a1",
         },
       },
+      {
+        id: "diego-rosales",
+        name: "Diego Rosales",
+        role: "SpaceX Ambassador",
+        topic: "Automatización de procesos en 2026 — Convoflow AI",
+        photoSrc: "/speakers/diego-rosales.jpg",
+        href: "https://www.linkedin.com/in/dvrm",
+        confirmed: true,
+        bio: "Ingeniero de software y SpaceX Ambassador. Cofundador de DDR Innova y coorganizador del primer Cursor Meetup en Guatemala.",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/dvrm",
+          website: "https://convoflow.ai",
+        },
+      },
     ],
   },
   tracks: {
@@ -322,6 +336,15 @@ export const event: EventContent = {
         logoWidth: 385,
         logoHeight: 399,
       },
+      {
+        id: "open2",
+        name: "Open2",
+        tier: "community",
+        href: "https://open2.io",
+        logoSrc: "/sponsors/open2.png",
+        logoWidth: 1024,
+        logoHeight: 241,
+      },
       /* {
         id: "gdg-xela",
         name: "GDG Xela",
@@ -404,8 +427,8 @@ export const event: EventContent = {
   },
   footer: {
     contactEmail: "eswinstuardporojcastro@gmail.com",
-    instagramHandle: "@aibuilders.gt",
-    instagramUrl: "https://instagram.com/aibuilders.gt",
+    instagramHandle: "@aibuilders.gt_",
+    instagramUrl: "https://instagram.com/aibuilders.gt_",
     copyright: "© 2026 AI Builders GT",
   },
   ctas: [

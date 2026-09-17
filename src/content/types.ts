@@ -16,6 +16,28 @@ export type EventDayId = "day-1" | "day-2"
 export type EventSlot = {
   time: string
   label: string
+  place?: string
+}
+
+export type TalkModality = "presencial" | "en-linea"
+
+export type EventTalk = {
+  time: string
+  speakerId?: string
+  title?: string
+  duration?: string
+  modality?: TalkModality
+  kind?: "talk" | "break"
+}
+
+export type RoomAccent = "brand" | "action"
+
+export type EventRoom = {
+  id: string
+  name: string
+  note?: string
+  accent?: RoomAccent
+  talks: EventTalk[]
 }
 
 export type EventDay = {
@@ -25,6 +47,9 @@ export type EventDay = {
   subtitle: string
   bullets: string[]
   schedule?: EventSlot[]
+  roomsHeading?: string
+  roomsNote?: string
+  rooms?: EventRoom[]
 }
 
 export type SpeakerSocials = {

@@ -1,0 +1,413 @@
+.day-slot {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.day-slot:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.day-slot-time {
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+  color: var(--paper);
+}
+
+.day-slot-place {
+  color: var(--mist);
+}
+
+.summit {
+  max-width: 72rem;
+}
+
+.summit-head {
+  margin-bottom: 2.4rem;
+}
+
+.summit-title {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(1.8rem, 8vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.summit-meta {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--mist);
+}
+
+.summit-pill {
+  display: inline-flex;
+  margin: 0.85rem 0 0;
+  max-width: 100%;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid color-mix(in oklab, var(--paper) 28%, transparent);
+  border-radius: 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--mist);
+}
+
+.summit .day-date {
+  margin-bottom: 0.85rem;
+}
+
+.agenda-pick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin: 0 0 1.4rem;
+  padding: 0;
+  border: 0;
+  position: relative;
+}
+
+.agenda-pick-legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.agenda-pick-choice {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.4rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid color-mix(in oklab, var(--paper) 28%, transparent);
+  border-radius: 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--paper);
+  cursor: pointer;
+  transition:
+    opacity 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+    color 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.agenda-pick-choice:hover {
+  opacity: 0.72;
+}
+
+.agenda-pick-choice:active {
+  opacity: 0.85;
+}
+
+.agenda-pick-choice:has(:checked) {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--paper);
+}
+
+.agenda-pick-choice:has(:checked):hover,
+.agenda-pick-choice:has(:checked):active {
+  opacity: 1;
+}
+
+.agenda-pick-choice:focus-within {
+  outline: 3px solid var(--action);
+  outline-offset: 3px;
+}
+
+.agenda-pick-input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.agenda-pick-input:focus,
+.agenda-pick-input:focus-visible {
+  outline: none;
+}
+
+.summit-fallback {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.summit-fallback li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 1.05rem;
+  color: var(--mist);
+}
+
+.summit-fallback li:last-child {
+  border-bottom: none;
+}
+
+.agenda-board {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1.15rem;
+}
+
+.agenda-span {
+  display: grid;
+  gap: 0.2rem;
+  padding: 1rem 1.15rem;
+  background: color-mix(in oklab, var(--ink) 55%, var(--brand));
+  border-radius: 4px;
+}
+
+.agenda-span-pause {
+  padding: 0.7rem 1.15rem;
+  background: color-mix(in oklab, var(--ink) 42%, var(--brand-deep));
+}
+
+.agenda-span-time {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+  color: color-mix(in oklab, var(--brand) 42%, var(--paper));
+}
+
+.agenda-span-pause .agenda-span-time {
+  font-family: var(--font-sans), ui-sans-serif, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--mist);
+}
+
+.agenda-span-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--paper);
+}
+
+.agenda-span-pause .agenda-span-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--mist);
+}
+
+.agenda-span-place {
+  margin: 0.1rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--mist);
+}
+
+.agenda-aula {
+  --room: var(--brand);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.agenda-aula[data-accent="action"] {
+  --room: var(--action);
+}
+
+.agenda-aula-name {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.agenda-aula-name::before {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--room);
+  flex: none;
+}
+
+.agenda-talks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.agenda-talk {
+  --room: var(--brand);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0.85rem 1rem 0.85rem 1.15rem;
+  background: color-mix(in oklab, var(--ink) 72%, var(--room));
+  border-radius: 4px;
+  box-shadow: inset 3px 0 0 var(--room);
+}
+
+.agenda-talk[data-accent="action"] {
+  --room: var(--action);
+}
+
+.agenda-talk-clock {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+  color: color-mix(in oklab, var(--room) 48%, var(--paper));
+}
+
+.agenda-talk-speaker {
+  margin: 0.15rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--paper);
+}
+
+.agenda-talk-title {
+  margin: 0.2rem 0 0;
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--mist);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.agenda-talk-live {
+  display: inline-flex;
+  align-self: flex-start;
+  margin: 0.45rem 0 0;
+  min-height: 1.6rem;
+  padding: 0 0.45rem;
+  border: 1px solid color-mix(in oklab, var(--paper) 28%, transparent);
+  border-radius: 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--paper);
+}
+
+.day-trail {
+  margin-top: 3.2rem;
+  padding-top: 2.4rem;
+  border-top: 1px solid var(--border-warm);
+}
+
+.day-trail-title {
+  margin: 0 0 0.2rem;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(1.8rem, 8vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.day-trail-slots {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.summit:has(#agenda-room-aula-principal:checked) .agenda-aula:not([data-room="aula-principal"]),
+.summit:has(#agenda-room-aula-2:checked) .agenda-aula:not([data-room="aula-2"]) {
+  display: none;
+}
+
+.summit:has(.agenda-pick-input:checked) .agenda-aula-name {
+  display: none;
+}
+
+.summit:has(.agenda-pick-input:checked) .agenda-vanos {
+  grid-template-columns: 1fr;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .agenda-pick-choice {
+    transition: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .day-slot,
+  .agenda-span {
+    grid-template-columns: 12rem 1fr;
+    gap: 1.15rem;
+    align-items: baseline;
+  }
+
+  .day-slot {
+    display: grid;
+  }
+
+  .agenda-pick {
+    display: none;
+  }
+
+  .summit:has(#agenda-room-aula-principal:checked) .agenda-aula:not([data-room="aula-principal"]),
+  .summit:has(#agenda-room-aula-2:checked) .agenda-aula:not([data-room="aula-2"]) {
+    display: flex;
+  }
+
+  .summit:has(.agenda-pick-input:checked) .agenda-aula-name {
+    display: flex;
+  }
+
+  .agenda-vanos,
+  .summit:has(.agenda-pick-input:checked) .agenda-vanos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.15rem 1.4rem;
+    align-items: stretch;
+  }
+
+  .agenda-talks {
+    min-height: calc(var(--block-mins, 60) * 0.2rem);
+  }
+
+  .agenda-talk {
+    flex: var(--talk-mins, 30) 1 0;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .day-trail {
+    max-width: 42rem;
+  }
+}

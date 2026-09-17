@@ -66,16 +66,133 @@ export const event: EventContent = {
         subtitle: "Día 1",
         bullets: [
           "Keynotes, paneles y charlas técnicas",
-          "Charlas simultáneas en 3 aulas",
+          "Charlas simultáneas en Aula Principal y Aula 2",
           "Presentación oficial de los retos del hackathon",
           "Workshop de formación de equipos",
         ],
         schedule: [
-          { time: "8:00", label: "Check-in e inauguración" },
-          { time: "Mañana", label: "Charlas y paneles en 3 aulas" },
-          { time: "Mediodía", label: "Café, pizza y bebida" },
-          { time: "Tarde", label: "Retos del hackathon y formación de equipos" },
-          { time: "17:00", label: "Cierre del summit" },
+          { time: "8:00 – 8:30", label: "Bienvenida e inauguración oficial", place: "Auditorio" },
+          { time: "8:30 – 10:30", label: "Charlas — Bloque 1 (paralelas)", place: "Aula Principal / Aula 2" },
+          { time: "10:30 – 10:45", label: "Coffee break" },
+          { time: "10:45 – 13:00", label: "Charlas — Bloque 2 (paralelas)", place: "Aula Principal / Aula 2" },
+          { time: "13:00 – 14:00", label: "Almuerzo" },
+          { time: "14:00 – 15:30", label: "Charlas — Bloque 3 (paralelas)", place: "Aula Principal / Aula 2" },
+          { time: "15:30 – 15:45", label: "Coffee break" },
+          {
+            time: "15:45 – 16:45",
+            label: "Workshop: formación de equipos y retos del hackathon",
+            place: "Auditorio",
+          },
+          { time: "16:45 – 17:00", label: "Cierre del Día 1", place: "Auditorio" },
+        ],
+        roomsHeading: "Agenda",
+        roomsNote:
+          "Bienvenida y cierre en el Auditorio · Charlas en Aula Principal y Aula 2",
+        rooms: [
+          {
+            id: "aula-principal",
+            name: "Aula Principal",
+            accent: "brand",
+            talks: [
+              {
+                time: "8:30 – 10:30",
+                speakerId: "erick-pineda",
+                duration: "2 h",
+              },
+              {
+                time: "10:30 – 10:45",
+                title: "Coffee break",
+                duration: "15 min",
+                kind: "break",
+              },
+              {
+                time: "10:45 – 11:45",
+                speakerId: "carlos-sosa",
+                duration: "1 h",
+              },
+              {
+                time: "11:45 – 12:15",
+                speakerId: "janeth-rosas",
+                duration: "30 min",
+              },
+              {
+                time: "12:15 – 13:00",
+                speakerId: "jennifer-zelada",
+                duration: "45 min",
+              },
+              {
+                time: "13:00 – 14:00",
+                title: "Almuerzo",
+                duration: "1 h",
+                kind: "break",
+              },
+              {
+                time: "14:00 – 15:00",
+                speakerId: "edwin-sac",
+                duration: "1 h",
+              },
+              {
+                time: "15:00 – 15:30",
+                speakerId: "diego-cum",
+                duration: "30 min",
+              },
+            ],
+          },
+          {
+            id: "aula-2",
+            name: "Aula 2",
+            accent: "action",
+            talks: [
+              {
+                time: "8:30 – 9:30",
+                speakerId: "yeffri-salazar",
+                duration: "1 h",
+              },
+              {
+                time: "9:30 – 10:30",
+                speakerId: "cristina-coutino",
+                duration: "1 h",
+              },
+              {
+                time: "10:30 – 10:45",
+                title: "Coffee break",
+                duration: "15 min",
+                kind: "break",
+              },
+              {
+                time: "10:45 – 11:30",
+                speakerId: "cristian-lavarreda",
+                duration: "45 min",
+                modality: "en-linea",
+              },
+              {
+                time: "11:30 – 12:00",
+                speakerId: "giovanni-castillo",
+                duration: "30 min",
+              },
+              {
+                time: "12:00 – 13:00",
+                speakerId: "diego-rosales",
+                duration: "1 h",
+              },
+              {
+                time: "13:00 – 14:00",
+                title: "Almuerzo",
+                duration: "1 h",
+                kind: "break",
+              },
+              {
+                time: "14:00 – 14:45",
+                speakerId: "carlos-escobar",
+                duration: "45 min",
+              },
+              {
+                time: "14:45 – 15:30",
+                speakerId: "marvin-mazariegos",
+                duration: "45 min",
+              },
+            ],
+          },
         ],
       },
       {
@@ -117,8 +234,8 @@ export const event: EventContent = {
         id: "carlos-sosa",
         name: "Carlos Sosa",
         role: "",
-        topic: "IA aplicada",
-        photoSrc: null,
+        topic: "Agentes en AWS",
+        photoSrc: "/speakers/carlos-sosa.jpg",
         href: null,
         confirmed: true,
         bio: "Desarrollador e investigador enfocado en aplicaciones prácticas de inteligencia artificial para el contexto latinoamericano.",
@@ -437,7 +554,7 @@ export const event: EventContent = {
         id: "horario",
         question: "¿A qué hora llego?",
         answer:
-          "Sábado 19: check-in e inauguración desde las 8:00, cierre a las 17:00. Domingo 20: check-in desde las 8:00, arranque a las 9:00 y cierre a las 15:00. Llegá con tiempo el primer día.",
+          "Sábado 19: bienvenida e inauguración de 8:00 a 8:30, charlas en dos aulas, workshop de equipos a las 15:45 y cierre a las 17:00. Domingo 20: check-in desde las 8:00, arranque a las 9:00 y cierre a las 15:00. Llegá con tiempo el primer día.",
       },
       {
         id: "llevar",

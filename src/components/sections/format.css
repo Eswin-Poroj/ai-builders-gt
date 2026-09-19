@@ -261,6 +261,7 @@
   padding: 0;
   list-style: none;
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
@@ -271,6 +272,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  min-width: 0;
   padding: 0.85rem 1rem 0.85rem 1.15rem;
   background: color-mix(in oklab, var(--ink) 72%, var(--room));
   border-radius: 4px;
@@ -279,6 +281,18 @@
 
 .agenda-talk[data-accent="action"] {
   --room: var(--action);
+}
+
+.agenda-talk-break {
+  justify-content: center;
+  min-height: 2.4rem;
+  background: color-mix(in oklab, var(--ink) 42%, var(--brand-deep));
+  box-shadow: none;
+}
+
+.agenda-talk-break .agenda-talk-clock,
+.agenda-talk-break .agenda-talk-title {
+  color: var(--mist);
 }
 
 .agenda-talk-clock {
@@ -292,22 +306,22 @@
 
 .agenda-talk-speaker {
   margin: 0.15rem 0 0;
+  min-width: 0;
   font-size: 1.05rem;
   font-weight: 600;
   line-height: 1.5;
   color: var(--paper);
+  overflow-wrap: break-word;
 }
 
 .agenda-talk-title {
   margin: 0.2rem 0 0;
+  min-width: 0;
   font-size: 0.82rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--mist);
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
+  overflow-wrap: break-word;
 }
 
 .agenda-talk-live {
@@ -397,17 +411,17 @@
     align-items: stretch;
   }
 
-  .agenda-talks {
-    min-height: calc(var(--block-mins, 60) * 0.2rem);
+  .agenda-talk {
+    flex: var(--talk-mins, 30) 0 auto;
+    min-height: calc(var(--talk-mins, 30) * 0.2rem);
   }
 
-  .agenda-talk {
-    flex: var(--talk-mins, 30) 1 0;
-    min-height: 0;
-    overflow: hidden;
+  .agenda-talk-break {
+    flex-grow: 0;
+    min-height: 2.8rem;
   }
 
   .day-trail {
-    max-width: 42rem;
+    max-width: 72rem;
   }
 }

@@ -40,7 +40,6 @@ function rangeFromLabel(time: string): { start: number; end: number } | null {
 }
 
 function talkInRange(talk: EventTalk, start: number, end: number): boolean {
-  if (talk.kind === "break") return false
   const range = rangeFromLabel(talk.time)
   if (!range) return false
   return range.start < end && range.end > start
@@ -48,6 +47,10 @@ function talkInRange(talk: EventTalk, start: number, end: number): boolean {
 
 function sharedTone(title: string): SharedTone {
   return /coffee|café/i.test(title) ? "pause" : "umbral"
+}
+
+function sundayTone(title: string): SharedTone {
+  return /coffee|café|almuerzo|traslado/i.test(title) ? "pause" : "umbral"
 }
 
 function talkMinutes(talk: EventTalk): number {
@@ -155,17 +158,33 @@ function SaturdaySummit({ day }: { day: EventDay }) {
 
 function SundayTrail({ day }: { day: EventDay }) {
   const slots = day.schedule && day.schedule.length > 0 ? day.schedule : null
+  const span = day.schedule ? daySpan(day.schedule) : null
 
   return (
-    <article className="day-trail">
-      <h3 className="day-trail-title">{day.title}</h3>
-      <p className="day-date">{day.dateLabel}</p>
+    <article className="day-trail" id="hackathon">
+      <header className="summit-head">
+        <h3 className="day-trail-title">{day.title}</h3>
+        <p className="summit-meta">
+          {day.dateLabel}
+          {span ? ` · ${span}` : null}
+        </p>
+        {day.roomsNote ? <p className="summit-pill">{day.roomsNote}</p> : null}
+      </header>
       {slots ? (
-        <ul className="day-trail-slots">
+        <ol className="agenda-board">
           {slots.map((slot) => (
-            <ScheduleSlot key={`${day.id}-${slot.time}-${slot.label}`} slot={slot} />
+            <SharedMoment
+              key={`${day.id}-${slot.time}-${slot.label}`}
+              band={{
+                kind: "shared",
+                tone: sundayTone(slot.label),
+                time: slot.time,
+                title: slot.label,
+                place: slot.place,
+              }}
+            />
           ))}
-        </ul>
+        </ol>
       ) : (
         <ul className="day-trail-slots">
           {day.bullets.map((item) => (
@@ -195,18 +214,6 @@ function RoomPick({ rooms }: { rooms: EventRoom[] }) {
         </label>
       ))}
     </fieldset>
-  )
-}
-
-function ScheduleSlot({ slot }: { slot: EventSlot }) {
-  return (
-    <li className="day-slot">
-      <span className="day-slot-time">{slot.time}</span>
-      <span>
-        {slot.label}
-        {slot.place ? <span className="day-slot-place"> · {slot.place}</span> : null}
-      </span>
-    </li>
   )
 }
 
@@ -265,10 +272,11 @@ function TalkCard({ talk, accent }: { talk: EventTalk; accent: RoomAccent }) {
   const speaker = talk.speakerId ? speakersById.get(talk.speakerId) : undefined
   const title = talk.title ?? speaker?.topic
   const live = talk.modality === "en-linea"
+  const isBreak = talk.kind === "break"
 
   return (
     <li
-      className="agenda-talk"
+      className={isBreak ? "agenda-talk agenda-talk-break" : "agenda-talk"}
       data-accent={accent}
       style={{ "--talk-mins": talkMinutes(talk) } as CSSProperties}
     >

@@ -29,7 +29,7 @@ export const event: EventContent = {
   about: {
     heading: "Sobre el evento",
     paragraphs: [
-      "AI Builders Xela combina el Building with AI Summit (charlas, paneles y networking) con el Cursor Hackathon (construcción intensiva de soluciones con IA), durante un fin de semana completo en Quetzaltenango.",
+      "AI Builders Xela combina el Building with AI Summit (charlas, paneles y networking) con el GrokBot Hackathon (construcción intensiva de soluciones con IA), durante un fin de semana completo en Quetzaltenango.",
       "Buscamos posicionar a Quetzaltenango como nodo activo del ecosistema tecnológico centroamericano, conectando a desarrolladores, fundadores, estudiantes y líderes del sector alrededor de la inteligencia artificial aplicada a problemas reales de Guatemala.",
       "Es la primera edición de lo que buscamos convertir en un referente anual del occidente del país.",
     ],
@@ -71,13 +71,11 @@ export const event: EventContent = {
           "Workshop de formación de equipos",
         ],
         schedule: [
-          { time: "8:00 – 8:30", label: "Bienvenida e inauguración oficial", place: "Auditorio" },
-          { time: "8:30 – 10:30", label: "Charlas — Bloque 1 (paralelas)", place: "Aula Principal / Aula 2" },
-          { time: "10:30 – 10:45", label: "Coffee break" },
-          { time: "10:45 – 13:00", label: "Charlas — Bloque 2 (paralelas)", place: "Aula Principal / Aula 2" },
+          { time: "8:00 – 9:30", label: "Bienvenida, inauguración y registro", place: "Auditorio" },
+          { time: "9:30 – 13:00", label: "Charlas — Bloques 1 y 2 (paralelas)", place: "Aula Principal / Aula 2" },
           { time: "13:00 – 14:00", label: "Almuerzo" },
           { time: "14:00 – 15:30", label: "Charlas — Bloque 3 (paralelas)", place: "Aula Principal / Aula 2" },
-          { time: "15:30 – 15:45", label: "Coffee break" },
+          { time: "15:30 – 15:45", label: "Coffee break", place: "Todos" },
           {
             time: "15:45 – 16:45",
             label: "Workshop: formación de equipos y retos del hackathon",
@@ -87,7 +85,7 @@ export const event: EventContent = {
         ],
         roomsHeading: "Agenda",
         roomsNote:
-          "Bienvenida y cierre en el Auditorio · Charlas en Aula Principal y Aula 2",
+          "Bienvenida y cierre en el Auditorio · Charlas en Aula Principal y Aula 2 · Aula 3 libre",
         rooms: [
           {
             id: "aula-principal",
@@ -95,9 +93,10 @@ export const event: EventContent = {
             accent: "brand",
             talks: [
               {
-                time: "8:30 – 10:30",
+                time: "9:30 – 10:30",
                 speakerId: "erick-pineda",
-                duration: "2 h",
+                duration: "1 h",
+                modality: "en-linea",
               },
               {
                 time: "10:30 – 10:45",
@@ -108,7 +107,9 @@ export const event: EventContent = {
               {
                 time: "10:45 – 11:45",
                 speakerId: "carlos-sosa",
+                title: "Agentes en AWS (complemento directo de la charla de Erick Pineda)",
                 duration: "1 h",
+                modality: "en-linea",
               },
               {
                 time: "11:45 – 12:15",
@@ -119,12 +120,6 @@ export const event: EventContent = {
                 time: "12:15 – 13:00",
                 speakerId: "jennifer-zelada",
                 duration: "45 min",
-              },
-              {
-                time: "13:00 – 14:00",
-                title: "Almuerzo",
-                duration: "1 h",
-                kind: "break",
               },
               {
                 time: "14:00 – 15:00",
@@ -144,52 +139,58 @@ export const event: EventContent = {
             accent: "action",
             talks: [
               {
-                time: "8:30 – 9:30",
+                time: "9:30 – 10:15",
                 speakerId: "yeffri-salazar",
-                duration: "1 h",
+                duration: "45 min",
               },
               {
-                time: "9:30 – 10:30",
-                speakerId: "cristina-coutino",
-                duration: "1 h",
+                time: "10:15 – 10:35",
+                speakerId: "giovanni-castillo",
+                duration: "20 min",
               },
               {
-                time: "10:30 – 10:45",
+                time: "10:35 – 10:40",
                 title: "Coffee break",
-                duration: "15 min",
+                duration: "5 min",
                 kind: "break",
               },
               {
-                time: "10:45 – 11:30",
-                speakerId: "cristian-lavarreda",
+                time: "10:40 – 11:25",
+                speakerId: "cristina-coutino",
                 duration: "45 min",
+              },
+              {
+                time: "11:25 – 11:55",
+                speakerId: "cristian-lavarreda",
+                duration: "30 min",
                 modality: "en-linea",
               },
               {
-                time: "11:30 – 12:00",
+                time: "11:55 – 12:15",
+                speakerId: "carlos-escobar",
+                duration: "20 min",
+              },
+              {
+                time: "12:15 – 13:00",
+                speakerId: "diego-rosales",
+                duration: "45 min",
+              },
+              {
+                time: "14:00 – 14:30",
                 speakerId: "giovanni-castillo",
+                title: "Convierte tu proyecto en una empresa que cambie tu vida",
                 duration: "30 min",
               },
               {
-                time: "12:00 – 13:00",
-                speakerId: "diego-rosales",
-                duration: "1 h",
+                time: "14:30 – 15:00",
+                speakerId: "pablo-rosales",
+                duration: "30 min",
+                modality: "en-linea",
               },
               {
-                time: "13:00 – 14:00",
-                title: "Almuerzo",
-                duration: "1 h",
-                kind: "break",
-              },
-              {
-                time: "14:00 – 14:45",
-                speakerId: "carlos-escobar",
-                duration: "45 min",
-              },
-              {
-                time: "14:45 – 15:30",
+                time: "15:00 – 15:30",
                 speakerId: "marvin-mazariegos",
-                duration: "45 min",
+                duration: "30 min",
               },
             ],
           },
@@ -198,20 +199,44 @@ export const event: EventContent = {
       {
         id: "day-2",
         dateLabel: "Domingo 20 sept",
-        title: "Grokbot Meetup - Guatemala (Xela)",
+        title: "GrokBot Hackathon",
         subtitle: "Día 2",
         bullets: [
-          "Presentado por Cursor como naming sponsor",
-          "Charla: GrokBot in Action — Pide y se te dará",
-          "3 bloques de construcción con mentoring",
-          "Demo Day ante jurado",
-          "Premiación y cierre",
+          "Un solo reto general para todos los equipos",
+          "Equipos de 2 a 4 personas",
+          "3 bloques de construcción con mentoría",
+          "Freeze de código a las 15:30",
+          "Demo Day, premiación y cierre",
         ],
+        roomsNote: "Auditorio 8:00–9:00 y desde 16:15 · Laboratorio el resto del día",
         schedule: [
-          { time: "8:00", label: "Check-in" },
-          { time: "9:00", label: "Arranque y GrokBot in Action" },
-          { time: "Día", label: "Construcción con mentoring" },
-          { time: "15:00", label: "Demo Day, premiación y cierre" },
+          { time: "8:00 – 8:30", label: "Bienvenida — jurado y mentores", place: "Auditorio" },
+          { time: "8:30 – 9:00", label: "Presentación del reto y reglas", place: "Auditorio" },
+          { time: "9:00 – 9:15", label: "Traslado al laboratorio" },
+          { time: "9:15 – 10:00", label: "Grokbot Meetup - Guatemala (Xela)", place: "Laboratorio" },
+          {
+            time: "10:00 – 11:30",
+            label: "Bloque de construcción 1 (checkpoint de idea ~10:30)",
+            place: "Laboratorio",
+          },
+          { time: "11:30 – 11:45", label: "Coffee break (horario flexible)", place: "Laboratorio" },
+          {
+            time: "11:45 – 13:15",
+            label: "Bloque de construcción 2 (mentoría ~12:30)",
+            place: "Laboratorio",
+          },
+          { time: "13:15 – 14:15", label: "Almuerzo (horario flexible)" },
+          {
+            time: "14:15 – 15:30",
+            label: "Bloque de construcción 3 (mentoría final ~15:00)",
+            place: "Laboratorio",
+          },
+          { time: "15:30", label: "Freeze de código", place: "Laboratorio" },
+          { time: "15:30 – 16:00", label: "Preparación de pitch", place: "Laboratorio" },
+          { time: "16:00 – 16:15", label: "Traslado al auditorio" },
+          { time: "16:15 – 17:05", label: "Demo Day — pitches", place: "Auditorio" },
+          { time: "17:05 – 17:20", label: "Deliberación del jurado", place: "Auditorio" },
+          { time: "17:20 – 17:30", label: "Premiación y cierre", place: "Auditorio" },
         ],
       },
     ],
@@ -392,39 +417,49 @@ export const event: EventContent = {
         confirmed: true,
         bio: "Ingeniera en Sistemas, Informática y Ciencias de la Computación y Magíster en Docencia Superior. Docente en la Facultad de Ingeniería de Universidad Mesoamericana; integra tecnología, innovación y educación en la formación de futuros profesionales.",
       },
+      {
+        id: "pablo-rosales",
+        name: "Pablo Rosales",
+        role: "",
+        topic:
+          "Juicio (humano), Datos e Inteligencia Artificial: la tríada necesaria para construir responsablemente con IA",
+        photoSrc: null,
+        href: null,
+        confirmed: true,
+      },
     ],
   },
   tracks: {
     heading: "Tracks",
-    note: "El organizador seleccionará 3 de estos 4 antes del cierre de inscripción.",
+    note: "El domingo hay un solo reto general para todos los equipos.",
     items: [
       {
         id: "lenguas-mayas",
         title: "IA para lenguas mayas",
         description:
           "Vertical estrella. Prototipos que ayuden a documentar, traducir o crear contenido en idiomas mayas de Guatemala, con respeto a las comunidades que los hablan.",
-        visible: true,
+        visible: false,
       },
       {
         id: "rural-agricola",
         title: "IA para el sector rural y agrícola",
         description:
           "Herramientas para el campo del occidente: cooperativas, cadenas agrícolas y problemas concretos de quien produce lejos de la capital.",
-        visible: true,
+        visible: false,
       },
       {
         id: "pymes",
         title: "IA para pymes y emprendimiento",
         description:
           "IA práctica para vender, operar y crecer un negocio pequeño. Menos demo de laboratorio, más algo que se pueda usar el lunes.",
-        visible: true,
+        visible: false,
       },
       {
         id: "salud-educacion",
         title: "IA para salud y educación",
         description:
           "Prototipos que ayuden a clínicas, escuelas o programas comunitarios, pensados para el contexto real de Quetzaltenango y el occidente.",
-        visible: true,
+        visible: false,
       },
     ],
   },
@@ -476,7 +511,7 @@ export const event: EventContent = {
         logoSrc: "/sponsors/python-gt.png",
         logoWidth: 385,
         logoHeight: 399,
-      },
+      },/*
       {
         id: "open2",
         name: "Open2",
@@ -485,7 +520,7 @@ export const event: EventContent = {
         logoSrc: "/sponsors/open2.png",
         logoWidth: 1024,
         logoHeight: 241,
-      },
+      },*/
       /* {
         id: "gdg-xela",
         name: "GDG Xela",
@@ -548,13 +583,13 @@ export const event: EventContent = {
       {
         id: "equipo",
         question: "¿Puedo ir sin equipo?",
-        answer: "Sí, hay un workshop de formación de equipos el Día 1.",
+        answer: "Sí, hay un workshop de formación de equipos el sábado a las 15:45. El domingo los equipos son de 2 a 4 personas.",
       },
       {
         id: "horario",
         question: "¿A qué hora llego?",
         answer:
-          "Sábado 19: bienvenida e inauguración de 8:00 a 8:30, charlas en dos aulas, workshop de equipos a las 15:45 y cierre a las 17:00. Domingo 20: check-in desde las 8:00, arranque a las 9:00 y cierre a las 15:00. Llegá con tiempo el primer día.",
+          "Sábado 19: bienvenida, inauguración y registro de 8:00 a 9:30, charlas en dos aulas, workshop de equipos a las 15:45 y cierre a las 17:00. Domingo 20: bienvenida a las 8:00 en el Auditorio, construcción en el Laboratorio y Demo Day desde las 16:15. Llegá con tiempo el primer día.",
       },
       {
         id: "llevar",
@@ -571,7 +606,7 @@ export const event: EventContent = {
         id: "comida",
         question: "¿Hay comida?",
         answer:
-          "Sí. Hay café, pizza y bebida. Si hay cambios, los avisamos en el grupo de WhatsApp.",
+          "Sí. Hay café, pizza y bebida. El domingo no se come en el laboratorio: café y almuerzo son horarios de referencia. Si hay cambios, los avisamos en el grupo de WhatsApp.",
       },
       {
         id: "donde",

@@ -3,6 +3,8 @@ import { visibleTracks } from "@/lib/site"
 
 export function TracksSection() {
   const tracks = visibleTracks(event.tracks.items)
+  if (tracks.length === 0) return null
+
   return (
     <section className="wall" id="tracks" aria-labelledby="tracks-title">
       <h2 id="tracks-title" className="wall-title shout">

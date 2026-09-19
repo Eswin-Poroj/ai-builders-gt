@@ -40,6 +40,12 @@ typography:
     fontWeight: 600
     lineHeight: 1.5
     letterSpacing: "normal"
+  watermark:
+    fontFamily: "Barlow Condensed, ui-sans-serif, sans-serif"
+    fontSize: "clamp(10rem, 42vw, 30rem)"
+    fontWeight: 700
+    lineHeight: 0.85
+    letterSpacing: "-0.04em"
 rounded:
   xs: "2px"
   sm: "4px"
@@ -180,7 +186,7 @@ El sábado *es* la agenda a todo el ancho (`#agenda`); el domingo es un rastro a
 
 ## Elevation & Depth
 
-Sin sombras de card. La profundidad es tonal: mixes de ink + brand, filete inset de aula en las charlas, y un hairline de piedra en el dintel del muro. El cierre usa «XELA» como marca de agua espectral, no relieve.
+Sin sombras de card. La profundidad es tonal: mixes de ink + brand, filete inset de aula en las charlas, y un hairline de piedra en el dintel del muro. El cierre usa «XELA» como marca de agua espectral, no relieve. El teaser de equipos del domingo usa «GROK» con el mismo cuerpo.
 
 ### Shadow Vocabulary
 
@@ -200,7 +206,7 @@ Radio 2px en banda, badge, chips de aliado y controles de speaker. Radio 4px en 
 
 ### Buttons
 
-Banda de conversión, no píldora. Action sobre paper, radio 2px, min-height 2.8rem, padding 0.65rem 1.2rem, peso 700, 0.88rem, tracking 0.04em, uppercase, label canónico «Regístrate gratis». Tres colocaciones (hero, mitad, cierre). Hover/focus-visible: `translateY(-2px)` en 0.18s `cubic-bezier(0.16, 1, 0.3, 1)` y resplandor más amplio. Skip-link: action/paper, padding 0.6rem 1rem, peso 600.
+Banda de conversión, no píldora. Action sobre paper, radio 2px, min-height 2.8rem, padding 0.65rem 1.2rem, peso 700, 0.88rem, tracking 0.04em, uppercase. Luma usa el label canónico «Regístrate gratis» en hero, mitad y cierre. El domingo tiene una segunda puerta: teaser «Registra tu equipo» hacia `/registro-hackathon`. Hover/focus-visible: `translateY(-2px)` en 0.18s `cubic-bezier(0.16, 1, 0.3, 1)` y resplandor más amplio. Skip-link: action/paper, padding 0.6rem 1rem, peso 600. Volver al inicio en el formulario: chip outline paper 28%, label 0.82rem uppercase.
 
 ### Chips
 
@@ -212,7 +218,7 @@ No hay cards flotantes. Muros a ancho completo: ink, `wall-ink` (ink 88% + brand
 
 ### Inputs / Fields
 
-No hay campos de registro. En celular el aula se elige con radios nativos vestidos de chip; en escritorio las dos aulas se leen a la vez. El registro sale a Luma.
+Inputs del GrokBot Hackathon viven en `/registro-hackathon`, no en la home. Campos ink + paper, radio 2px, body 1.05rem; labels 0.82rem. El registro del fin de semana sigue saliendo a Luma.
 
 ### Navigation
 

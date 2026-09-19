@@ -1,0 +1,7 @@
+export const HACKATHON_REGISTER_PATH = "/registro-hackathon"
+export const MAX_TEAMS = 12
+export const MAX_PEOPLE = 50
+export const MIN_MEMBERS = 2
+export const MAX_MEMBERS = 5
+export const TEAM_NAME_MAX = 80
+export const CONTACT_MAX = 120

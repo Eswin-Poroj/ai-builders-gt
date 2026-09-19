@@ -4,6 +4,7 @@ import { FaqSection } from "@/components/sections/faq"
 import { FinalCtaSection } from "@/components/sections/final-cta"
 import { FooterSection } from "@/components/sections/footer"
 import { FormatSection } from "@/components/sections/format"
+import { HackathonCtaSection } from "@/components/sections/hackathon-cta"
 import { HeroSection } from "@/components/sections/hero"
 import { MidCtaSection } from "@/components/sections/mid-cta"
 import { SpeakersSection } from "@/components/sections/speakers"
@@ -18,6 +19,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <FormatSection />
+      <HackathonCtaSection />
       <SpeakersSection />
       <TracksSection />
       <MidCtaSection />

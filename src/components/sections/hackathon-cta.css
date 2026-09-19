@@ -1,0 +1,41 @@
+.hackathon-cta {
+  position: relative;
+  overflow: hidden;
+  min-height: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hackathon-cta::before {
+  content: "GROK";
+  position: absolute;
+  bottom: -0.08em;
+  right: -0.06em;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(10rem, 42vw, 30rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.85;
+  color: color-mix(in oklab, var(--paper) 8%, transparent);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.hackathon-cta .wall-title,
+.hackathon-cta .lede,
+.hackathon-cta .band {
+  position: relative;
+  z-index: 1;
+}
+
+.hackathon-cta .lede {
+  max-width: 36rem;
+}
+
+.hackathon-cta .band {
+  align-self: flex-start;
+  min-width: min(16rem, 100%);
+}

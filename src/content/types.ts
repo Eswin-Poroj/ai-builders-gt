@@ -133,6 +133,8 @@ export type EventContent = {
   seo: {
     title: string
     description: string
+    hackathonTitle: string
+    hackathonDescription: string
   }
   hero: {
     lines: [string, string, string]
@@ -176,5 +178,30 @@ export type EventContent = {
     whatsappQrSrc: string
     copyright: string
   }
+  registerTeams: RegisterTeamsCopy
   ctas: EventCta[]
+}
+
+export type RegisterTeamsCopy = {
+  heading: string
+  lede: string
+  ctaHeading: string
+  ctaLede: string
+  ctaLabel: string
+  backLabel: string
+  fullMessage: string
+  successTemplate: string
+  teamNameLabel: string
+  membersLegend: string
+  memberLabel: string
+  contactLabel: string
+  contactHint: string
+  addMember: string
+  removeMember: string
+  submit: string
+  submitting: string
+  submitted: string
+  listHeading: string
+  emptyList: string
+  memberCountLabel: string
 }

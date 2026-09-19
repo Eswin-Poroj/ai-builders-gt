@@ -1,3 +1,4 @@
+import { HACKATHON_REGISTER_PATH } from "@/lib/hackathon/constants"
 import type { EventContent } from "./types"
 
 export const event: EventContent = {
@@ -20,6 +21,9 @@ export const event: EventContent = {
     title: "AI Builders Xela 2026 — Hackathon de IA en Guatemala",
     description:
       "19–20 de septiembre 2026 en la Facultad de Ingeniería, Universidad Mesoamericana, Quetzaltenango. El primer hackathon de IA del occidente de Guatemala. 100% gratis.",
+    hackathonTitle: "Registra tu equipo — GrokBot Hackathon | AI Builders Xela 2026",
+    hackathonDescription:
+      "Inscribe tu equipo al GrokBot Hackathon el domingo 20 de septiembre en Quetzaltenango. Equipos de 2 a 5 personas. Cupo: 12 equipos o 50 personas.",
   },
   hero: {
     lines: ["AI", "BUILDERS", "XELA"],
@@ -203,7 +207,7 @@ export const event: EventContent = {
         subtitle: "Día 2",
         bullets: [
           "Un solo reto general para todos los equipos",
-          "Equipos de 2 a 4 personas",
+          "Equipos de 2 a 5 personas",
           "3 bloques de construcción con mentoría",
           "Freeze de código a las 15:30",
           "Demo Day, premiación y cierre",
@@ -583,7 +587,15 @@ export const event: EventContent = {
       {
         id: "equipo",
         question: "¿Puedo ir sin equipo?",
-        answer: "Sí, hay un workshop de formación de equipos el sábado a las 15:45. El domingo los equipos son de 2 a 4 personas.",
+        answer: "Sí, hay un workshop de formación de equipos el sábado a las 15:45. El domingo los equipos son de 2 a 5 personas.",
+      },
+      {
+        id: "registro-equipo",
+        question: "¿Cómo registro mi equipo del domingo?",
+        answer:
+          "En la página de registro de equipos. Cupo de 12 equipos o 50 personas, lo que se llene primero.",
+        href: HACKATHON_REGISTER_PATH,
+        linkLabel: "Ir al registro de equipos",
       },
       {
         id: "horario",
@@ -624,6 +636,32 @@ export const event: EventContent = {
         imageAlt: "Código QR para unirse al grupo de WhatsApp de AI Builders GT",
       },
     ],
+  },
+  registerTeams: {
+    heading: "Registra tu equipo",
+    lede:
+      "GrokBot Hackathon, domingo 20 de septiembre. Equipos de 2 a 5 personas. Un solo reto para todos. Cupo: 12 equipos o 50 personas.",
+    ctaHeading: "Registra tu equipo",
+    ctaLede:
+      "GrokBot Hackathon · domingo 20 · equipos de 2 a 5 · 12 equipos o 50 personas.",
+    ctaLabel: "Registra tu equipo",
+    backLabel: "AI Builders Xela",
+    fullMessage: "Cupo lleno",
+    successTemplate:
+      "¡Equipo {name} registrado! Nos vemos el domingo 20 de septiembre en el GrokBot Hackathon. Cualquier duda: {email}.",
+    teamNameLabel: "Nombre del equipo",
+    membersLegend: "Integrantes",
+    memberLabel: "Integrante {n}",
+    contactLabel: "WhatsApp o correo del representante",
+    contactHint: "Lo usamos solo para contactar al equipo.",
+    addMember: "+ Agregar integrante",
+    removeMember: "Quitar",
+    submit: "Registrar equipo",
+    submitting: "Registrando…",
+    submitted: "Equipo registrado",
+    listHeading: "Equipos registrados",
+    emptyList: "Aún no hay equipos registrados.",
+    memberCountLabel: "{n} integrantes",
   },
   finalCta: {
     heading: "No te quedes fuera del primer hackathon de IA del occidente de Guatemala",

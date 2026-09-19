@@ -51,7 +51,12 @@ export function FaqSection() {
               {item.href && item.linkLabel ? (
                 <>
                   {" "}
-                  <a href={item.href} rel="noreferrer" target="_blank">
+                  <a
+                    href={item.href}
+                    {...(item.href.startsWith("http")
+                      ? { rel: "noreferrer", target: "_blank" }
+                      : {})}
+                  >
                     {item.linkLabel}
                   </a>
                   {"."}

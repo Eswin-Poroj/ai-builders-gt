@@ -4,7 +4,7 @@ import { event } from "@/content/event"
 export function FooterSection() {
   return (
     <footer className="site-foot">
-      <a className="foot-lockup" href="#registro">
+      <a className="foot-lockup" href="/#registro">
         <Image
           src="/brand/logo-mark-knockout.png"
           alt=""

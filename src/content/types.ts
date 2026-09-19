@@ -143,6 +143,8 @@ export type EventContent = {
   about: {
     heading: string
     paragraphs: string[]
+    quota: string
+    quotaLinkLabel: string
     stats: EventStat[]
   }
   format: {
@@ -165,6 +167,10 @@ export type EventContent = {
   faq: {
     heading: string
     items: FaqItem[]
+  }
+  midCta: {
+    heading: string
+    lede: string
   }
   finalCta: {
     heading: string

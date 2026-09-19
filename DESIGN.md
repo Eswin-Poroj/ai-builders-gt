@@ -178,7 +178,7 @@ Noche como suelo, brand como tinte, un teal que solo abre.
 
 Pila vertical a todo el ancho sobre ink. Sin `max-width` de sitio. Canto `--wall-x` 1.5rem en móvil; 8vw desde 800px. Muros: padding 4rem en el eje vertical.
 
-Hero a 100svh, reel de cinco fotos con Ken Burns de 25s. Invitación absoluta al borde inferior. Logo knockout ~2.2rem arriba a la izquierda. El CTA de mitad no es un muro: es padding sobre ink.
+Hero a 100svh, reel de cinco fotos con Ken Burns de 25s. Invitación absoluta al borde inferior. Logo knockout ~2.2rem arriba a la izquierda. El CTA de mitad es un muro: shout, lede y banda Luma, el mismo ritmo que el teaser de equipos.
 
 El sábado *es* la agenda a todo el ancho (`#agenda`); el domingo es un rastro a 42rem. Speakers a dos columnas desde 800px. About: 1fr / 2fr desde 800px.
 

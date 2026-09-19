@@ -1,0 +1,7 @@
+.wall.mid {
+  padding: 4rem var(--wall-x);
+}
+
+.mid .lede {
+  max-width: 36rem;
+}

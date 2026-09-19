@@ -37,6 +37,9 @@ export const event: EventContent = {
       "Buscamos posicionar a Quetzaltenango como nodo activo del ecosistema tecnológico centroamericano, conectando a desarrolladores, fundadores, estudiantes y líderes del sector alrededor de la inteligencia artificial aplicada a problemas reales de Guatemala.",
       "Es la primera edición de lo que buscamos convertir en un referente anual del occidente del país.",
     ],
+    quota:
+      "El GrokBot Hackathon del domingo tiene cupo: 12 equipos o 50 personas, lo que se llene primero.",
+    quotaLinkLabel: "Registrate con tiempo para asegurar un lugar",
     stats: [
       {
         id: "participants",
@@ -46,7 +49,7 @@ export const event: EventContent = {
       {
         id: "prize",
         value: "Premios",
-        label: "en efectivo + créditos de Cursor",
+        label: "en créditos de GrokBot",
       },
       {
         id: "days",
@@ -576,7 +579,8 @@ export const event: EventContent = {
       {
         id: "costo",
         question: "¿Cuánto cuesta participar?",
-        answer: "Es completamente gratuito.",
+        answer:
+          "Es completamente gratuito. Los premios del hackathon son créditos de GrokBot, no efectivo.",
       },
       {
         id: "experiencia",
@@ -662,6 +666,10 @@ export const event: EventContent = {
     listHeading: "Equipos registrados",
     emptyList: "Aún no hay equipos registrados.",
     memberCountLabel: "{n} integrantes",
+  },
+  midCta: {
+    heading: "Registrate antes de llegar",
+    lede: "El Summit y el hackathon son gratis. Luma te da el QR de entrada.",
   },
   finalCta: {
     heading: "No te quedes fuera del primer hackathon de IA del occidente de Guatemala",

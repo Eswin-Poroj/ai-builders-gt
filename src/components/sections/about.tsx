@@ -1,4 +1,7 @@
+import Link from "next/link"
 import { event } from "@/content/event"
+import { HACKATHON_REGISTER_PATH } from "@/lib/hackathon/constants"
+import "./about.css"
 
 export function AboutSection() {
   return (
@@ -10,10 +13,14 @@ export function AboutSection() {
         <aside>
           <Stats />
         </aside>
-        <div>
+        <div className="about-copy">
           {event.about.paragraphs.map((p, i) => (
             <p key={i} className="lede">{p}</p>
           ))}
+          <p className="lede">
+            {event.about.quota}{" "}
+            <Link href={HACKATHON_REGISTER_PATH}>{event.about.quotaLinkLabel}</Link>.
+          </p>
         </div>
       </div>
     </section>

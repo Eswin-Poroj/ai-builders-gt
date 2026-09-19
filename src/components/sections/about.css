@@ -1,0 +1,5 @@
+.about-copy a {
+  color: var(--action);
+  font-weight: 600;
+  text-underline-offset: 0.18em;
+}

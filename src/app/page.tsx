@@ -10,12 +10,14 @@ import { MidCtaSection } from "@/components/sections/mid-cta"
 import { SpeakersSection } from "@/components/sections/speakers"
 import { TracksSection } from "@/components/sections/tracks"
 import { VenueSection } from "@/components/sections/venue"
+import { JsonLd } from "@/components/json-ld"
 
 export const dynamic = "force-static"
 
 export default function Home() {
   return (
     <main>
+      <JsonLd />
       <HeroSection />
       <AboutSection />
       <FormatSection />

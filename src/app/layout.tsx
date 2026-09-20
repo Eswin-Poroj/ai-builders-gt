@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import { Poppins, Barlow_Condensed } from "next/font/google"
-import { JsonLd } from "@/components/json-ld"
 import { event } from "@/content/event"
 import { SITE_URL } from "@/lib/site"
 import "./globals.css"
@@ -47,7 +46,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <a className="skip" href="#sobre">
           Saltar al contenido
         </a>
-        <JsonLd />
         {children}
       </body>
     </html>

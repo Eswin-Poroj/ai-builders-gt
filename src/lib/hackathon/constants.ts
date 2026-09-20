@@ -1,4 +1,7 @@
 export const HACKATHON_REGISTER_PATH = "/registro-hackathon"
+export const HACKATHON_JUDGE_PATH = "/jurados"
+export const JUDGE_COOKIE = "abgt_jurado"
+export const JUDGE_SESSION_HOURS = 14
 export const MAX_TEAMS = 12
 export const MAX_PEOPLE = 50
 export const MIN_MEMBERS = 2

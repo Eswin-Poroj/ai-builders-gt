@@ -1,0 +1,286 @@
+.jurados {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.jurados-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem 1.15rem;
+  padding: 1.15rem var(--wall-x);
+  border-bottom: 1px solid var(--border-warm);
+}
+
+.jurados-bar-name {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(1.8rem, 8vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.jurados-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.15rem;
+  align-items: center;
+}
+
+.jurados-nav a,
+.jurados-nav button {
+  color: var(--mist);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.jurados-nav a[aria-current="page"],
+.jurados-nav a:hover,
+.jurados-nav a:focus-visible,
+.jurados-nav button:hover,
+.jurados-nav button:focus-visible {
+  color: var(--paper);
+}
+
+.jurados-main {
+  flex: 1;
+}
+
+.jurados-title {
+  margin: 0 0 1.15rem;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(1.8rem, 8vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.jurados-lede {
+  margin: 0 0 1.4rem;
+  max-width: 36rem;
+}
+
+.jurados-form,
+.jurados-sheet {
+  max-width: 40rem;
+}
+
+.jurados-error,
+.jurados-success {
+  margin: 0 0 1.15rem;
+  padding: 0.85rem 1.15rem;
+  border-radius: 2px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.jurados-error {
+  border: 1px solid var(--border-subtle);
+  background: color-mix(in oklab, var(--ink) 72%, var(--brand));
+}
+
+.jurados-success {
+  border: 1px solid color-mix(in oklab, var(--action) 45%, transparent);
+  background: color-mix(in oklab, var(--ink) 78%, var(--action));
+}
+
+.jurados-field {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0 0 1.15rem;
+}
+
+.jurados-field label,
+.jurados-legend {
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.jurados-hint {
+  margin: 0;
+  color: var(--mist);
+  font-size: 0.82rem;
+}
+
+.jurados-field input,
+.jurados-field textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid color-mix(in oklab, var(--paper) 28%, transparent);
+  border-radius: 2px;
+  background: color-mix(in oklab, var(--ink) 82%, var(--paper));
+  color: var(--paper);
+  font: inherit;
+  font-size: 1.05rem;
+}
+
+.jurados-field input {
+  min-height: 2.8rem;
+}
+
+.jurados-field textarea {
+  min-height: 6.5rem;
+  resize: vertical;
+}
+
+.jurados-criterion {
+  margin: 0 0 1.4rem;
+  padding: 0;
+  border: 0;
+}
+
+.jurados-criterion .jurados-legend {
+  margin: 0 0 0.35rem;
+}
+
+.jurados-score-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.jurados-score-row input {
+  max-width: 6.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.jurados-domain {
+  margin: 0 0 1.4rem;
+  padding: 0;
+  border: 0;
+}
+
+.jurados-domain-option {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem;
+  align-items: start;
+  margin: 0 0 0.85rem;
+}
+
+.jurados-total {
+  margin: 0 0 1.4rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.jurados-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border-subtle);
+  max-width: 46rem;
+}
+
+.jurados-list a {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  text-decoration: none;
+  color: inherit;
+}
+
+.jurados-list a:hover,
+.jurados-list a:focus-visible {
+  color: var(--paper);
+}
+
+.jurados-list-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.jurados-list-meta {
+  color: var(--mist);
+  font-size: 0.82rem;
+}
+
+.jurados-badge {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--action);
+}
+
+.jurados-table-wrap {
+  overflow-x: auto;
+}
+
+.jurados-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.05rem;
+}
+
+.jurados-table th,
+.jurados-table td {
+  padding: 0.85rem 1.15rem 0.85rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  text-align: left;
+  vertical-align: top;
+}
+
+.jurados-table th {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--mist);
+}
+
+.jurados-table td:nth-child(2),
+.jurados-table td:nth-child(3) {
+  font-variant-numeric: tabular-nums;
+}
+
+.jurados-help {
+  margin: 1.4rem 0 0;
+  max-width: 40rem;
+}
+
+.jurados-help summary {
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.jurados-help ul {
+  margin: 0.85rem 0 0;
+  padding: 0 0 0 1.15rem;
+  color: var(--mist);
+}
+
+.jurados-submit {
+  width: 100%;
+  max-width: 20rem;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.jurados-submit:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.jurados-meta {
+  margin: 0 0 1.4rem;
+  color: var(--mist);
+  font-size: 0.82rem;
+}

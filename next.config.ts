@@ -7,6 +7,18 @@ const nextConfig: NextConfig = {
     // Cap at the hero master (2560). 3840 would upscale the photo and look pixelated.
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 2560],
   },
+  async headers() {
+    return [
+      {
+        source: "/jurados",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+      {
+        source: "/jurados/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+    ]
+  },
 }
 
 export default nextConfig

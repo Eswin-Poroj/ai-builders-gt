@@ -2,26 +2,25 @@ import { AboutSection } from "@/components/sections/about"
 import { AlliesSection } from "@/components/sections/allies"
 import { FaqSection } from "@/components/sections/faq"
 import { FinalCtaSection } from "@/components/sections/final-cta"
-import { FooterSection } from "@/components/sections/footer"
 import { FormatSection } from "@/components/sections/format"
-import { HackathonCtaSection } from "@/components/sections/hackathon-cta"
 import { HeroSection } from "@/components/sections/hero"
 import { MidCtaSection } from "@/components/sections/mid-cta"
+import { RecapSection } from "@/components/sections/recap"
 import { SpeakersSection } from "@/components/sections/speakers"
 import { TracksSection } from "@/components/sections/tracks"
 import { VenueSection } from "@/components/sections/venue"
+import { WinnersSection } from "@/components/sections/winners"
 import { JsonLd } from "@/components/json-ld"
 
-export const dynamic = "force-static"
-
-export default function Home() {
+export function EventArchive({ pageUrl }: { pageUrl: string }) {
   return (
-    <main>
-      <JsonLd />
+    <>
+      <JsonLd pageUrl={pageUrl} />
       <HeroSection />
       <AboutSection />
+      <RecapSection />
+      <WinnersSection />
       <FormatSection />
-      <HackathonCtaSection />
       <SpeakersSection />
       <TracksSection />
       <MidCtaSection />
@@ -29,7 +28,6 @@ export default function Home() {
       <VenueSection />
       <FaqSection />
       <FinalCtaSection />
-      <FooterSection />
-    </main>
+    </>
   )
 }

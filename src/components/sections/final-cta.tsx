@@ -1,13 +1,18 @@
+import { CommunityCta } from "@/components/community-cta"
 import { event } from "@/content/event"
-import { RegisterCta } from "@/components/register-cta"
+import "./final-cta.css"
 
-export function FinalCtaSection() {
+type Props = {
+  heading?: string
+}
+
+export function FinalCtaSection({ heading }: Props = {}) {
   return (
-    <section className="final wall" aria-labelledby="final-title">
+    <section className="final wall" id="cierre" aria-labelledby="final-title">
       <h2 id="final-title" className="final-title shout">
-        {event.finalCta.heading}
+        {heading ?? event.finalCta.heading}
       </h2>
-      <RegisterCta placement="final" />
+      <CommunityCta placement="final" />
     </section>
   )
 }

@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { event } from "@/content/event"
-import { HACKATHON_REGISTER_PATH } from "@/lib/hackathon/constants"
 import "./about.css"
 
 export function AboutSection() {
@@ -14,13 +13,23 @@ export function AboutSection() {
           <Stats />
         </aside>
         <div className="about-copy">
-          {event.about.paragraphs.map((p, i) => (
-            <p key={i} className="lede">{p}</p>
+          {event.about.paragraphs.map((paragraph) => (
+            <p key={paragraph} className="lede">{paragraph}</p>
           ))}
-          <p className="lede">
-            {event.about.quota}{" "}
-            <Link href={HACKATHON_REGISTER_PATH}>{event.about.quotaLinkLabel}</Link>.
-          </p>
+          {event.about.quota ? (
+            <p className="lede">
+              {event.about.quota}
+              {event.about.quotaHref && event.about.quotaLinkLabel ? (
+                <>
+                  {" "}
+                  <Link href={event.about.quotaHref}>
+                    {event.about.quotaLinkLabel}
+                  </Link>
+                  .
+                </>
+              ) : null}
+            </p>
+          ) : null}
         </div>
       </div>
     </section>

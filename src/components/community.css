@@ -1,0 +1,19 @@
+.qr-plaque {
+  display: block;
+  width: 6.5rem;
+  margin: 0 0 1.2rem;
+  padding: 0.4rem;
+  background: var(--paper);
+  border-radius: 4px;
+}
+
+.qr-plaque--faq {
+  width: 8.5rem;
+  padding: 0.45rem;
+}
+
+.qr-plaque img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

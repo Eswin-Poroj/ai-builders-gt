@@ -10,7 +10,7 @@ export function HackathonJsonLd() {
     description: event.seo.hackathonDescription,
     startDate: event.dates.endIso,
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-    eventStatus: "https://schema.org/EventScheduled",
+    eventStatus: "https://schema.org/EventCompleted",
     isAccessibleForFree: true,
     url: `${SITE_URL}${HACKATHON_REGISTER_PATH}`,
     image: `${SITE_URL}/brand/logo-lockup-themes.png`,
@@ -33,7 +33,7 @@ export function HackathonJsonLd() {
       price: 0,
       priceCurrency: "GTQ",
       url: `${SITE_URL}${HACKATHON_REGISTER_PATH}`,
-      availability: "https://schema.org/InStock",
+      availability: "https://schema.org/SoldOut",
     },
   }
 

@@ -11,6 +11,7 @@
   --border-subtle: color-mix(in oklab, var(--paper) 11%, transparent);
   --border-warm: color-mix(in oklab, #c4b49a 38%, transparent);
   --wall-x: 1.5rem;
+  --nav-h: 4.3125rem;
 }
 
 @theme inline {
@@ -1014,6 +1015,37 @@ img { max-width: 100%; height: auto; }
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* === MOBILE HERO (≤799px) — the door has to fit above the fold === */
+@media (max-width: 799px) {
+  .hero,
+  .hero-stage {
+    min-height: calc(100svh - var(--nav-h));
+  }
+
+  /* The nav already carries the mark; don't stamp it twice. */
+  .hero-logo {
+    display: none;
+  }
+
+  .hero-invite h1 {
+    font-size: clamp(2.4rem, 12vw, 3.2rem);
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .band-hero {
+    width: 100%;
+  }
+
+  /* Community home only: the door and the edition chip are the two
+     things that matter here, not a third label competing with them. */
+  .hero-badge--community {
+    display: none;
   }
 }
 

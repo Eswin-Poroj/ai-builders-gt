@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { Poppins, Barlow_Condensed } from "next/font/google"
-import { event } from "@/content/event"
+import { community } from "@/content/community"
 import { SITE_URL } from "@/lib/site"
 import "./globals.css"
 
@@ -20,21 +20,21 @@ const display = Barlow_Condensed({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: event.seo.title,
-  description: event.seo.description,
+  title: community.seo.title,
+  description: community.seo.description,
   alternates: { canonical: SITE_URL },
   openGraph: {
-    title: event.seo.title,
-    description: event.seo.description,
+    title: community.seo.title,
+    description: community.seo.description,
     url: SITE_URL,
-    siteName: event.communityName,
+    siteName: community.name,
     locale: "es_GT",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: event.seo.title,
-    description: event.seo.description,
+    title: community.seo.title,
+    description: community.seo.description,
   },
   robots: { index: true, follow: true },
 }
@@ -43,7 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="es" className={`${sans.variable} ${display.variable}`}>
       <body className={sans.className}>
-        <a className="skip" href="#sobre">
+        <a className="skip" href="#inicio">
           Saltar al contenido
         </a>
         {children}

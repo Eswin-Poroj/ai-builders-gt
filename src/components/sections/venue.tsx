@@ -7,7 +7,7 @@ export function VenueSection() {
   return (
     <section className="wall" id="ubicacion" aria-labelledby="ubicacion-title">
       <h2 id="ubicacion-title" className="wall-title">
-        Ubicación
+        {venue.heading}
       </h2>
       <p className="lede venue-address">
         {venue.display}

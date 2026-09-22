@@ -119,7 +119,7 @@ components:
 
 El sistema es el umbral cívico de Xela: un reel de fotos reales del kiosco, el Parque Centroamérica y el Templo a Minerva. La invitación se lee abajo a la izquierda, sobre la noche, no recortada al contorno de un arco. El campo es noche (`ink`). El papel y un solo teal de acción abren la puerta. Seed `4c2d6d65`.
 
-Barlow Condensed carga el shout (hero, muros, tracks). Poppins 400–700 sostiene ledes, FAQ, meta y chips. Los muros se distinguen por tinte de brand sobre ink. Quien llega ve el lugar, la fecha y que es gratis, y sale a Luma.
+Barlow Condensed carga el shout (hero, muros, tracks). Poppins 400–700 sostiene ledes, FAQ, meta y chips. Los muros se distinguen por tinte de brand sobre ink. Quien llega ve que la edición ya ocurrió, el archivo visual y una sola puerta teal hacia el grupo de WhatsApp.
 
 Rechazos visuales confirmados: afiche gritón recortado, wood-type de feria, chamfer a 45°, hero SaaS con orbes.
 
@@ -178,7 +178,7 @@ Noche como suelo, brand como tinte, un teal que solo abre.
 
 Pila vertical a todo el ancho sobre ink. Sin `max-width` de sitio. Canto `--wall-x` 1.5rem en móvil; 8vw desde 800px. Muros: padding 4rem en el eje vertical.
 
-Hero a 100svh, reel de cinco fotos con Ken Burns de 25s. Invitación absoluta al borde inferior. Logo knockout ~2.2rem arriba a la izquierda. El CTA de mitad es un muro: shout, lede y banda Luma, el mismo ritmo que el teaser de equipos.
+Hero a 100svh, reel de cinco fotos con Ken Burns de 25s. Invitación absoluta al borde inferior. Logo knockout ~2.2rem arriba a la izquierda. El CTA de mitad es un muro: shout, lede y banda WhatsApp, el mismo ritmo que el recap.
 
 El sábado *es* la agenda a todo el ancho (`#agenda`); el domingo es un rastro a 42rem. Speakers a dos columnas desde 800px. About: 1fr / 2fr desde 800px.
 
@@ -206,7 +206,7 @@ Radio 2px en banda, badge, chips de aliado y controles de speaker. Radio 4px en 
 
 ### Buttons
 
-Banda de conversión, no píldora. Action sobre paper, radio 2px, min-height 2.8rem, padding 0.65rem 1.2rem, peso 700, 0.88rem, tracking 0.04em, uppercase. Luma usa el label canónico «Regístrate gratis» en hero, mitad y cierre. El domingo tiene una segunda puerta: teaser «Registra tu equipo» hacia `/registro-hackathon`. Hover/focus-visible: `translateY(-2px)` en 0.18s `cubic-bezier(0.16, 1, 0.3, 1)` y resplandor más amplio. Skip-link: action/paper, padding 0.6rem 1rem, peso 600. Volver al inicio en el formulario: chip outline paper 28%, label 0.82rem uppercase.
+Banda de conversión, no píldora. Action sobre paper, radio 2px, min-height 2.8rem, padding 0.65rem 1.2rem, peso 700, 0.88rem, tracking 0.04em, uppercase. La comunidad usa el label canónico «Entrá al grupo» en hero, mitad y cierre. Instagram es chip outline, no segunda banda teal. Hover/focus-visible: `translateY(-2px)` en 0.18s `cubic-bezier(0.16, 1, 0.3, 1)` y resplandor más amplio. Skip-link: action/paper, padding 0.6rem 1rem, peso 600. Volver al inicio en el formulario: chip outline paper 28%, label 0.82rem uppercase.
 
 ### Chips
 
@@ -218,11 +218,11 @@ No hay cards flotantes. Muros a ancho completo: ink, `wall-ink` (ink 88% + brand
 
 ### Inputs / Fields
 
-Inputs del GrokBot Hackathon viven en `/registro-hackathon`, no en la home. Campos ink + paper, radio 2px, body 1.05rem; labels 0.82rem. El registro del fin de semana sigue saliendo a Luma.
+Inputs del GrokBot Hackathon viven en `/registro-hackathon`, no en la home. Campos ink + paper, radio 2px, body 1.05rem; labels 0.82rem. La home ya no sale a Luma: la puerta es el grupo de WhatsApp.
 
 ### Navigation
 
-No hay nav de sitio. Skip al contenido. Pie: lockup Barlow uppercase + links Poppins 600 0.82rem.
+Pestañas sticky sobre ink. Lockup a la izquierda; a la derecha **Comunidad** y una pestaña por edición (`Xela 2026`). Activa: paper + filete inferior 2px action. El recap de cada edición vive en `/eventos/{slug}`. La home es la casa de la comunidad.
 
 ### FAQ
 
@@ -236,6 +236,10 @@ Bienvenida, almuerzo, workshop y cierre: banda a todo el ancho, tinta ink + bran
 
 Fila que voltea. Frente: marca 4.5rem (ratio 4/5), foto o iniciales Barlow; filete izquierdo 2px action. Nombre Barlow uppercase. Hover: opacity 0.72. Dorso: bio mist, socials en chip 2px. Flip 0.55s `cubic-bezier(0.16, 1, 0.3, 1)`.
 
+### Recap wall
+
+Muro `wall-ink` a todo el ancho. Strip cívico a 42svh (reusa el reel, no lightbox). Grid a sangre con junta 2px; 2 columnas en celular, 4 desde 800px. Radio 2px. Caption label 0.82rem. Dialog ink, backdrop ink 82%+negro, sin glass. `prefers-reduced-motion` congela el strip (mismas reglas del hero) y apaga el fade del dialog.
+
 ### Invite motion
 
 El panel entra con `rise`: opacity 0 + `translateY(18px)` → reposo, 0.7s `cubic-bezier(0.16, 1, 0.3, 1)`. El reel hace fade-in 0.8s y Ken Burns 25s. Con `prefers-reduced-motion`, invite, reel, banda y flip se apagan.
@@ -245,7 +249,7 @@ El panel entra con `rise`: opacity 0 + `translateY(18px)` → reposo, 0.7s `cubi
 ### Do:
 
 - **Do** leer la invitación abajo a la izquierda, sobre el reel cívico de noche.
-- **Do** usar la banda teal de 2px como única puerta; el label canónico es «Regístrate gratis».
+- **Do** usar la banda teal de 2px como única puerta; el label canónico es «Entrá al grupo».
 - **Do** tintear muros con ink + brand; usar stone solo en hairlines.
 - **Do** pintar las dos aulas a la vez en escritorio, con filete brand / action, y el chip de aula activo en papel.
 - **Do** tratar el sábado como el tablero y el domingo como rastro, no como dos cards gemelas.

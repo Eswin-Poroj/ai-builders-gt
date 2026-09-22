@@ -1,0 +1,56 @@
+.edition-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.edition-plaque {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 10rem;
+  padding: 1.15rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 2px;
+  text-decoration: none;
+  background: color-mix(in oklab, var(--ink) 74%, var(--brand));
+  transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.edition-plaque:hover,
+.edition-plaque:focus-visible {
+  transform: translateY(-2px);
+}
+
+.edition-status {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--action);
+}
+
+.edition-name {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(1.8rem, 8vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+.edition-meta {
+  margin: 0.45rem 0 0;
+  color: var(--mist);
+  font-size: 1.05rem;
+}
+
+@media (min-width: 800px) {
+  .edition-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

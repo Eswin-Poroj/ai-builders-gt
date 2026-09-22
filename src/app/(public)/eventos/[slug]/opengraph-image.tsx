@@ -1,11 +1,23 @@
 import { ImageResponse } from "next/og"
-import { community } from "@/content/community"
+import { getEdition } from "@/content/editions"
 
-export const alt = community.seo.title
+export const alt = "AI Builders Xela 2026"
 export const size = { width: 1200, height: 630 }
 export const contentType = "image/png"
 
-export default function OpengraphImage() {
+export default async function OpengraphImage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
+  const edition = getEdition(slug)
+  const title = edition?.editionName ?? "AI Builders GT"
+  const meta = edition
+    ? `${edition.dates.display} · ${edition.venue.city}`
+    : "Comunidad de IA en Guatemala"
+  const cta = edition?.seo.ogCta ?? "Entrá al grupo"
+
   return new ImageResponse(
     (
       <div
@@ -43,7 +55,9 @@ export default function OpengraphImage() {
           }}
         >
           <span>AI Builders</span>
-          <span style={{ color: "#0F766E" }}>GT</span>
+          <span style={{ color: "#0F766E" }}>
+            {edition?.tabLabel ?? title}
+          </span>
         </div>
         <div
           style={{
@@ -53,7 +67,7 @@ export default function OpengraphImage() {
             color: "#EDEBEE",
           }}
         >
-          Comunidad de IA en Guatemala
+          {meta}
         </div>
         <div
           style={{
@@ -68,7 +82,7 @@ export default function OpengraphImage() {
             justifyContent: "center",
           }}
         >
-          Entrá al grupo
+          {cta}
         </div>
       </div>
     ),

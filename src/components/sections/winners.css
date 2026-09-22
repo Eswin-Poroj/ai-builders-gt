@@ -1,0 +1,44 @@
+.winners {
+  display: grid;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.winner-row {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.winner-row:last-child {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.winner-place {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--action);
+}
+
+.winner-name {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(1.8rem, 8vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+.winner-project,
+.winner-members {
+  margin: 0;
+  color: var(--mist);
+  font-size: 1.05rem;
+}

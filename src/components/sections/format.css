@@ -411,6 +411,10 @@
     align-items: stretch;
   }
 
+  .agenda-vanos:has(> .agenda-aula:only-child) {
+    grid-template-columns: 1fr;
+  }
+
   .agenda-talk {
     flex: var(--talk-mins, 30) 0 auto;
     min-height: calc(var(--talk-mins, 30) * 0.2rem);

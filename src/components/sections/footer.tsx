@@ -1,10 +1,11 @@
 import Image from "next/image"
 import { event } from "@/content/event"
+import "@/components/community.css"
 
 export function FooterSection() {
   return (
     <footer className="site-foot">
-      <a className="foot-lockup" href="/#registro">
+      <a className="foot-lockup" href="/">
         <Image
           src="/brand/logo-mark-knockout.png"
           alt=""
@@ -30,15 +31,8 @@ export function FooterSection() {
         href={event.footer.whatsappUrl}
         rel="noreferrer"
         target="_blank"
+        className="qr-plaque"
         aria-label="Escanear para unirse al grupo de WhatsApp"
-        style={{
-          display: "block",
-          width: "6.5rem",
-          margin: "0 0 1.2rem",
-          padding: "0.4rem",
-          background: "var(--paper)",
-          borderRadius: 4,
-        }}
       >
         <Image
           src={event.footer.whatsappQrSrc}
@@ -46,7 +40,6 @@ export function FooterSection() {
           width={450}
           height={450}
           sizes="6.5rem"
-          style={{ display: "block", width: "100%", height: "auto" }}
         />
       </a>
       <p className="foot-copy">{event.footer.copyright}</p>

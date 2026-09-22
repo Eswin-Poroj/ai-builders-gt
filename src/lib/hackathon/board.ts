@@ -30,5 +30,5 @@ export function computeBoard(teams: PublicTeam[]): HackathonBoard {
 }
 
 export function formatOccupancy(board: HackathonBoard) {
-  return `${board.teamCount}/${MAX_TEAMS} equipos · ${board.personCount}/${MAX_PEOPLE} personas · ${board.availableSpots} cupos disponibles`
+  return `${board.teamCount}/${MAX_TEAMS} equipos · ${board.personCount}/${MAX_PEOPLE} personas`
 }

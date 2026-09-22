@@ -1,0 +1,13 @@
+/* On a phone the desktop watermark sits on the bottom edge, under the
+   title and the button, and overflow clips the rest of the word. */
+@media (max-width: 799px) {
+  .final::before {
+    top: 12%;
+    bottom: auto;
+    left: var(--wall-x);
+    font-size: clamp(4.8rem, 28vw, 7.5rem);
+    line-height: 0.8;
+    letter-spacing: -0.03em;
+    color: color-mix(in oklab, var(--brand) 42%, transparent);
+  }
+}

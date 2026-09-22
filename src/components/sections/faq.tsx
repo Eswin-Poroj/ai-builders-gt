@@ -1,15 +1,7 @@
 import Image from "next/image"
 import { event } from "@/content/event"
 import type { FaqItem } from "@/content/types"
-
-const faqImageWrapStyle = {
-  display: "block",
-  width: "8.5rem",
-  margin: "0 0 1.2rem",
-  padding: "0.45rem",
-  background: "var(--paper)",
-  borderRadius: 4,
-} as const
+import "@/components/community.css"
 
 function FaqItemImage({ item }: { item: FaqItem }) {
   if (!item.imageSrc) return null
@@ -21,16 +13,20 @@ function FaqItemImage({ item }: { item: FaqItem }) {
       width={450}
       height={450}
       sizes="8.5rem"
-      style={{ display: "block", width: "100%", height: "auto" }}
     />
   )
 
   if (!item.href) {
-    return <div style={faqImageWrapStyle}>{image}</div>
+    return <div className="qr-plaque qr-plaque--faq">{image}</div>
   }
 
   return (
-    <a href={item.href} rel="noreferrer" target="_blank" style={faqImageWrapStyle}>
+    <a
+      href={item.href}
+      rel="noreferrer"
+      target="_blank"
+      className="qr-plaque qr-plaque--faq"
+    >
       {image}
     </a>
   )

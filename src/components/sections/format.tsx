@@ -79,7 +79,7 @@ function buildAgenda(day: EventDay): AgendaBand[] {
   const schedule = day.schedule ?? []
 
   return schedule.map((slot) => {
-    if (!/paralelas/i.test(slot.label)) {
+    if (!/paralelas|charlas/i.test(slot.label)) {
       return {
         kind: "shared",
         tone: sharedTone(slot.label),
@@ -134,7 +134,7 @@ function SaturdaySummit({ day }: { day: EventDay }) {
         </p>
         {day.roomsNote ? <p className="summit-pill">{day.roomsNote}</p> : null}
       </header>
-      {hasRooms ? <RoomPick rooms={rooms} /> : null}
+      {rooms.length > 1 ? <RoomPick rooms={rooms} /> : null}
       {bands ? (
         <ol className="agenda-board">
           {bands.map((band) =>

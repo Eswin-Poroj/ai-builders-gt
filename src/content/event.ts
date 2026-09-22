@@ -1,10 +1,16 @@
-import { HACKATHON_REGISTER_PATH } from "@/lib/hackathon/constants"
 import type { EventContent } from "./types"
+
+const WHATSAPP_GROUP_URL =
+  "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t"
+const INSTAGRAM_URL = "https://instagram.com/aibuilders.gt_"
 
 export const event: EventContent = {
   communityName: "AI Builders GT",
   editionName: "AI Builders Xela 2026",
-  badge: "100% Gratis",
+  slug: "xela-2026",
+  tabLabel: "Xela 2026",
+  eventStatus: "completed",
+  badge: "Ya sucedió",
   dates: {
     startIso: "2026-09-19",
     endIso: "2026-09-20",
@@ -15,36 +21,38 @@ export const event: EventContent = {
     name: "Facultad de Ingeniería, Universidad Mesoamericana",
     city: "Quetzaltenango",
     display: "Facultad de Ingeniería, Universidad Mesoamericana, Quetzaltenango",
+    heading: "Dónde fue",
     mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6628.659181363057!2d-91.54277412306315!3d14.843519185672095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e9821d5d018bf%3A0xb35fd953c69529a9!2sFacultad%20de%20Ingenier%C3%ADa%20Universidad%20Mesoamericana!5e1!3m2!1ses!2sgt!4v1787904151989!5m2!1ses!2sgt",
   },
   seo: {
-    title: "AI Builders Xela 2026 — Hackathon de IA en Guatemala",
+    title: "AI Builders Xela 2026 — archivo de la 1.ª edición",
     description:
-      "19–20 de septiembre 2026 en la Facultad de Ingeniería, Universidad Mesoamericana, Quetzaltenango. El primer hackathon de IA del occidente de Guatemala. 100% gratis.",
-    hackathonTitle: "Registra tu equipo — GrokBot Hackathon | AI Builders Xela 2026",
+      "El 19 y 20 de septiembre 2026, el primer hackathon de IA del occidente de Guatemala se hizo en la Facultad de Ingeniería, Universidad Mesoamericana, Quetzaltenango. Archivo de la comunidad AI Builders GT.",
+    hackathonTitle: "GrokBot Hackathon — archivo | AI Builders Xela 2026",
     hackathonDescription:
-      "Inscribe tu equipo al GrokBot Hackathon el domingo 20 de septiembre en Quetzaltenango. Equipos de 2 a 5 personas. Cupo: 12 equipos o 50 personas.",
+      "El GrokBot Hackathon del domingo 20 de septiembre 2026 en Quetzaltenango ya ocurrió. Equipos de 2 a 5. El cupo de la primera edición cerró.",
+    ogCta: "Entrá al grupo",
   },
   hero: {
     lines: ["AI", "BUILDERS", "XELA"],
     subhead:
-      "El primer hackathon de inteligencia artificial en el occidente de Guatemala",
+      "Fue el primer hackathon de inteligencia artificial en el occidente de Guatemala",
   },
   about: {
-    heading: "Sobre el evento",
+    heading: "Lo que pasó",
     paragraphs: [
-      "AI Builders Xela combina el Building with AI Summit (charlas, paneles y networking) con el GrokBot Hackathon (construcción intensiva de soluciones con IA), durante un fin de semana completo en Quetzaltenango.",
-      "Buscamos posicionar a Quetzaltenango como nodo activo del ecosistema tecnológico centroamericano, conectando a desarrolladores, fundadores, estudiantes y líderes del sector alrededor de la inteligencia artificial aplicada a problemas reales de Guatemala.",
-      "Es la primera edición de lo que buscamos convertir en un referente anual del occidente del país.",
+      "El 19 y 20 de septiembre 2026, AI Builders Xela juntó el Building with AI Summit y el GrokBot Hackathon en la Facultad de Ingeniería de la Universidad Mesoamericana, en Quetzaltenango.",
+      "Fue la primera vez que el occidente de Guatemala tuvo un hackathon de inteligencia artificial. Dos días de charlas, equipos y prototipos, con gente que vino a construir.",
+      "Esta página es el archivo de esa edición. La comunidad sigue: el grupo de WhatsApp y el Instagram son la puerta para lo que viene.",
     ],
-    quota:
-      "El GrokBot Hackathon del domingo tiene cupo: 12 equipos o 50 personas, lo que se llene primero.",
-    quotaLinkLabel: "Registrate con tiempo para asegurar un lugar",
+    quota: "",
+    quotaLinkLabel: "",
+    quotaHref: null,
     stats: [
       {
-        id: "participants",
-        value: "80–150",
-        label: "participantes esperados",
+        id: "speakers",
+        value: "10",
+        label: "speakers del summit",
       },
       {
         id: "prize",
@@ -54,17 +62,17 @@ export const event: EventContent = {
       {
         id: "days",
         value: "2 días",
-        label: "completos de actividades",
+        label: "19 y 20 de septiembre",
       },
       {
         id: "price",
         value: "Gratis",
-        label: "evento completamente gratuito",
+        label: "entrada libre",
       },
     ],
   },
   format: {
-    heading: "Formato",
+    heading: "El fin de semana",
     days: [
       {
         id: "day-1",
@@ -73,15 +81,15 @@ export const event: EventContent = {
         subtitle: "Día 1",
         bullets: [
           "Keynotes, paneles y charlas técnicas",
-          "Charlas simultáneas en Aula Principal y Aula 2",
+          "Charlas en el Aula Principal",
           "Presentación oficial de los retos del hackathon",
           "Workshop de formación de equipos",
         ],
         schedule: [
           { time: "8:00 – 9:30", label: "Bienvenida, inauguración y registro", place: "Auditorio" },
-          { time: "9:30 – 13:00", label: "Charlas — Bloques 1 y 2 (paralelas)", place: "Aula Principal / Aula 2" },
+          { time: "9:30 – 13:00", label: "Charlas — Bloques 1 y 2", place: "Aula Principal" },
           { time: "13:00 – 14:00", label: "Almuerzo" },
-          { time: "14:00 – 15:30", label: "Charlas — Bloque 3 (paralelas)", place: "Aula Principal / Aula 2" },
+          { time: "14:00 – 15:30", label: "Charlas — Bloque 3", place: "Aula Principal" },
           { time: "15:30 – 15:45", label: "Coffee break", place: "Todos" },
           {
             time: "15:45 – 16:45",
@@ -92,7 +100,7 @@ export const event: EventContent = {
         ],
         roomsHeading: "Agenda",
         roomsNote:
-          "Bienvenida y cierre en el Auditorio · Charlas en Aula Principal y Aula 2 · Aula 3 libre",
+          "Bienvenida y cierre en el Auditorio · Charlas en el Aula Principal",
         rooms: [
           {
             id: "aula-principal",
@@ -100,10 +108,20 @@ export const event: EventContent = {
             accent: "brand",
             talks: [
               {
+                time: "9:30 – 10:15",
+                speakerId: "yeffri-salazar",
+                duration: "45 min",
+              },
+              {
                 time: "9:30 – 10:30",
                 speakerId: "erick-pineda",
                 duration: "1 h",
                 modality: "en-linea",
+              },
+              {
+                time: "10:15 – 10:35",
+                speakerId: "giovanni-castillo",
+                duration: "20 min",
               },
               {
                 time: "10:30 – 10:45",
@@ -112,59 +130,16 @@ export const event: EventContent = {
                 kind: "break",
               },
               {
+                time: "10:40 – 11:25",
+                speakerId: "cristina-coutino",
+                duration: "45 min",
+              },
+              {
                 time: "10:45 – 11:45",
                 speakerId: "carlos-sosa",
                 title: "Agentes en AWS (complemento directo de la charla de Erick Pineda)",
                 duration: "1 h",
                 modality: "en-linea",
-              },
-              {
-                time: "11:45 – 12:15",
-                speakerId: "janeth-rosas",
-                duration: "30 min",
-              },
-              {
-                time: "12:15 – 13:00",
-                speakerId: "jennifer-zelada",
-                duration: "45 min",
-              },
-              {
-                time: "14:00 – 15:00",
-                speakerId: "edwin-sac",
-                duration: "1 h",
-              },
-              {
-                time: "15:00 – 15:30",
-                speakerId: "diego-cum",
-                duration: "30 min",
-              },
-            ],
-          },
-          {
-            id: "aula-2",
-            name: "Aula 2",
-            accent: "action",
-            talks: [
-              {
-                time: "9:30 – 10:15",
-                speakerId: "yeffri-salazar",
-                duration: "45 min",
-              },
-              {
-                time: "10:15 – 10:35",
-                speakerId: "giovanni-castillo",
-                duration: "20 min",
-              },
-              {
-                time: "10:35 – 10:40",
-                title: "Coffee break",
-                duration: "5 min",
-                kind: "break",
-              },
-              {
-                time: "10:40 – 11:25",
-                speakerId: "cristina-coutino",
-                duration: "45 min",
               },
               {
                 time: "11:25 – 11:55",
@@ -189,14 +164,13 @@ export const event: EventContent = {
                 duration: "30 min",
               },
               {
-                time: "14:30 – 15:00",
-                speakerId: "pablo-rosales",
-                duration: "30 min",
-                modality: "en-linea",
+                time: "14:00 – 15:00",
+                speakerId: "edwin-sac",
+                duration: "1 h",
               },
               {
                 time: "15:00 – 15:30",
-                speakerId: "marvin-mazariegos",
+                speakerId: "diego-cum",
                 duration: "30 min",
               },
             ],
@@ -345,34 +319,6 @@ export const event: EventContent = {
         },
       },
       {
-        id: "marvin-mazariegos",
-        name: "Marvin Moises Mazariegos Toyom",
-        role: "DDR Innova",
-        topic: "Del Prompt al Ship It: cómo Claude Cowork pasa de responder a entregar trabajo real",
-        photoSrc: "/speakers/marvin-moises.png",
-        href: "https://github.com/mmazariegos-2021338",
-        confirmed: true,
-        bio: "Developer y AI Community Builder de Guatemala. Apasionado por la inteligencia artificial y el desarrollo de software. AI DevRel en DDR Innova.",
-        socials: {
-          instagram: "https://www.instagram.com/devmar_17",
-          github: "https://github.com/mmazariegos-2021338",
-          twitter: "https://x.com/Devmar_17",
-        },
-      },
-      {
-        id: "janeth-rosas",
-        name: "Rocío Janeth Rosas Hernández",
-        role: "CodeKids",
-        topic: "Futuro Autónomo, Agentes de IA y el cambio en nuestras tareas rutinarias",
-        photoSrc: "/speakers/rocio-rosas.jpg",
-        href: "https://www.linkedin.com/in/janeth-rosas-957021132",
-        confirmed: true,
-        bio: "Ingeniera en sistemas y ciencias de la computación. Fundadora de CodeKids, gestora de proyectos STEAM a nivel nacional e internacional y voluntaria en comunidades de tecnología.",
-        socials: {
-          linkedin: "https://www.linkedin.com/in/janeth-rosas-957021132",
-        },
-      },
-      {
         id: "erick-pineda",
         name: "Erick Pineda",
         role: "Python Guatemala",
@@ -412,27 +358,6 @@ export const event: EventContent = {
           linkedin: "https://www.linkedin.com/in/dvrm",
           website: "https://convoflow.ai",
         },
-      },
-      {
-        id: "jennifer-zelada",
-        name: "Jennifer Sucely Zelada de León",
-        role: "Universidad Mesoamericana",
-        topic:
-          "¿La IA realmente programa bien? Cómo evaluar el código generado por Inteligencia Artificial",
-        photoSrc: "/speakers/jennifer-zelada.jpg",
-        href: null,
-        confirmed: true,
-        bio: "Ingeniera en Sistemas, Informática y Ciencias de la Computación y Magíster en Docencia Superior. Docente en la Facultad de Ingeniería de Universidad Mesoamericana; integra tecnología, innovación y educación en la formación de futuros profesionales.",
-      },
-      {
-        id: "pablo-rosales",
-        name: "Pablo Rosales",
-        role: "",
-        topic:
-          "Juicio (humano), Datos e Inteligencia Artificial: la tríada necesaria para construir responsablemente con IA",
-        photoSrc: null,
-        href: null,
-        confirmed: true,
       },
     ],
   },
@@ -578,81 +503,75 @@ export const event: EventContent = {
     items: [
       {
         id: "costo",
-        question: "¿Cuánto cuesta participar?",
+        question: "¿Cuánto costó participar?",
         answer:
-          "Es completamente gratuito. Los premios del hackathon son créditos de GrokBot, no efectivo.",
+          "Fue completamente gratuito. Los premios del hackathon fueron créditos de GrokBot, no efectivo.",
       },
       {
         id: "experiencia",
-        question: "¿Necesito experiencia previa en IA?",
+        question: "¿Necesito experiencia previa en IA para la comunidad?",
         answer:
-          "No, hay espacio para todos los niveles, desde principiantes hasta avanzados.",
-      },
-      {
-        id: "equipo",
-        question: "¿Puedo ir sin equipo?",
-        answer: "Sí, hay un workshop de formación de equipos el sábado a las 15:45. El domingo los equipos son de 2 a 5 personas.",
-      },
-      {
-        id: "registro-equipo",
-        question: "¿Cómo registro mi equipo del domingo?",
-        answer:
-          "En la página de registro de equipos. Cupo de 12 equipos o 50 personas, lo que se llene primero.",
-        href: HACKATHON_REGISTER_PATH,
-        linkLabel: "Ir al registro de equipos",
+          "No. El summit y el hackathon tuvieron espacio para todos los niveles, y el grupo sigue igual: desde principiantes hasta avanzados.",
       },
       {
         id: "horario",
-        question: "¿A qué hora llego?",
+        question: "¿Cómo fue el horario?",
         answer:
-          "Sábado 19: bienvenida, inauguración y registro de 8:00 a 9:30, charlas en dos aulas, workshop de equipos a las 15:45 y cierre a las 17:00. Domingo 20: bienvenida a las 8:00 en el Auditorio, construcción en el Laboratorio y Demo Day desde las 16:15. Llegá con tiempo el primer día.",
-      },
-      {
-        id: "llevar",
-        question: "¿Qué necesito llevar?",
-        answer:
-          "Registrate en Luma antes de llegar y llevá el QR de confirmación. Laptop, cargador y, si tenés, una extensión. El evento es gratis.",
+          "Sábado 19: bienvenida de 8:00 a 9:30, charlas en el Aula Principal, workshop de equipos a las 15:45 y cierre a las 17:00. Domingo 20: bienvenida a las 8:00, construcción en el Laboratorio y Demo Day desde las 16:15. El detalle completo está en El fin de semana.",
+        href: "#formato",
+        linkLabel: "Ver la agenda",
       },
       {
         id: "parqueo",
-        question: "¿Hay parqueo?",
+        question: "¿Hubo parqueo?",
         answer: "Sí, hay parqueo en la Universidad Mesoamericana.",
       },
       {
         id: "comida",
-        question: "¿Hay comida?",
+        question: "¿Hubo comida?",
         answer:
-          "Sí. Hay café, pizza y bebida. El domingo no se come en el laboratorio: café y almuerzo son horarios de referencia. Si hay cambios, los avisamos en el grupo de WhatsApp.",
+          "Sí. Café, pizza y bebida. El domingo no se comió en el laboratorio: café y almuerzo fueron horarios de referencia.",
       },
       {
         id: "donde",
-        question: "¿Dónde es el evento?",
+        question: "¿Dónde fue el evento?",
         answer: "Facultad de Ingeniería, Universidad Mesoamericana, Quetzaltenango.",
       },
       {
-        id: "avisos",
-        question: "¿Dónde me entero de cambios?",
+        id: "fotos",
+        question: "¿Dónde están las fotos?",
         answer:
-          "En el grupo de WhatsApp de la comunidad. Ahí van avisos de último minuto, horarios y lo que vaya saliendo.",
-        href: "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t",
+          "Todavía no tenemos fotos del recinto para este archivo. Las que vayan saliendo se publican en el grupo de WhatsApp; acá abajo están los equipos que compitieron.",
+        href: "#recap",
+        linkLabel: "Ver los equipos",
+      },
+      {
+        id: "proxima",
+        question: "¿Va a haber otra edición?",
+        answer:
+          "Esta fue la primera. La comunidad sigue activa y queremos que Xela se vuelva un referente anual del occidente. La fecha de la siguiente no está anunciada todavía.",
+      },
+      {
+        id: "avisos",
+        question: "¿Dónde me entero de lo que sigue?",
+        answer:
+          "En el grupo de WhatsApp de la comunidad. Ahí van avisos, fotos y lo que vaya saliendo.",
+        href: WHATSAPP_GROUP_URL,
         linkLabel: "Entrá al grupo",
-        imageSrc: "/community/whatsapp-qr.png",
-        imageAlt: "Código QR para unirse al grupo de WhatsApp de AI Builders GT",
       },
     ],
   },
   registerTeams: {
-    heading: "Registra tu equipo",
+    heading: "Equipos de Xela 2026",
     lede:
-      "GrokBot Hackathon, domingo 20 de septiembre. Equipos de 2 a 5 personas. Un solo reto para todos. Cupo: 12 equipos o 50 personas.",
+      "El registro para el GrokBot Hackathon ya cerró. Estos fueron los equipos que compitieron el domingo 20 de septiembre.",
     ctaHeading: "Registra tu equipo",
     ctaLede:
       "GrokBot Hackathon · domingo 20 · equipos de 2 a 5 · 12 equipos o 50 personas.",
     ctaLabel: "Registra tu equipo",
     backLabel: "AI Builders Xela",
     fullMessage: "Cupo lleno",
-    successTemplate:
-      "¡Equipo {name} registrado! Nos vemos el domingo 20 de septiembre en el GrokBot Hackathon. Cualquier duda: {email}.",
+    successTemplate: "Equipo {name} registrado. Cualquier duda: {email}.",
     teamNameLabel: "Nombre del equipo",
     membersLegend: "Integrantes",
     memberLabel: "Integrante {n}",
@@ -668,18 +587,46 @@ export const event: EventContent = {
     memberCountLabel: "{n} integrantes",
   },
   midCta: {
-    heading: "Registrate antes de llegar",
-    lede: "El Summit y el hackathon son gratis. Luma te da el QR de entrada.",
+    heading: "La comunidad sigue en Xela",
+    lede: "El summit y el hackathon ya fueron. El grupo de WhatsApp y el Instagram son la puerta para lo que viene.",
   },
   finalCta: {
-    heading: "No te quedes fuera del primer hackathon de IA del occidente de Guatemala",
+    heading: "Ya pasó, pero el grupo sigue",
+  },
+  recap: {
+    heading: "Así se vio",
+    lede:
+      "El sábado fue summit. El domingo, GrokBot Hackathon. Este muro es el archivo visual de la primera edición en Xela.",
+    // COMENTARIO: fotos reales del recinto van acá cuando existan. Mientras
+    // tanto, esta sección no las inventa: muestra a los equipos en su lugar.
+    photos: [],
+    teamsHeading: "Los equipos",
+    teamsLede:
+      "Todavía no tenemos fotos del recinto. Estos son los equipos que compitieron el domingo 20 en el GrokBot Hackathon.",
+    teams: [
+      { teamName: "No’j Code" },
+      { teamName: "UNIC" },
+      { teamName: "BALAM TEAM" },
+      { teamName: "Asimov's Builders" },
+      { teamName: "CodeSensitive" },
+      { teamName: "print(\"Hola Mundo\")" },
+      { teamName: "Fatal3ye.inc" },
+      { teamName: "Tauron Flash" },
+      { teamName: "Alt + F4" },
+    ],
+  },
+  community: {
+    doors: [
+      { id: "whatsapp", kind: "primary", label: "Entrá al grupo" },
+      { id: "instagram", kind: "secondary", label: "Instagram" },
+    ],
   },
   footer: {
     contactEmail: "eswinstuardporojcastro@gmail.com",
     instagramHandle: "@aibuilders.gt_",
-    instagramUrl: "https://instagram.com/aibuilders.gt_",
+    instagramUrl: INSTAGRAM_URL,
     whatsappLabel: "WhatsApp",
-    whatsappUrl: "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t",
+    whatsappUrl: WHATSAPP_GROUP_URL,
     whatsappQrSrc: "/community/whatsapp-qr.png",
     copyright: "© 2026 AI Builders GT",
   },

@@ -1,0 +1,93 @@
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem var(--wall-x);
+  background: color-mix(in oklab, var(--ink) 94%, black);
+  border-bottom: 1px solid var(--border-warm);
+}
+
+.site-nav-lockup {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  min-width: 0;
+}
+
+.site-nav-lockup img {
+  width: 1.8rem;
+  height: auto;
+}
+
+.site-nav-name {
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.site-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.15rem;
+}
+
+.site-tab {
+  padding: 0.45rem 0.7rem;
+  color: var(--mist);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+}
+
+.site-tab[aria-current="page"] {
+  color: var(--paper);
+  border-bottom-color: var(--action);
+}
+
+.site-tab:hover,
+.site-tab:focus-visible {
+  color: var(--paper);
+}
+
+/* === MOBILE (≤799px) — keep the nav to one row so the hero CTA
+   underneath stays above the fold. Desktop is untouched. === */
+@media (max-width: 799px) {
+  .site-nav {
+    flex-wrap: nowrap;
+    min-height: var(--nav-h);
+  }
+
+  .site-nav-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 5rem;
+  }
+
+  .site-tabs {
+    flex-wrap: nowrap;
+    gap: 0.1rem;
+  }
+
+  .site-tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.5rem 0.4rem;
+    font-size: 0.72rem;
+    white-space: nowrap;
+  }
+}

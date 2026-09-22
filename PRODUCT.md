@@ -14,17 +14,17 @@ Next.js App Router, deploy en Vercel (elección del usuario en init, 2026-08-24)
 
 Visitante principal: alguien en celular que llega desde Instagram o WhatsApp y, a la vez, un builder de Quetzaltenango / occidente de Guatemala (devs, estudiantes, fundadores) que necesita saber qué es AI Builders GT y si el fin de semana en Xela vale la pena.
 
-Trabajo en el sitio: reconocer la comunidad, entender AI Builders Xela 2026, creerle, y registrarse en Luma.
+Trabajo en el sitio: reconocer la comunidad, ver que Xela 2026 ya ocurrió, creerle, y entrar al grupo de WhatsApp.
 
 Audiencias secundarias (no son el job principal): aliados, prensa local, speakers.
 
 ## Product Purpose
 
-Home de la comunidad **AI Builders GT** en aibuildersgt.com, con **AI Builders Xela 2026** como pieza principal.
+Home de la comunidad **AI Builders GT** en aibuildersgt.com, con **AI Builders Xela 2026** como archivo de la primera edición.
 
-Es a la vez la casa de la comunidad y la landing de conversión de la primera edición: el primer hackathon de inteligencia artificial en el occidente de Guatemala.
+Es a la vez la casa de la comunidad y el recap de esa edición: el primer hackathon de inteligencia artificial en el occidente de Guatemala.
 
-Éxito: el visitante hace clic en «Regístrate gratis» y sale a Luma. Un solo objetivo de conversión. El sitio no captura datos propios.
+Éxito: el visitante hace clic en «Entrá al grupo» y sale a WhatsApp. Un solo objetivo de conversión.
 
 ## Positioning
 
@@ -44,7 +44,7 @@ AI Builders GT es la comunidad; Xela 2026 es la prueba de que el occidente de Gu
 
 - Una sola página, scroll vertical; no hay app, auth ni CMS.
 - Identidad de comunidad (logo, nombre AI Builders GT, redes, contacto) en header y footer; el cuerpo convierte a Xela 2026.
-- CTA de registro al menos tres veces (hero, mitad, cierre); todos apuntan a Luma.
+- CTA de comunidad al menos tres veces (hero, mitad, cierre); todos apuntan a WhatsApp. Instagram es chip, no segunda banda.
 - Cuatro tracks visibles; el organizador seleccionará 3 de 4 antes del cierre de inscripción — debe poder ocultarse uno sin rearmar la página.
 - Sin formularios propios.
 - Prioridad de carga: mobile-first, sin librerías pesadas innecesarias.
@@ -67,7 +67,7 @@ Abierto:
 - Paleta vinculante: morado `#5B21B6`, morado oscuro `#4C1D95`, verde agua `#0F766E`, fondo oscuro `#0F0A1E`, blanco `#FFFFFF`.
 - Tipografía vinculante: sans-serif geométrica moderna (ejemplos citados: Inter, Poppins o similar); títulos bold, cuerpo regular.
 - Tono visual solicitado: tecnología de vanguardia + identidad regional/latinoamericana; moderno, limpio, no corporativo genérico.
-- CTA fijo: «Regístrate gratis». Badge: «100% Gratis».
+- CTA fijo: «Entrá al grupo». Badge: «Ya sucedió».
 
 ## Evidence on Hand
 
@@ -83,7 +83,7 @@ No hay testimonios, fotos de ediciones anteriores, ni URL de Luma. No inventar q
 
 ## Product Principles
 
-1. El sitio es la casa de AI Builders GT; la acción que importa es registrarse a Xela 2026.
+1. El sitio es la casa de AI Builders GT; la acción que importa es unirse a la comunidad.
 2. La prueba es local y concreta: Xela, la universidad, speakers nombrados, tracks de Guatemala — no un pitch genérico de IA.
 3. Gratis y accesible es parte de la oferta, no un asterisco.
 4. Lo que falta (Luma, logos, fotos) se marca como reemplazable; no se fabrica.

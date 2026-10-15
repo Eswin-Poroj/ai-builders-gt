@@ -39,7 +39,7 @@ export default async function OpengraphImage({
             display: "flex",
             fontSize: 28,
             fontWeight: 600,
-            color: "#0F766E",
+            color: "#E5D4F5",
             marginBottom: 18,
           }}
         >
@@ -56,7 +56,7 @@ export default async function OpengraphImage({
           }}
         >
           <span>AI Builders</span>
-          <span style={{ color: "#0F766E" }}>
+          <span>
             {edition?.tabLabel ?? title}
           </span>
         </div>

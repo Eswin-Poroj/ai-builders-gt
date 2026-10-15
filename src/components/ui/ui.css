@@ -34,6 +34,14 @@
   background: transparent;
 }
 
+.format-badge--en-linea {
+  border-color: color-mix(in oklab, var(--paper) 28%, transparent);
+}
+
+.format-badge--presencial {
+  border-color: color-mix(in oklab, var(--accent) 55%, transparent);
+}
+
 .event-card {
   display: flex;
   flex-direction: column;

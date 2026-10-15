@@ -43,7 +43,7 @@ export default function OpengraphImage() {
           }}
         >
           <span>AI Builders</span>
-          <span style={{ color: "#0F766E" }}>GT</span>
+          <span>GT</span>
         </div>
         <div
           style={{

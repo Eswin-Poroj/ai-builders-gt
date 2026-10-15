@@ -1,3 +1,4 @@
+import { LumaEmbed } from "@/components/sections/luma-embed"
 import { FormatBadge } from "@/components/ui/format-badge"
 import { Wall } from "@/components/ui/wall"
 import { community } from "@/content/community"
@@ -22,16 +23,10 @@ export function CharlasSection() {
         <span>Serie semanal en línea. No es un evento presencial.</span>
       </p>
       <p className="lede">{community.charlas.lede}</p>
-      <div className="charlas-frame">
-        <iframe
-          src={LUMA_WEEKLY_TALKS_EMBED_URL}
-          title="Calendario de charlas en línea — Café con Builders with AI"
-          loading="lazy"
-          allowFullScreen
-          referrerPolicy="strict-origin-when-cross-origin"
-          tabIndex={0}
-        />
-      </div>
+      <LumaEmbed
+        src={LUMA_WEEKLY_TALKS_EMBED_URL}
+        title="Calendario de charlas en línea — Café con Builders with AI"
+      />
       <p className="charlas-fallback">
         <a
           href={LUMA_WEEKLY_TALKS_CALENDAR_URL}

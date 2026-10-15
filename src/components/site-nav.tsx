@@ -28,9 +28,26 @@ export function SiteNav() {
         >
           Comunidad
         </Link>
-        <a className="site-tab" href="/#charlas">
+        <Link
+          className="site-tab"
+          href="/#charlas"
+          onClick={(event) => {
+            if (pathname !== "/") return
+            const section = document.getElementById("charlas")
+            if (!section) return
+            event.preventDefault()
+            const reduceMotion = window.matchMedia(
+              "(prefers-reduced-motion: reduce)",
+            ).matches
+            section.scrollIntoView({
+              behavior: reduceMotion ? "auto" : "smooth",
+              block: "start",
+            })
+            history.replaceState(null, "", "/#charlas")
+          }}
+        >
           Charlas
-        </a>
+        </Link>
         {editionIndex.map((edition) => {
           const href = editionPath(edition.slug)
           const current =

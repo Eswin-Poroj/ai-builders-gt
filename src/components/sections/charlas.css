@@ -1,0 +1,48 @@
+.charlas {
+  scroll-margin-top: var(--nav-h);
+}
+
+.charlas-frame {
+  width: 100%;
+  max-width: 56rem;
+  height: min(78svh, 44rem);
+  min-height: 32rem;
+  margin: 1.4rem 0 0;
+  border: 1px solid color-mix(in oklab, var(--paper) 16%, transparent);
+  border-radius: 4px;
+  overflow: hidden;
+  background: color-mix(in oklab, var(--ink) 72%, var(--brand-deep));
+}
+
+.charlas-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: transparent;
+}
+
+.charlas-fallback {
+  margin: 1rem 0 0;
+  max-width: 56rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.charlas-fallback a {
+  color: var(--mist);
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+.charlas-fallback a:hover,
+.charlas-fallback a:focus-visible {
+  color: var(--paper);
+}
+
+@media (min-width: 800px) {
+  .charlas-frame {
+    height: min(70svh, 36rem);
+    min-height: 28rem;
+  }
+}

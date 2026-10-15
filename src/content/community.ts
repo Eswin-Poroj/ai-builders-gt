@@ -19,6 +19,12 @@ export const community = {
       "Cada evento tiene su pestaña. Cuando haya otra edición, aparece al lado de Xela 2026.",
     ],
   },
+  charlas: {
+    heading: "Charlas en línea",
+    lede:
+      "Casi cada martes, alguien que ya construye con IA nos cuenta cómo lo hizo. Son gratis y en línea. Apuntate a la que te interese y te mandamos el link el mismo día.",
+    fallbackLabel: "Si el calendario no carga, abrilo en Luma",
+  },
   editions: {
     heading: "Ediciones",
     lede: "Cada edición tiene su propia página: recap, speakers, agenda y sede. Xela 2026 es la primera.",

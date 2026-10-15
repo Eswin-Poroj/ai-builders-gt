@@ -28,6 +28,9 @@ export function SiteNav() {
         >
           Comunidad
         </Link>
+        <a className="site-tab" href="/#charlas">
+          Charlas
+        </a>
         {editionIndex.map((edition) => {
           const href = editionPath(edition.slug)
           const current =

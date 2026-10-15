@@ -79,6 +79,13 @@
   .site-tabs {
     flex-wrap: nowrap;
     gap: 0.1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .site-tabs::-webkit-scrollbar {
+    display: none;
   }
 
   .site-tab {

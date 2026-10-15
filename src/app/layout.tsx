@@ -1,8 +1,11 @@
 import type { Metadata } from "next"
 import { Poppins, Barlow_Condensed } from "next/font/google"
+import type { ReactNode } from "react"
+import { SkipLink } from "@/components/ui/skip-link"
 import { community } from "@/content/community"
 import { SITE_URL } from "@/lib/site"
 import "./globals.css"
+import "@/components/ui/ui.css"
 
 const sans = Poppins({
   subsets: ["latin"],
@@ -39,13 +42,11 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 }
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="es" className={`${sans.variable} ${display.variable}`}>
+    <html lang="es-GT" className={`${sans.variable} ${display.variable}`}>
       <body className={sans.className}>
-        <a className="skip" href="#inicio">
-          Saltar al contenido
-        </a>
+        <SkipLink />
         {children}
       </body>
     </html>

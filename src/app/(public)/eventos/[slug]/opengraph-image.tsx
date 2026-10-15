@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og"
+import { COMMUNITY_CTA_LABEL } from "@/content/community"
 import { getEdition } from "@/content/editions"
 
 export const alt = "AI Builders Xela 2026"
@@ -16,7 +17,7 @@ export default async function OpengraphImage({
   const meta = edition
     ? `${edition.dates.display} · ${edition.venue.city}`
     : "Comunidad de IA en Guatemala"
-  const cta = edition?.seo.ogCta ?? "Entrá al grupo"
+  const cta = edition?.seo.ogCta ?? COMMUNITY_CTA_LABEL
 
   return new ImageResponse(
     (
@@ -72,12 +73,12 @@ export default async function OpengraphImage({
         <div
           style={{
             marginTop: 36,
-            background: "#0F766E",
-            color: "#EDEBEE",
+            background: "#F59E0B",
+            color: "#0F0A1E",
             padding: "16px 28px",
             fontSize: 26,
             fontWeight: 700,
-            width: 320,
+            width: 420,
             display: "flex",
             justifyContent: "center",
           }}

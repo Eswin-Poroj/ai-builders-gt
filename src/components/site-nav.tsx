@@ -3,11 +3,25 @@
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { editionIndex, editionPath } from "@/content/edition-index"
 import "./site-nav.css"
+
+function scrollToId(id: string) {
+  const section = document.getElementById(id)
+  if (!section) return false
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches
+  section.scrollIntoView({
+    behavior: reduceMotion ? "auto" : "smooth",
+    block: "start",
+  })
+  return true
+}
 
 export function SiteNav() {
   const pathname = usePathname()
+  const onHome = pathname === "/"
+  const onEvents = pathname.startsWith("/eventos/")
 
   return (
     <header className="site-nav">
@@ -24,7 +38,7 @@ export function SiteNav() {
         <Link
           className="site-tab"
           href="/"
-          aria-current={pathname === "/" ? "page" : undefined}
+          aria-current={onHome ? "page" : undefined}
         >
           Comunidad
         </Link>
@@ -32,37 +46,27 @@ export function SiteNav() {
           className="site-tab"
           href="/#charlas"
           onClick={(event) => {
-            if (pathname !== "/") return
-            const section = document.getElementById("charlas")
-            if (!section) return
+            if (!onHome) return
+            if (!scrollToId("charlas")) return
             event.preventDefault()
-            const reduceMotion = window.matchMedia(
-              "(prefers-reduced-motion: reduce)",
-            ).matches
-            section.scrollIntoView({
-              behavior: reduceMotion ? "auto" : "smooth",
-              block: "start",
-            })
             history.replaceState(null, "", "/#charlas")
           }}
         >
           Charlas
         </Link>
-        {editionIndex.map((edition) => {
-          const href = editionPath(edition.slug)
-          const current =
-            pathname === href || pathname.startsWith(`${href}/`)
-          return (
-            <Link
-              key={edition.slug}
-              className="site-tab"
-              href={href}
-              aria-current={current ? "page" : undefined}
-            >
-              {edition.tabLabel}
-            </Link>
-          )
-        })}
+        <Link
+          className="site-tab"
+          href="/#eventos-pasados"
+          aria-current={onEvents ? "page" : undefined}
+          onClick={(event) => {
+            if (!onHome) return
+            if (!scrollToId("eventos-pasados")) return
+            event.preventDefault()
+            history.replaceState(null, "", "/#eventos-pasados")
+          }}
+        >
+          Eventos
+        </Link>
       </nav>
     </header>
   )

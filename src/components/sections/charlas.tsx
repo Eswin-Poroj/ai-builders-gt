@@ -1,3 +1,5 @@
+import { FormatBadge } from "@/components/ui/format-badge"
+import { Wall } from "@/components/ui/wall"
 import { community } from "@/content/community"
 import {
   LUMA_WEEKLY_TALKS_CALENDAR_URL,
@@ -7,14 +9,18 @@ import "./charlas.css"
 
 export function CharlasSection() {
   return (
-    <section
-      className="wall wall-ink charlas"
+    <Wall
       id="charlas"
-      aria-labelledby="charlas-title"
+      titleId="charlas-title"
+      tone="ink"
+      className="charlas"
+      eyebrow={community.charlas.eyebrow}
+      heading={community.charlas.heading}
     >
-      <h2 id="charlas-title" className="wall-title shout">
-        {community.charlas.heading}
-      </h2>
+      <p className="format-row">
+        <FormatBadge format={community.charlas.format} />
+        <span>Serie semanal en línea. No es un evento presencial.</span>
+      </p>
       <p className="lede">{community.charlas.lede}</p>
       <div className="charlas-frame">
         <iframe
@@ -35,6 +41,6 @@ export function CharlasSection() {
           {community.charlas.fallbackLabel}
         </a>
       </p>
-    </section>
+    </Wall>
   )
 }

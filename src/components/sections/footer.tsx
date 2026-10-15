@@ -1,11 +1,12 @@
 import Image from "next/image"
+import Link from "next/link"
 import { event } from "@/content/event"
 import "@/components/community.css"
 
 export function FooterSection() {
   return (
     <footer className="site-foot">
-      <a className="foot-lockup" href="/">
+      <Link className="foot-lockup" href="/">
         <Image
           src="/brand/logo-mark-knockout.png"
           alt=""
@@ -17,12 +18,18 @@ export function FooterSection() {
           <br />
           GT
         </span>
-      </a>
+      </Link>
       <div className="foot-links">
         <a href={event.footer.whatsappUrl} rel="noreferrer" target="_blank">
           {event.footer.whatsappLabel}
         </a>
-        <a href={event.footer.instagramUrl}>{event.footer.instagramHandle}</a>
+        <a
+          href={event.footer.instagramUrl}
+          rel="noreferrer"
+          target="_blank"
+        >
+          {event.footer.instagramHandle}
+        </a>
         <a href={`mailto:${event.footer.contactEmail}`}>
           {event.footer.contactEmail}
         </a>

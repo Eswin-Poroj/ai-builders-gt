@@ -1,32 +1,18 @@
-import ReactDOM from "react-dom"
 import { CommunityCta } from "@/components/community-cta"
-import { CIVIC_REEL } from "@/content/civic-reel"
-import { event } from "@/content/event"
 import {
   CalendarMark,
   PersonMark,
   PinMark,
 } from "@/components/hero-marks"
+import { HeroPhoto } from "@/components/ui/hero-photo"
+import { event } from "@/content/event"
 import "./hero.css"
 
 export function HeroSection() {
-  ReactDOM.preload("/hero/kiosco-svg-noche.svg", { as: "image", type: "image/svg+xml" })
-
   return (
     <section className="hero" id="inicio" aria-labelledby="hero-title">
       <div className="hero-stage">
-        <div className="hero-reel" aria-hidden="true">
-          {CIVIC_REEL.map((slide, index) => (
-            <img
-              key={slide.src}
-              src={slide.src}
-              alt=""
-              className={`hero-slide ${slide.className}`}
-              fetchPriority={index === 0 ? "high" : undefined}
-              decoding="async"
-            />
-          ))}
-        </div>
+        <HeroPhoto />
         <div className="hero-veil" />
         <div className="hero-invite">
           <div className="hero-title-block">
@@ -45,18 +31,18 @@ export function HeroSection() {
                 {event.dates.display}
               </p>
               <p className="hero-venue">
-                <PinMark className="hero-mark hero-mark-action" />
+                <PinMark className="hero-mark hero-mark-brand" />
                 {event.venue.display}
               </p>
             </div>
             <div className="hero-actions">
               <p className="hero-badge">
-                <CalendarMark className="hero-mark hero-mark-action" />
+                <CalendarMark className="hero-mark" />
                 {event.badge}
               </p>
               <CommunityCta
                 placement="hero"
-                className="band band-hero"
+                className="band-hero"
                 leading={<PersonMark />}
               />
             </div>

@@ -1,4 +1,6 @@
 import type { ReactNode } from "react"
+import { Band } from "@/components/ui/band"
+import { COMMUNITY_CTA_LABEL } from "@/content/community"
 import { getCommunityHref, getPrimaryDoor } from "@/lib/community"
 
 type Props = {
@@ -13,23 +15,17 @@ export function CommunityCta({
   placement,
   label,
   href,
-  className = "band",
+  className,
   leading,
 }: Props) {
   const door = getPrimaryDoor()
   const target = href ?? getCommunityHref(door.id)
-  const text = label ?? door.label
-  const external = target.startsWith("http")
+  const text = label ?? door.label ?? COMMUNITY_CTA_LABEL
 
   return (
-    <a
-      className={className}
-      href={target}
-      data-cta={`community-${placement}`}
-      {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
-    >
+    <Band href={target} className={className} placement={`community-${placement}`}>
       {leading}
       {text}
-    </a>
+    </Band>
   )
 }

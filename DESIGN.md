@@ -1,12 +1,14 @@
 ---
 name: AI Builders GT
-description: Umbral cívico de Xela — reel de noche en el parque, shout Barlow, una sola puerta teal.
+description: Umbral cívico de Xela — still de noche, shout Barlow, puerta ámbar con tinta ink.
 colors:
   ink: "#0f0a1e"
   paper: "#ffffff"
   brand: "#5b21b6"
   brand-deep: "#4c1d95"
   action: "#0f766e"
+  accent: "#f59e0b"
+  on-accent: "#0f0a1e"
   mist: "color-mix(in oklab, #ffffff 78%, #5b21b6)"
   stone: "#c4b49a"
 typography:
@@ -58,8 +60,8 @@ spacing:
   inset-lg: "8vw"
 components:
   button-primary:
-    backgroundColor: "{colors.action}"
-    textColor: "{colors.paper}"
+    backgroundColor: "{colors.accent}"
+    textColor: "{colors.on-accent}"
     typography: "{typography.label}"
     rounded: "{rounded.xs}"
     padding: "0.65rem 1.2rem"
@@ -117,23 +119,23 @@ components:
 
 **Creative North Star: "El umbral del arco"**
 
-El sistema es el umbral cívico de Xela: un reel de fotos reales del kiosco, el Parque Centroamérica y el Templo a Minerva. La invitación se lee abajo a la izquierda, sobre la noche, no recortada al contorno de un arco. El campo es noche (`ink`). El papel y un solo teal de acción abren la puerta. Seed `4c2d6d65`.
+El sistema es el umbral cívico de Xela: una sola foto ligera del kiosco de noche (AVIF/WebP, no el reel de SVG). La invitación se lee abajo a la izquierda, sobre la noche. El campo es noche (`ink`). La puerta de conversión es ámbar `#F59E0B` con tinta `ink`. El teal queda como acento grande (GT) y skip-link, nunca como texto chico sobre púrpura. Seed `4c2d6d65`.
 
-Barlow Condensed carga el shout (hero, muros, tracks). Poppins 400–700 sostiene ledes, FAQ, meta y chips. Los muros se distinguen por tinte de brand sobre ink. Quien llega ve que la edición ya ocurrió, el archivo visual y una sola puerta teal hacia el grupo de WhatsApp.
+Barlow Condensed carga el shout (hero, muros, tracks). Poppins 400–700 sostiene ledes, FAQ, meta y chips. Los muros se distinguen por tinte de brand sobre ink. En la home, el propósito («Pasar de usar la IA a construir con ella») y una sola puerta ámbar («Unite a la comunidad») van primero; las charlas en línea y el archivo van después.
 
 Rechazos visuales confirmados: afiche gritón recortado, wood-type de feria, chamfer a 45°, hero SaaS con orbes.
 
 **Key Characteristics:**
 
-- Reel cívico de Xela a 100svh; cartel Barlow en caja alta, anclado abajo a la izquierda
-- Campo noche, papel blanco, brand que tintea, teal como única puerta
+- Foto cívica de Xela a 100svh (un still AVIF/WebP); cartel Barlow en caja alta, anclado abajo a la izquierda
+- Campo noche, papel blanco, brand que tintea, ámbar como única puerta de conversión (texto ink)
 - Dos caras: Barlow Condensed (shout) + Poppins (cuerpo), tracking leve en títulos
-- CTA banda teal, radio 2px, hover `translateY(-2px)`, resplandor con offset
+- CTA banda ámbar con texto ink, radio 2px, hover `translateY(-2px)`, resplandor con offset
 - Agenda del sábado: dos vanos en escritorio (Aula Principal brand, Aula 2 action); un aula por chip en celular
 
 ## Colors
 
-Noche como suelo, brand como tinte, un teal que solo abre.
+Noche como suelo, brand como tinte, ámbar que abre, teal como acento grande.
 
 ### Primary
 
@@ -143,7 +145,8 @@ Noche como suelo, brand como tinte, un teal que solo abre.
 
 ### Secondary
 
-- **Teal de puerta** (`action`): Única superficie de conversión (banda, skip-link, `::selection`, anillo de foco). Marca «Xela» en el hero y el «+» del FAQ. No rellena secciones.
+- **Teal** (`action` / `teal`): Skip-link, `::selection`, la palabra GT del hero (texto grande) y el «+» del FAQ. **No** es texto de label, rol, tier ni badge chico: sobre ink da 3,54:1 y sobre brand-deep 2,0:1.
+- **Ámbar de puerta** (`accent` `#F59E0B`): Única superficie de conversión. Texto siempre `on-accent` / `ink` `#0F0A1E` (9,03:1). Nunca blanco sobre ámbar (2,15:1, falla AA). Anillo de foco.
 
 ### Neutral
 
@@ -153,7 +156,7 @@ Noche como suelo, brand como tinte, un teal que solo abre.
 
 **La regla del campo.** El suelo es ink. Brand tintea; brand-deep pinta formato y aliados. Action no es fondo de sección.
 
-**La regla de la única puerta.** Un solo color de conversión: action. Su rareza es el punto.
+**La regla de la única puerta.** Un solo color de conversión: accent (ámbar) con tinta ink. El teal no pinta CTAs ni labels.
 
 ## Typography
 
@@ -172,13 +175,13 @@ Noche como suelo, brand como tinte, un teal que solo abre.
 
 **La regla de las dos caras.** Barlow Condensed para el shout; Poppins para el cuerpo. El display va en caja alta; el lede no.
 
-**La regla del vano.** El reel llena el campo. Logo, título, fecha, sede, badge y CTA se leen abajo a la izquierda, sobre la foto, con velo ink + brand — no con recorte geométrico del kiosco.
+**La regla del vano.** La foto llena el campo. En la home: propósito + una banda ámbar. En el archivo de edición: título, fecha, sede, badge y CTA. Velo ink + brand — no recorte geométrico del kiosco.
 
 ## Layout
 
 Pila vertical a todo el ancho sobre ink. Sin `max-width` de sitio. Canto `--wall-x` 1.5rem en móvil; 8vw desde 800px. Muros: padding 4rem en el eje vertical.
 
-Hero a 100svh, reel de cinco fotos con Ken Burns de 25s. Invitación absoluta al borde inferior. Logo knockout ~2.2rem arriba a la izquierda. El CTA de mitad es un muro: shout, lede y banda WhatsApp, el mismo ritmo que el recap.
+Hero a 100svh, una sola foto del kiosco (srcset AVIF/WebP, sin Ken Burns ni fade-in: el LCP no puede esperar). Invitación absoluta al borde inferior. El CTA de la home es uno solo.
 
 El sábado *es* la agenda a todo el ancho (`#agenda`); el domingo es un rastro a 42rem. Speakers a dos columnas desde 800px. About: 1fr / 2fr desde 800px.
 
@@ -190,7 +193,7 @@ Sin sombras de card. La profundidad es tonal: mixes de ink + brand, filete inset
 
 ### Shadow Vocabulary
 
-- **Puerta** (`box-shadow: 0 4px 20px color-mix(in oklab, #0f766e 42%, transparent)`): resplandor de la banda en reposo, con offset. Hover: `0 8px 30px` al 55%. No es halo a 0px.
+- **Puerta** (`box-shadow: 0 4px 20px color-mix(in oklab, #f59e0b 42%, transparent)`): resplandor de la banda en reposo, con offset. Hover: `0 8px 30px` al 55%. No es halo a 0px.
 - **Dintel** (`box-shadow: inset 0 1px 0 var(--border-warm)`): filo superior de cada muro.
 - **Junta** (`border-top: 1px solid var(--border-warm)`): entre muros consecutivos.
 
@@ -206,7 +209,7 @@ Radio 2px en banda, badge, chips de aliado y controles de speaker. Radio 4px en 
 
 ### Buttons
 
-Banda de conversión, no píldora. Action sobre paper, radio 2px, min-height 2.8rem, padding 0.65rem 1.2rem, peso 700, 0.88rem, tracking 0.04em, uppercase. La comunidad usa el label canónico «Entrá al grupo» en hero, mitad y cierre. Instagram es chip outline, no segunda banda teal. Hover/focus-visible: `translateY(-2px)` en 0.18s `cubic-bezier(0.16, 1, 0.3, 1)` y resplandor más amplio. Skip-link: action/paper, padding 0.6rem 1rem, peso 600. Volver al inicio en el formulario: chip outline paper 28%, label 0.82rem uppercase.
+Banda de conversión, no píldora. Ámbar sobre ink, radio 2px, min-height 2.8rem, padding 0.65rem 1.2rem, peso 700, 0.88rem, tracking 0.04em, uppercase. Label canónico: «Unite a la comunidad». Instagram es chip outline, no segunda banda. Hover/focus-visible: `translateY(-2px)` en 0.18s `cubic-bezier(0.16, 1, 0.3, 1)` y resplandor más amplio. Skip-link: teal/paper (no es CTA de conversión). Volver al inicio en el formulario: chip outline paper 28%, label 0.82rem uppercase.
 
 ### Chips
 
@@ -222,7 +225,7 @@ Inputs del GrokBot Hackathon viven en `/registro-hackathon`, no en la home. Camp
 
 ### Navigation
 
-Pestañas sticky sobre ink. Lockup a la izquierda; a la derecha **Comunidad** y una pestaña por edición (`Xela 2026`). Activa: paper + filete inferior 2px action. El recap de cada edición vive en `/eventos/{slug}`. La home es la casa de la comunidad.
+Pestañas sticky sobre ink. Lockup a la izquierda; a la derecha **Comunidad · Charlas · Eventos**. Activa: paper + filete inferior 2px action. El recap de cada edición vive en `/eventos/{slug}` y se enlaza desde Eventos pasados. La home es la casa de la comunidad.
 
 ### FAQ
 
@@ -242,14 +245,18 @@ Muro `wall-ink` a todo el ancho. Strip cívico a 42svh (reusa el reel, no lightb
 
 ### Invite motion
 
-El panel entra con `rise`: opacity 0 + `translateY(18px)` → reposo, 0.7s `cubic-bezier(0.16, 1, 0.3, 1)`. El reel hace fade-in 0.8s y Ken Burns 25s. Con `prefers-reduced-motion`, invite, reel, banda y flip se apagan.
+El panel entra con `rise`: opacity 0 + `translateY(18px)` → reposo, 0.7s `cubic-bezier(0.16, 1, 0.3, 1)`. La foto del hero no se anima (LCP). Con `prefers-reduced-motion`, invite, banda y flip se apagan.
+
+## Tokens y componentes
+
+Los tokens viven en `src/styles/tokens.css` (`--ink`, `--brand`, `--brand-deep`, `--teal`, `--accent`, `--on-accent`, `--paper`, `--mist`). Los bloques reutilizables están en `src/components/ui/`: `Band`, `Chip`, `Wall`, `SkipLink`, `FormatBadge`, `HeroPhoto`, `EventCard`. El archivo de eventos de la home es `src/content/events.ts`: un evento nuevo es una fila de datos, no una sección nueva.
 
 ## Do's and Don'ts
 
 ### Do:
 
-- **Do** leer la invitación abajo a la izquierda, sobre el reel cívico de noche.
-- **Do** usar la banda teal de 2px como única puerta; el label canónico es «Entrá al grupo».
+- **Do** leer la invitación abajo a la izquierda, sobre la foto cívica de noche.
+- **Do** usar la banda ámbar de 2px como única puerta, con texto ink; el label canónico es «Unite a la comunidad».
 - **Do** tintear muros con ink + brand; usar stone solo en hairlines.
 - **Do** pintar las dos aulas a la vez en escritorio, con filete brand / action, y el chip de aula activo en papel.
 - **Do** tratar el sábado como el tablero y el domingo como rastro, no como dos cards gemelas.
@@ -259,5 +266,7 @@ El panel entra con `rise`: opacity 0 + `translateY(18px)` → reposo, 0.7s `cubi
 - **Don't** recortar a 45°, usar `clip-path` de chamfer, ni madera de feria.
 - **Don't** armar un hero SaaS con orbes, glass cards o CTA en píldora.
 - **Don't** pintar secciones con action ni añadir un segundo color de conversión.
+- **Don't** usar teal como texto de label, rol o tier (falla AA sobre púrpura/ink).
+- **Don't** poner blanco sobre ámbar.
 - **Don't** usar teal como riel de día ni como eyebrow.
 - **Don't** animar con slam o `translateX`; el invite solo sube en Y. El FAQ «+» es la única rotación permitida.

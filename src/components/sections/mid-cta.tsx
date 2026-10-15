@@ -16,7 +16,7 @@ export function MidCtaSection({ heading, lede }: Props = {}) {
         {heading ?? event.midCta.heading}
       </h2>
       <p className="lede">{lede ?? event.midCta.lede}</p>
-      <CommunityCta placement="mid" className="band band-hero" />
+      <CommunityCta placement="mid" className="band-hero" />
     </section>
   )
 }

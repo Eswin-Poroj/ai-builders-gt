@@ -1,7 +1,9 @@
+import {
+  COMMUNITY_CTA_LABEL,
+  COMMUNITY_WHATSAPP_URL,
+} from "./community"
 import type { EventContent } from "./types"
 
-const WHATSAPP_GROUP_URL =
-  "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t"
 const INSTAGRAM_URL = "https://instagram.com/aibuilders.gt_"
 
 export const event: EventContent = {
@@ -31,7 +33,7 @@ export const event: EventContent = {
     hackathonTitle: "GrokBot Hackathon — archivo | AI Builders Xela 2026",
     hackathonDescription:
       "El GrokBot Hackathon del domingo 20 de septiembre 2026 en Quetzaltenango ya ocurrió. Equipos de 2 a 5. El cupo de la primera edición cerró.",
-    ogCta: "Entrá al grupo",
+    ogCta: COMMUNITY_CTA_LABEL,
   },
   hero: {
     lines: ["AI", "BUILDERS", "XELA"],
@@ -556,8 +558,8 @@ export const event: EventContent = {
         question: "¿Dónde me entero de lo que sigue?",
         answer:
           "En el grupo de WhatsApp de la comunidad. Ahí van avisos, fotos y lo que vaya saliendo.",
-        href: WHATSAPP_GROUP_URL,
-        linkLabel: "Entrá al grupo",
+        href: COMMUNITY_WHATSAPP_URL,
+        linkLabel: COMMUNITY_CTA_LABEL,
       },
     ],
   },
@@ -617,7 +619,12 @@ export const event: EventContent = {
   },
   community: {
     doors: [
-      { id: "whatsapp", kind: "primary", label: "Entrá al grupo" },
+      {
+        id: "whatsapp",
+        kind: "primary",
+        label: COMMUNITY_CTA_LABEL,
+        href: COMMUNITY_WHATSAPP_URL,
+      },
       { id: "instagram", kind: "secondary", label: "Instagram" },
     ],
   },
@@ -626,7 +633,7 @@ export const event: EventContent = {
     instagramHandle: "@aibuilders.gt_",
     instagramUrl: INSTAGRAM_URL,
     whatsappLabel: "WhatsApp",
-    whatsappUrl: WHATSAPP_GROUP_URL,
+    whatsappUrl: COMMUNITY_WHATSAPP_URL,
     whatsappQrSrc: "/community/whatsapp-qr.png",
     copyright: "© 2026 AI Builders GT",
   },

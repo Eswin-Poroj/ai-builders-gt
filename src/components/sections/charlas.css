@@ -16,8 +16,8 @@
 .charlas-frame {
   width: 100%;
   max-width: 56rem;
-  height: min(78svh, 44rem);
-  min-height: 32rem;
+  height: min(58svh, 32rem);
+  min-height: 20rem;
   margin: 1.4rem 0 0;
   border: 1px solid color-mix(in oklab, var(--paper) 16%, transparent);
   border-radius: 4px;
@@ -61,7 +61,7 @@
 
 @media (min-width: 800px) {
   .charlas-frame {
-    height: min(70svh, 36rem);
-    min-height: 28rem;
+    height: min(58svh, 30rem);
+    min-height: 22rem;
   }
 }

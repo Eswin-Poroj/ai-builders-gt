@@ -1,0 +1,870 @@
+[
+  {
+    "file": "live-event-desktop.report.json",
+    "fetchTime": "2026-10-15T10:10:07.796Z",
+    "requestedUrl": "https://www.aibuildersgt.com/eventos/xela-2026",
+    "scores": {
+      "performance": 76,
+      "accessibility": 97,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "display": "0.3 s",
+        "numeric": 273.90700000000004,
+        "score": 1
+      },
+      "largest-contentful-paint": {
+        "display": "6.0 s",
+        "numeric": 5986.906999999999,
+        "score": 0.04
+      },
+      "total-blocking-time": {
+        "display": "0 ms",
+        "numeric": 0,
+        "score": 1
+      },
+      "cumulative-layout-shift": {
+        "display": "0",
+        "numeric": 0,
+        "score": 1
+      },
+      "speed-index": {
+        "display": "0.6 s",
+        "numeric": 625.106916416707,
+        "score": 1
+      },
+      "interactive": {
+        "display": "6.5 s",
+        "numeric": 6526.907,
+        "score": 0.21
+      },
+      "total-byte-weight": {
+        "display": "Total size was 13,847 KiB",
+        "numeric": 14179798,
+        "score": 0.5
+      }
+    },
+    "lcpSelector": null,
+    "a11yFails": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "score": 0,
+        "items": [
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "score": 0,
+        "items": [
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ]
+        ]
+      }
+    ],
+    "bestPracticesFails": [],
+    "runtimeError": null
+  },
+  {
+    "file": "live-event-mobile.report.json",
+    "fetchTime": "2026-10-15T10:09:54.179Z",
+    "requestedUrl": "https://www.aibuildersgt.com/eventos/xela-2026",
+    "scores": {
+      "performance": 66,
+      "accessibility": 93,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "display": "1.0 s",
+        "numeric": 964.401,
+        "score": 1
+      },
+      "largest-contentful-paint": {
+        "display": "59.7 s",
+        "numeric": 59656.401,
+        "score": 0
+      },
+      "total-blocking-time": {
+        "display": "80 ms",
+        "numeric": 76.99999999999989,
+        "score": 0.99
+      },
+      "cumulative-layout-shift": {
+        "display": "0",
+        "numeric": 0,
+        "score": 1
+      },
+      "speed-index": {
+        "display": "9.9 s",
+        "numeric": 9882.133959837589,
+        "score": 0.1
+      },
+      "interactive": {
+        "display": "60.7 s",
+        "numeric": 60728.901,
+        "score": 0
+      },
+      "total-byte-weight": {
+        "display": "Total size was 13,853 KiB",
+        "numeric": 14185570,
+        "score": 0.5
+      }
+    },
+    "lcpSelector": null,
+    "a11yFails": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "score": 0,
+        "items": [
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "link-name",
+        "title": "Links do not have a discernible name",
+        "score": 0,
+        "items": [
+          [
+            "body.poppins_c0362d48-module__nEpFzq__className > header.site-nav > a.site-nav-lockup",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "score": 0,
+        "items": [
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ]
+        ]
+      }
+    ],
+    "bestPracticesFails": [],
+    "runtimeError": null
+  },
+  {
+    "file": "live-home-desktop.report.json",
+    "fetchTime": "2026-10-15T10:09:40.992Z",
+    "requestedUrl": "https://www.aibuildersgt.com/",
+    "scores": {
+      "performance": 75,
+      "accessibility": 96,
+      "best-practices": 78,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "display": "0.3 s",
+        "numeric": 270.536,
+        "score": 1
+      },
+      "largest-contentful-paint": {
+        "display": "10.4 s",
+        "numeric": 10370.536,
+        "score": 0
+      },
+      "total-blocking-time": {
+        "display": "40 ms",
+        "numeric": 42.00000000000006,
+        "score": 1
+      },
+      "cumulative-layout-shift": {
+        "display": "0",
+        "numeric": 0,
+        "score": 1
+      },
+      "speed-index": {
+        "display": "0.5 s",
+        "numeric": 544.8258772730229,
+        "score": 1
+      },
+      "interactive": {
+        "display": "10.5 s",
+        "numeric": 10532.536,
+        "score": 0.03
+      },
+      "total-byte-weight": {
+        "display": "Total size was 14,515 KiB",
+        "numeric": 14862992,
+        "score": 0.5
+      }
+    },
+    "lcpSelector": null,
+    "a11yFails": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "score": 0,
+        "items": [
+          [
+            "ul.edition-grid > li > a.edition-plaque > p.edition-status",
+            ""
+          ]
+        ]
+      }
+    ],
+    "bestPracticesFails": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "score": 0
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "score": 0
+      }
+    ],
+    "runtimeError": null
+  },
+  {
+    "file": "live-home-mobile.report.json",
+    "fetchTime": "2026-10-15T10:09:26.247Z",
+    "requestedUrl": "https://www.aibuildersgt.com/",
+    "scores": {
+      "performance": 68,
+      "accessibility": 92,
+      "best-practices": 79,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "display": "2.6 s",
+        "numeric": 2633.0305,
+        "score": 0.62
+      },
+      "largest-contentful-paint": {
+        "display": "59.1 s",
+        "numeric": 59080.334999999934,
+        "score": 0
+      },
+      "total-blocking-time": {
+        "display": "30 ms",
+        "numeric": 30.5,
+        "score": 1
+      },
+      "cumulative-layout-shift": {
+        "display": "0",
+        "numeric": 0,
+        "score": 1
+      },
+      "speed-index": {
+        "display": "4.9 s",
+        "numeric": 4914.73985200011,
+        "score": 0.65
+      },
+      "interactive": {
+        "display": "60.7 s",
+        "numeric": 60748.28759999994,
+        "score": 0
+      },
+      "total-byte-weight": {
+        "display": "Total size was 14,520 KiB",
+        "numeric": 14868688,
+        "score": 0.5
+      }
+    },
+    "lcpSelector": null,
+    "a11yFails": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "score": 0,
+        "items": [
+          [
+            "ul.edition-grid > li > a.edition-plaque > p.edition-status",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "link-name",
+        "title": "Links do not have a discernible name",
+        "score": 0,
+        "items": [
+          [
+            "body.poppins_c0362d48-module__nEpFzq__className > header.site-nav > a.site-nav-lockup",
+            ""
+          ]
+        ]
+      }
+    ],
+    "bestPracticesFails": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "score": 0
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "score": 0
+      }
+    ],
+    "runtimeError": null
+  },
+  {
+    "file": "local-event-desktop.report.json",
+    "fetchTime": "2026-10-15T10:12:26.633Z",
+    "requestedUrl": "http://127.0.0.1:3000/eventos/xela-2026",
+    "scores": {
+      "performance": 96,
+      "accessibility": 97,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "display": "0.3 s",
+        "numeric": 337.05665,
+        "score": 1
+      },
+      "largest-contentful-paint": {
+        "display": "1.4 s",
+        "numeric": 1422.7422,
+        "score": 0.83
+      },
+      "total-blocking-time": {
+        "display": "0 ms",
+        "numeric": 0,
+        "score": 1
+      },
+      "cumulative-layout-shift": {
+        "display": "0",
+        "numeric": 0,
+        "score": 1
+      },
+      "speed-index": {
+        "display": "0.5 s",
+        "numeric": 458.04723683366603,
+        "score": 1
+      },
+      "interactive": {
+        "display": "1.4 s",
+        "numeric": 1430.7422,
+        "score": 0.99
+      },
+      "total-byte-weight": {
+        "display": "Total size was 13,871 KiB",
+        "numeric": 14203721,
+        "score": 0.5
+      }
+    },
+    "lcpSelector": null,
+    "a11yFails": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "score": 0,
+        "items": [
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "score": 0,
+        "items": [
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ]
+        ]
+      }
+    ],
+    "bestPracticesFails": [],
+    "runtimeError": null
+  },
+  {
+    "file": "local-event-mobile.report.json",
+    "fetchTime": "2026-10-15T10:12:13.804Z",
+    "requestedUrl": "http://127.0.0.1:3000/eventos/xela-2026",
+    "scores": {
+      "performance": null,
+      "accessibility": 93,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "display": "1.2 s",
+        "numeric": 1213.67175,
+        "score": 0.99
+      },
+      "largest-contentful-paint": {
+        "display": null,
+        "numeric": null,
+        "score": null
+      },
+      "total-blocking-time": {
+        "display": null,
+        "numeric": null,
+        "score": null
+      },
+      "cumulative-layout-shift": {
+        "display": "0",
+        "numeric": 0,
+        "score": 1
+      },
+      "speed-index": {
+        "display": "1.2 s",
+        "numeric": 1213.67175,
+        "score": 1
+      },
+      "interactive": {
+        "display": null,
+        "numeric": null,
+        "score": null
+      },
+      "total-byte-weight": {
+        "display": "Total size was 13,876 KiB",
+        "numeric": 14209277,
+        "score": 0.5
+      }
+    },
+    "lcpSelector": null,
+    "a11yFails": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "score": 0,
+        "items": [
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ],
+          [
+            "div.speaker-card-inner > div.speaker-back > div.speaker-back-header > span.speaker-back-name",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "link-name",
+        "title": "Links do not have a discernible name",
+        "score": 0,
+        "items": [
+          [
+            "body.poppins_c0362d48-module__nEpFzq__className > header.site-nav > a.site-nav-lockup",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "score": 0,
+        "items": [
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ],
+          [
+            "div.cast > div.speaker-card > div.speaker-card-inner > button.speaker-front",
+            ""
+          ]
+        ]
+      }
+    ],
+    "bestPracticesFails": [],
+    "runtimeError": null
+  },
+  {
+    "file": "local-home-desktop.report.json",
+    "fetchTime": "2026-10-15T10:12:00.736Z",
+    "requestedUrl": "http://127.0.0.1:3000/",
+    "scores": {
+      "performance": 75,
+      "accessibility": 96,
+      "best-practices": 78,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "display": "0.3 s",
+        "numeric": 251.47860000000003,
+        "score": 1
+      },
+      "largest-contentful-paint": {
+        "display": "10.9 s",
+        "numeric": 10862.957199999997,
+        "score": 0
+      },
+      "total-blocking-time": {
+        "display": "0 ms",
+        "numeric": 0,
+        "score": 1
+      },
+      "cumulative-layout-shift": {
+        "display": "0",
+        "numeric": 0,
+        "score": 1
+      },
+      "speed-index": {
+        "display": "0.4 s",
+        "numeric": 415.0071921691221,
+        "score": 1
+      },
+      "interactive": {
+        "display": "11.0 s",
+        "numeric": 11026.957199999999,
+        "score": 0.02
+      },
+      "total-byte-weight": {
+        "display": "Total size was 14,540 KiB",
+        "numeric": 14889243,
+        "score": 0.5
+      }
+    },
+    "lcpSelector": null,
+    "a11yFails": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "score": 0,
+        "items": [
+          [
+            "ul.edition-grid > li > a.edition-plaque > p.edition-status",
+            ""
+          ]
+        ]
+      }
+    ],
+    "bestPracticesFails": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "score": 0
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "score": 0
+      }
+    ],
+    "runtimeError": null
+  },
+  {
+    "file": "local-home-mobile.report.json",
+    "fetchTime": "2026-10-15T10:11:47.689Z",
+    "requestedUrl": "http://127.0.0.1:3000/",
+    "scores": {
+      "performance": 66,
+      "accessibility": 92,
+      "best-practices": 79,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "display": "0.9 s",
+        "numeric": 913.1764000000001,
+        "score": 1
+      },
+      "largest-contentful-paint": {
+        "display": "65.5 s",
+        "numeric": 65501.35279999999,
+        "score": 0
+      },
+      "total-blocking-time": {
+        "display": "370 ms",
+        "numeric": 373.4117999999992,
+        "score": 0.7
+      },
+      "cumulative-layout-shift": {
+        "display": "0",
+        "numeric": 0,
+        "score": 1
+      },
+      "speed-index": {
+        "display": "1.1 s",
+        "numeric": 1097.1656680001051,
+        "score": 1
+      },
+      "interactive": {
+        "display": "66.6 s",
+        "numeric": 66558.8528,
+        "score": 0
+      },
+      "total-byte-weight": {
+        "display": "Total size was 14,549 KiB",
+        "numeric": 14897879,
+        "score": 0.5
+      }
+    },
+    "lcpSelector": null,
+    "a11yFails": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "score": 0,
+        "items": [
+          [
+            "ul.edition-grid > li > a.edition-plaque > p.edition-status",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "link-name",
+        "title": "Links do not have a discernible name",
+        "score": 0,
+        "items": [
+          [
+            "body.poppins_c0362d48-module__nEpFzq__className > header.site-nav > a.site-nav-lockup",
+            ""
+          ]
+        ]
+      }
+    ],
+    "bestPracticesFails": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "score": 0
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "score": 0
+      }
+    ],
+    "runtimeError": null
+  }
+]

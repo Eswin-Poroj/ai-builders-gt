@@ -1,0 +1,164 @@
+{
+  "url": "http://127.0.0.1:3000/registro-hackathon",
+  "status": 200,
+  "viewport": "desktop",
+  "prefix": "local",
+  "title": "GrokBot Hackathon — archivo | AI Builders Xela 2026",
+  "sections": [
+    {
+      "file": "01-site-nav.png",
+      "id": "site-nav",
+      "title": "site-nav",
+      "tag": "HEADER",
+      "y": 0,
+      "h": 62,
+      "w": 1440
+    },
+    {
+      "file": "02-inicio.png",
+      "id": "inicio",
+      "title": "EQUIPOS DE XELA 2026",
+      "tag": "SECTION",
+      "y": 62,
+      "h": 951,
+      "w": 1440
+    },
+    {
+      "file": "03-site-foot.png",
+      "id": "site-foot",
+      "title": "site-foot",
+      "tag": "FOOTER",
+      "y": 1012,
+      "h": 364,
+      "w": 1440
+    }
+  ],
+  "contrastSamples": [
+    {
+      "sel": ".lede",
+      "text": "El registro para el GrokBot Hackathon ya cerró. Estos fueron los equipos que com",
+      "fg": null,
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "16px",
+      "fontWeight": "400"
+    },
+    {
+      "sel": ".band",
+      "text": "ENTRÁ AL GRUPO",
+      "fg": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "bg": {
+        "r": 15,
+        "g": 118,
+        "b": 110,
+        "a": 1
+      },
+      "fontSize": "14.08px",
+      "fontWeight": "700"
+    },
+    {
+      "sel": ".site-tab",
+      "text": "COMUNIDAD",
+      "fg": null,
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "13.12px",
+      "fontWeight": "700"
+    },
+    {
+      "sel": ".foot-copy",
+      "text": "© 2026 AI Builders GT",
+      "fg": null,
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "12px",
+      "fontWeight": "400"
+    }
+  ],
+  "a11y": {
+    "lang": "es",
+    "title": "GrokBot Hackathon — archivo | AI Builders Xela 2026",
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "EQUIPOS DE XELA 2026"
+      }
+    ],
+    "emptyAlt": 3,
+    "missingAlt": 0,
+    "iframes": [],
+    "skipExists": true,
+    "landmarks": [
+      {
+        "tag": "HEADER",
+        "role": null,
+        "label": null
+      },
+      {
+        "tag": "NAV",
+        "role": null,
+        "label": "Pestañas del sitio"
+      },
+      {
+        "tag": "MAIN",
+        "role": null,
+        "label": null
+      },
+      {
+        "tag": "FOOTER",
+        "role": null,
+        "label": null
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "WhatsApp",
+        "href": "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t",
+        "w": 69,
+        "h": 20,
+        "small": true
+      },
+      {
+        "text": "@aibuilders.gt_",
+        "href": "https://instagram.com/aibuilders.gt_",
+        "w": 106,
+        "h": 20,
+        "small": true
+      },
+      {
+        "text": "eswinstuardporojcastro@gmail.com",
+        "href": "mailto:eswinstuardporojcastro@gmail.com",
+        "w": 240,
+        "h": 20,
+        "small": true
+      }
+    ],
+    "duplicateIds": [],
+    "ctas": [
+      {
+        "text": "ENTRÁ AL GRUPO",
+        "href": "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t",
+        "cta": "community-mid"
+      }
+    ],
+    "issues": []
+  },
+  "finalUrl": "http://127.0.0.1:3000/registro-hackathon"
+}

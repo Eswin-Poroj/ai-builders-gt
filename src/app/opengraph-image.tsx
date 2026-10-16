@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og"
-import { community } from "@/content/community"
+import { COMMUNITY_CTA_LABEL, community } from "@/content/community"
 
 export const alt = community.seo.title
 export const size = { width: 1200, height: 630 }
@@ -16,7 +16,7 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           background: "#0F0A1E",
-          color: "#EDEBEE",
+          color: "#FFFFFF",
           padding: 72,
           fontFamily: "Poppins, ui-sans-serif, sans-serif",
         }}
@@ -26,7 +26,7 @@ export default function OpengraphImage() {
             display: "flex",
             fontSize: 28,
             fontWeight: 600,
-            color: "#0F766E",
+            color: "#E5D4F5",
             marginBottom: 18,
           }}
         >
@@ -43,32 +43,32 @@ export default function OpengraphImage() {
           }}
         >
           <span>AI Builders</span>
-          <span style={{ color: "#0F766E" }}>GT</span>
+          <span>GT</span>
         </div>
         <div
           style={{
             display: "flex",
             fontSize: 28,
             marginTop: 22,
-            color: "#EDEBEE",
+            color: "#E5D4F5",
           }}
         >
-          Comunidad de IA en Guatemala
+          Pasar de usar la IA a construir con ella
         </div>
         <div
           style={{
             marginTop: 36,
-            background: "#0F766E",
-            color: "#EDEBEE",
+            background: "#F59E0B",
+            color: "#0F0A1E",
             padding: "16px 28px",
             fontSize: 26,
             fontWeight: 700,
-            width: 320,
+            width: 420,
             display: "flex",
             justifyContent: "center",
           }}
         >
-          Entrá al grupo
+          {COMMUNITY_CTA_LABEL}
         </div>
       </div>
     ),

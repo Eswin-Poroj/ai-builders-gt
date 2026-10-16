@@ -1,18 +1,5 @@
 @import "tailwindcss";
-
-/* === TOKENS === */
-:root {
-  --ink: #0f0a1e;
-  --paper: #ffffff;
-  --brand: #5b21b6;
-  --brand-deep: #4c1d95;
-  --action: #0f766e;
-  --mist: color-mix(in oklab, var(--paper) 78%, var(--brand));
-  --border-subtle: color-mix(in oklab, var(--paper) 11%, transparent);
-  --border-warm: color-mix(in oklab, #c4b49a 38%, transparent);
-  --wall-x: 1.5rem;
-  --nav-h: 4.3125rem;
-}
+@import "../styles/tokens.css";
 
 @theme inline {
   --color-ink: var(--ink);
@@ -20,6 +7,8 @@
   --color-brand: var(--brand);
   --color-brand-deep: var(--brand-deep);
   --color-action: var(--action);
+  --color-teal: var(--teal);
+  --color-accent: var(--accent);
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
 }
@@ -45,7 +34,7 @@ body {
 }
 
 :focus-visible {
-  outline: 3px solid var(--action);
+  outline: 3px solid var(--focus-ring);
   outline-offset: 3px;
 }
 
@@ -69,6 +58,12 @@ img { max-width: 100%; height: auto; }
 .skip:focus { top: 1rem; }
 
 /* === HERO === */
+.hero,
+.wall,
+.final {
+  scroll-margin-top: var(--nav-h);
+}
+
 .hero {
   position: relative;
   min-height: 100svh;
@@ -81,69 +76,30 @@ img { max-width: 100%; height: auto; }
   overflow: hidden;
 }
 
-.hero-reel {
+.hero-media {
   position: absolute;
   inset: 0;
-  /* Fade the reel in so images have ~0.8 s to load before they're visible */
-  animation: hero-reel-in 0.8s ease-out both;
+  background: var(--ink);
 }
 
-.hero-slide {
+.hero-photo {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 42% 58%;
-  will-change: opacity, transform;
-}
-
-/* 5 slides × 5 s each = 25 s total cycle.
-   Visible window: 0-16% (4 s), fade out 16-20% (1 s), hidden 20-96%, fade in 96-100%.
-   Delay formula: -(N-1) * 5s so each slide enters at its own window.
-   Image 1 → 0 s,  Image 2 → -20 s,  Image 3 → -15 s,
-   Image 4 → -10 s, Image 5 → -5 s                       */
-.hero-slide--1 {
-  animation: hero-ken 25s ease-in-out infinite;
-  object-position: 42% 58%;
-}
-.hero-slide--2 {
-  animation: hero-ken 25s ease-in-out infinite;
-  animation-delay: -20s;
-  object-position: 52% 50%;
-}
-.hero-slide--3 {
-  animation: hero-ken 25s ease-in-out infinite;
-  animation-delay: -15s;
-  object-position: 50% 45%;
-}
-.hero-slide--4 {
-  animation: hero-ken 25s ease-in-out infinite;
-  animation-delay: -10s;
-  object-position: 48% 55%;
-}
-.hero-slide--5 {
-  animation: hero-ken 25s ease-in-out infinite;
-  animation-delay: -5s;
-  object-position: 50% 60%;
 }
 
 .hero-veil {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(
-      to top,
-      color-mix(in oklab, var(--ink) 96%, var(--brand)) 0%,
-      color-mix(in oklab, var(--ink) 78%, var(--brand)) 20%,
-      color-mix(in oklab, var(--ink) 42%, transparent) 46%,
-      transparent 64%
-    ),
-    linear-gradient(
-      to right,
-      color-mix(in oklab, var(--ink) 72%, transparent) 0%,
-      transparent 58%
-    );
+  background: linear-gradient(
+    to top,
+    color-mix(in oklab, var(--ink) 92%, var(--brand)) 0%,
+    color-mix(in oklab, var(--ink) 45%, transparent) 42%,
+    transparent 68%
+  );
 }
 
 /* Bottom-left anchored: the photo lives above, the title commands below */
@@ -156,7 +112,6 @@ img { max-width: 100%; height: auto; }
   justify-content: flex-end;
   align-items: flex-start;
   padding: max(1.5rem, env(safe-area-inset-top)) var(--wall-x) 2.5rem max(var(--wall-x), env(safe-area-inset-left));
-  animation: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* Small logo stamp top-left */
@@ -190,7 +145,8 @@ img { max-width: 100%; height: auto; }
 }
 
 .hero-xela {
-  color: var(--action);
+  /* Teal #0F766E on ink/purple is ~3.5:1 — below the 4.5:1 floor. Paper on ink is AA. */
+  color: var(--paper);
 }
 
 /* Bottom info bar: date/venue left, badge+CTA right */
@@ -226,7 +182,7 @@ img { max-width: 100%; height: auto; }
   color: color-mix(in oklab, var(--brand) 60%, var(--paper));
 }
 
-.hero-mark-action { color: var(--action); }
+.hero-mark-action { color: var(--mist); }
 
 .hero-actions {
   display: flex;
@@ -256,26 +212,26 @@ img { max-width: 100%; height: auto; }
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  min-height: 2.8rem;
+  min-height: var(--band-min-h);
   padding: 0.65rem 1.2rem;
-  background: var(--action);
-  color: var(--paper);
+  background: var(--accent);
+  color: var(--on-accent);
   text-decoration: none;
   font-weight: 700;
   font-size: 0.88rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  border-radius: 2px;
+  border-radius: var(--radius-xs);
   transition:
-    transform 0.18s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 20px color-mix(in oklab, var(--action) 42%, transparent);
+    transform 0.18s var(--ease-door),
+    box-shadow 0.18s var(--ease-door);
+  box-shadow: 0 4px 20px color-mix(in oklab, var(--accent) 42%, transparent);
 }
 
 .band:hover,
 .band:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px color-mix(in oklab, var(--action) 55%, transparent);
+  box-shadow: 0 8px 30px color-mix(in oklab, var(--accent) 55%, transparent);
 }
 
 .band-hero {
@@ -383,7 +339,7 @@ img { max-width: 100%; height: auto; }
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--action);
+  color: var(--mist);
 }
 
 .day-title {
@@ -497,7 +453,7 @@ img { max-width: 100%; height: auto; }
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--action);
+  color: var(--paper);
 }
 
 .speaker-back-close {
@@ -539,7 +495,7 @@ img { max-width: 100%; height: auto; }
 
 .speaker-back-topic::before {
   content: "Charla: ";
-  color: var(--action);
+  color: var(--mist);
   font-weight: 700;
   font-size: 0.68rem;
   letter-spacing: 0.08em;
@@ -569,8 +525,8 @@ img { max-width: 100%; height: auto; }
 
 .speaker-social-link:hover,
 .speaker-social-link:focus-visible {
-  border-color: var(--action);
-  color: var(--action);
+  border-color: var(--paper);
+  color: var(--paper);
 }
 
 .speaker-social-link svg {
@@ -624,7 +580,7 @@ img { max-width: 100%; height: auto; }
 
 .speaker-role {
   margin: 0.2rem 0 0;
-  color: var(--action);
+  color: var(--mist);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -645,7 +601,7 @@ img { max-width: 100%; height: auto; }
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--action);
+  color: var(--mist);
   opacity: 0;
   transform: translateX(-4px);
   transition: opacity 0.18s ease, transform 0.18s ease;
@@ -792,7 +748,7 @@ img { max-width: 100%; height: auto; }
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--action);
+  color: var(--mist);
 }
 
 .ally-name {
@@ -976,6 +932,9 @@ img { max-width: 100%; height: auto; }
 }
 
 .foot-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-size: 0.8rem;
   font-weight: 600;
   width: fit-content;
@@ -994,18 +953,6 @@ img { max-width: 100%; height: auto; }
 }
 
 /* === ANIMATIONS === */
-@keyframes hero-reel-in {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@keyframes hero-ken {
-  0%   { opacity: 1; transform: scale(1.00); }
-  16%  { opacity: 1; transform: scale(1.06); }
-  20%  { opacity: 0; transform: scale(1.06); }
-  96%  { opacity: 0; transform: scale(1.00); }
-  100% { opacity: 1; transform: scale(1.00); }
-}
 
 @keyframes rise {
   from {
@@ -1051,15 +998,7 @@ img { max-width: 100%; height: auto; }
 
 /* === RESPONSIVE === */
 @media (min-width: 800px) {
-  :root {
-    --wall-x: 8vw;
-  }
-
-  .hero-slide--1 { object-position: 40% 50%; }
-  .hero-slide--2 { object-position: 50% 48%; }
-  .hero-slide--3 { object-position: 50% 42%; }
-  .hero-slide--4 { object-position: 46% 52%; }
-  .hero-slide--5 { object-position: 50% 55%; }
+  .hero-photo { object-position: 40% 50%; }
 
   .hero-invite {
     padding-bottom: 4rem;
@@ -1110,24 +1049,6 @@ img { max-width: 100%; height: auto; }
 @media (prefers-reduced-motion: reduce) {
   .hero-invite {
     animation: none;
-  }
-
-  .hero-reel {
-    animation: none;
-  }
-
-  .hero-slide--1,
-  .hero-slide--2,
-  .hero-slide--3,
-  .hero-slide--4,
-  .hero-slide--5 {
-    animation: none;
-    transform: none;
-    opacity: 0;
-  }
-
-  .hero-slide--1 {
-    opacity: 1;
   }
 
   .band,

@@ -2,11 +2,22 @@
   scroll-margin-top: var(--nav-h);
 }
 
+.format-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 0.85rem;
+  margin: 0 0 1rem;
+  color: var(--mist);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .charlas-frame {
   width: 100%;
   max-width: 56rem;
-  height: min(78svh, 44rem);
-  min-height: 32rem;
+  height: min(58svh, 32rem);
+  min-height: 20rem;
   margin: 1.4rem 0 0;
   border: 1px solid color-mix(in oklab, var(--paper) 16%, transparent);
   border-radius: 4px;
@@ -20,6 +31,14 @@
   height: 100%;
   border: 0;
   background: transparent;
+}
+
+.charlas-placeholder {
+  margin: 0;
+  padding: 1.2rem;
+  color: var(--mist);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .charlas-fallback {
@@ -42,7 +61,7 @@
 
 @media (min-width: 800px) {
   .charlas-frame {
-    height: min(70svh, 36rem);
-    min-height: 28rem;
+    height: min(58svh, 30rem);
+    min-height: 22rem;
   }
 }

@@ -1,0 +1,31 @@
+/* Design tokens — AI Builders GT
+   Brand: ink, violet, teal, paper. Amber is the conversion surface only. */
+
+:root {
+  --ink: #0f0a1e;
+  --paper: #ffffff;
+  --brand: #5b21b6;
+  --brand-deep: #4c1d95;
+  --teal: #0f766e;
+  --action: var(--teal);
+  --accent: #f59e0b;
+  --on-accent: var(--ink);
+  --on-action: var(--paper);
+  --mist: color-mix(in oklab, var(--paper) 78%, var(--brand));
+  --label: var(--mist);
+  --border-subtle: color-mix(in oklab, var(--paper) 11%, transparent);
+  --border-warm: color-mix(in oklab, #c4b49a 38%, transparent);
+  --wall-x: 1.5rem;
+  --nav-h: 4.3125rem;
+  --focus-ring: var(--accent);
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --band-min-h: 2.8rem;
+  --ease-door: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --wall-x: 8vw;
+  }
+}

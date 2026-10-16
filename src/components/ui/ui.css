@@ -1,0 +1,134 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.section-eyebrow {
+  margin: 0 0 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mist);
+}
+
+.format-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.7rem;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xs);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: transparent;
+}
+
+.format-badge--en-linea {
+  border-color: color-mix(in oklab, var(--paper) 28%, transparent);
+}
+
+.format-badge--presencial {
+  border-color: color-mix(in oklab, var(--accent) 55%, transparent);
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1.2rem 1.15rem 1.3rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  background: color-mix(in oklab, var(--ink) 74%, var(--brand));
+}
+
+.event-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem 0.75rem;
+}
+
+.event-card-meta time {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--mist);
+}
+
+.event-card-title {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(1.6rem, 6vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.event-card-topic,
+.event-card-speakers {
+  margin: 0;
+  color: var(--mist);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.event-card-label {
+  display: block;
+  margin: 0 0 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paper);
+}
+
+.event-card-books ul {
+  margin: 0;
+  padding: 0 0 0 1.1rem;
+  color: var(--mist);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.event-card-books li + li {
+  margin-top: 0.2rem;
+}
+
+.event-card-link {
+  width: fit-content;
+  margin-top: 0.2rem;
+  color: var(--paper);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-underline-offset: 0.22em;
+}
+
+.event-card-link:hover,
+.event-card-link:focus-visible {
+  color: var(--paper);
+}
+
+.event-grid {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 800px) {
+  .event-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

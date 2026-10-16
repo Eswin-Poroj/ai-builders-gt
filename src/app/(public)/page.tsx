@@ -1,11 +1,8 @@
 import { CommunityJsonLd } from "@/components/json-ld"
 import { CharlasSection } from "@/components/sections/charlas"
-import { CommunityAbout } from "@/components/sections/community-about"
 import { CommunityHero } from "@/components/sections/community-hero"
-import { EditionsSection } from "@/components/sections/editions"
 import { FooterSection } from "@/components/sections/footer"
-import { MidCtaSection } from "@/components/sections/mid-cta"
-import { community } from "@/content/community"
+import { PastEventsSection } from "@/components/sections/past-events"
 
 export const dynamic = "force-static"
 
@@ -14,13 +11,8 @@ export default function Home() {
     <main>
       <CommunityJsonLd />
       <CommunityHero />
-      <CommunityAbout />
       <CharlasSection />
-      <EditionsSection />
-      <MidCtaSection
-        heading={community.midCta.heading}
-        lede={community.midCta.lede}
-      />
+      <PastEventsSection />
       <FooterSection />
     </main>
   )

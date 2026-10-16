@@ -1,0 +1,325 @@
+{
+  "url": "http://127.0.0.1:3000/",
+  "status": 200,
+  "viewport": "desktop",
+  "prefix": "local",
+  "title": "AI Builders GT — comunidad de IA en Guatemala",
+  "sections": [
+    {
+      "file": "01-site-nav.png",
+      "id": "site-nav",
+      "title": "site-nav",
+      "tag": "HEADER",
+      "y": 0,
+      "h": 62,
+      "w": 1440
+    },
+    {
+      "file": "02-inicio.png",
+      "id": "inicio",
+      "title": "AI\nBUILDERS\nGT",
+      "tag": "SECTION",
+      "y": 62,
+      "h": 900,
+      "w": 1440
+    },
+    {
+      "file": "03-sobre.png",
+      "id": "sobre",
+      "title": "LA CASA",
+      "tag": "SECTION",
+      "y": 962,
+      "h": 442,
+      "w": 1440
+    },
+    {
+      "file": "04-charlas.png",
+      "id": "charlas",
+      "title": "CHARLAS EN LÍNEA",
+      "tag": "SECTION",
+      "y": 1403,
+      "h": 950,
+      "w": 1440
+    },
+    {
+      "file": "05-ediciones.png",
+      "id": "ediciones",
+      "title": "EDICIONES",
+      "tag": "SECTION",
+      "y": 2353,
+      "h": 491,
+      "w": 1440
+    },
+    {
+      "file": "06-comunidad.png",
+      "id": "comunidad",
+      "title": "EL GRUPO SIGUE ABIERTO",
+      "tag": "SECTION",
+      "y": 2845,
+      "h": 376,
+      "w": 1440
+    },
+    {
+      "file": "07-site-foot.png",
+      "id": "site-foot",
+      "title": "site-foot",
+      "tag": "FOOTER",
+      "y": 3221,
+      "h": 364,
+      "w": 1440
+    }
+  ],
+  "contrastSamples": [
+    {
+      "sel": ".lede",
+      "text": "AI Builders GT es la comunidad. Xela 2026 fue la primera prueba: un summit y un ",
+      "fg": null,
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "16px",
+      "fontWeight": "400"
+    },
+    {
+      "sel": ".hero-subhead",
+      "text": "Comunidad de builders de inteligencia artificial en Guatemala. La primera edició",
+      "fg": null,
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "16.8px",
+      "fontWeight": "500"
+    },
+    {
+      "sel": ".hero-xela",
+      "text": "GT",
+      "fg": {
+        "r": 15,
+        "g": 118,
+        "b": 110,
+        "a": 1
+      },
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "192px",
+      "fontWeight": "700"
+    },
+    {
+      "sel": ".band",
+      "text": "ENTRÁ AL GRUPO",
+      "fg": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "bg": {
+        "r": 15,
+        "g": 118,
+        "b": 110,
+        "a": 1
+      },
+      "fontSize": "14.08px",
+      "fontWeight": "700"
+    },
+    {
+      "sel": ".site-tab",
+      "text": "COMUNIDAD",
+      "fg": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "13.12px",
+      "fontWeight": "700"
+    },
+    {
+      "sel": ".edition-status",
+      "text": "YA SUCEDIÓ",
+      "fg": {
+        "r": 15,
+        "g": 118,
+        "b": 110,
+        "a": 1
+      },
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "13.12px",
+      "fontWeight": "700"
+    },
+    {
+      "sel": ".charlas-fallback a",
+      "text": "Si el calendario no carga, abrilo en Luma",
+      "fg": null,
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "13.12px",
+      "fontWeight": "600"
+    },
+    {
+      "sel": ".foot-copy",
+      "text": "© 2026 AI Builders GT",
+      "fg": null,
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "12px",
+      "fontWeight": "400"
+    },
+    {
+      "sel": ".hero-date",
+      "text": "19–20 de septiembre 2026",
+      "fg": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "13.76px",
+      "fontWeight": "600"
+    }
+  ],
+  "a11y": {
+    "lang": "es",
+    "title": "AI Builders GT — comunidad de IA en Guatemala",
+    "h1": "AI\nBUILDERS\nGT",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "AI\nBUILDERS\nGT"
+      },
+      {
+        "tag": "H2",
+        "text": "LA CASA"
+      },
+      {
+        "tag": "H2",
+        "text": "CHARLAS EN LÍNEA"
+      },
+      {
+        "tag": "H2",
+        "text": "EDICIONES"
+      },
+      {
+        "tag": "H3",
+        "text": "XELA 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "EL GRUPO SIGUE ABIERTO"
+      }
+    ],
+    "emptyAlt": 8,
+    "missingAlt": 0,
+    "iframes": [
+      {
+        "src": "https://luma.com/embed/calendar/cal-Y5A1rEB10zxvFEh/events?tag=Caf%C3%A9%20con%20Builders%20with%20AI",
+        "title": "Calendario de charlas en línea — Café con Builders with AI",
+        "width": 894,
+        "height": 574
+      }
+    ],
+    "skipExists": true,
+    "landmarks": [
+      {
+        "tag": "HEADER",
+        "role": null,
+        "label": null
+      },
+      {
+        "tag": "NAV",
+        "role": null,
+        "label": "Pestañas del sitio"
+      },
+      {
+        "tag": "MAIN",
+        "role": null,
+        "label": null
+      },
+      {
+        "tag": "FOOTER",
+        "role": null,
+        "label": null
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "Si el calendario no carga, abrilo en Luma",
+        "href": "https://luma.com/calendar/cal-Y5A1rEB10zxvFEh?tag=Caf%C3%A9%20con%20Builders%20with%20AI",
+        "w": 270,
+        "h": 19,
+        "small": true
+      },
+      {
+        "text": "WhatsApp",
+        "href": "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t",
+        "w": 69,
+        "h": 20,
+        "small": true
+      },
+      {
+        "text": "@aibuilders.gt_",
+        "href": "https://instagram.com/aibuilders.gt_",
+        "w": 106,
+        "h": 20,
+        "small": true
+      },
+      {
+        "text": "eswinstuardporojcastro@gmail.com",
+        "href": "mailto:eswinstuardporojcastro@gmail.com",
+        "w": 240,
+        "h": 20,
+        "small": true
+      }
+    ],
+    "duplicateIds": [],
+    "ctas": [
+      {
+        "text": "ENTRÁ AL GRUPO",
+        "href": "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t",
+        "cta": "community-hero"
+      },
+      {
+        "text": "ENTRÁ AL GRUPO",
+        "href": "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t",
+        "cta": "community-mid"
+      }
+    ],
+    "issues": []
+  },
+  "finalUrl": "http://127.0.0.1:3000/"
+}

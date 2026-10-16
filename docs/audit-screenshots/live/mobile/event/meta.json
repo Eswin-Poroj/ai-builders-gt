@@ -1,0 +1,589 @@
+{
+  "url": "https://www.aibuildersgt.com/eventos/xela-2026",
+  "status": 304,
+  "viewport": "mobile",
+  "prefix": "live",
+  "title": "AI Builders Xela 2026 — archivo de la 1.ª edición",
+  "sections": [
+    {
+      "file": "01-site-nav.png",
+      "id": "site-nav",
+      "title": "site-nav",
+      "tag": "HEADER",
+      "y": 0,
+      "h": 69,
+      "w": 390
+    },
+    {
+      "file": "02-inicio.png",
+      "id": "inicio",
+      "title": "AI\nBUILDERS\nXELA",
+      "tag": "SECTION",
+      "y": 69,
+      "h": 775,
+      "w": 390
+    },
+    {
+      "file": "03-sobre.png",
+      "id": "sobre",
+      "title": "LO QUE PASÓ",
+      "tag": "SECTION",
+      "y": 844,
+      "h": 970,
+      "w": 390
+    },
+    {
+      "file": "04-recap.png",
+      "id": "recap",
+      "title": "LOS EQUIPOS",
+      "tag": "SECTION",
+      "y": 1814,
+      "h": 793,
+      "w": 390
+    },
+    {
+      "file": "05-formato.png",
+      "id": "formato",
+      "title": "EL FIN DE SEMANA",
+      "tag": "SECTION",
+      "y": 2607,
+      "h": 4526,
+      "w": 390
+    },
+    {
+      "file": "06-speakers.png",
+      "id": "speakers",
+      "title": "SPEAKERS",
+      "tag": "SECTION",
+      "y": 7133,
+      "h": 2974,
+      "w": 390
+    },
+    {
+      "file": "07-comunidad.png",
+      "id": "comunidad",
+      "title": "LA COMUNIDAD SIGUE EN XELA",
+      "tag": "SECTION",
+      "y": 10107,
+      "h": 381,
+      "w": 390
+    },
+    {
+      "file": "08-aliados.png",
+      "id": "aliados",
+      "title": "ALIADOS",
+      "tag": "SECTION",
+      "y": 10488,
+      "h": 410,
+      "w": 390
+    },
+    {
+      "file": "09-ubicacion.png",
+      "id": "ubicacion",
+      "title": "DÓNDE FUE",
+      "tag": "SECTION",
+      "y": 10897,
+      "h": 467,
+      "w": 390
+    },
+    {
+      "file": "10-faq.png",
+      "id": "faq",
+      "title": "PREGUNTAS",
+      "tag": "SECTION",
+      "y": 11364,
+      "h": 747,
+      "w": 390
+    },
+    {
+      "file": "11-cierre.png",
+      "id": "cierre",
+      "title": "YA PASÓ, PERO EL GRUPO SIGUE",
+      "tag": "SECTION",
+      "y": 12111,
+      "h": 506,
+      "w": 390
+    },
+    {
+      "file": "12-site-foot.png",
+      "id": "site-foot",
+      "title": "site-foot",
+      "tag": "FOOTER",
+      "y": 12617,
+      "h": 364,
+      "w": 390
+    }
+  ],
+  "contrastSamples": [
+    {
+      "sel": ".lede",
+      "text": "El 19 y 20 de septiembre 2026, AI Builders Xela juntó el Building with AI Summit",
+      "fg": null,
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "16px",
+      "fontWeight": "400"
+    },
+    {
+      "sel": ".hero-subhead",
+      "text": "Fue el primer hackathon de inteligencia artificial en el occidente de Guatemala",
+      "fg": null,
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "16.8px",
+      "fontWeight": "500"
+    },
+    {
+      "sel": ".hero-xela",
+      "text": "XELA",
+      "fg": {
+        "r": 15,
+        "g": 118,
+        "b": 110,
+        "a": 1
+      },
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "46.8px",
+      "fontWeight": "700"
+    },
+    {
+      "sel": ".band",
+      "text": "ENTRÁ AL GRUPO",
+      "fg": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "bg": {
+        "r": 15,
+        "g": 118,
+        "b": 110,
+        "a": 1
+      },
+      "fontSize": "14.08px",
+      "fontWeight": "700"
+    },
+    {
+      "sel": ".site-tab",
+      "text": "COMUNIDAD",
+      "fg": null,
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "10.88px",
+      "fontWeight": "700"
+    },
+    {
+      "sel": ".speaker-role",
+      "text": "CREABOT",
+      "fg": {
+        "r": 15,
+        "g": 118,
+        "b": 110,
+        "a": 1
+      },
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "12px",
+      "fontWeight": "700"
+    },
+    {
+      "sel": ".speaker-topic",
+      "text": "La Ruta del Chip: IA y mecatrónica como puerta de entrada al empleo",
+      "fg": null,
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "14.08px",
+      "fontWeight": "400"
+    },
+    {
+      "sel": ".foot-copy",
+      "text": "© 2026 AI Builders GT",
+      "fg": null,
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "12px",
+      "fontWeight": "400"
+    },
+    {
+      "sel": ".hero-date",
+      "text": "19–20 de septiembre 2026",
+      "fg": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "13.76px",
+      "fontWeight": "600"
+    },
+    {
+      "sel": ".faq-item summary",
+      "text": "¿Cuánto costó participar?",
+      "fg": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "15.2px",
+      "fontWeight": "600"
+    },
+    {
+      "sel": ".stat-label",
+      "text": "speakers del summit",
+      "fg": null,
+      "bg": {
+        "r": 15,
+        "g": 10,
+        "b": 30,
+        "a": 1
+      },
+      "fontSize": "12.48px",
+      "fontWeight": "400"
+    },
+    {
+      "sel": ".summit-meta",
+      "text": "Sábado 19 sept · 8:00 – 17:00",
+      "fg": null,
+      "bg": {
+        "r": 76,
+        "g": 29,
+        "b": 149,
+        "a": 1
+      },
+      "fontSize": "13.12px",
+      "fontWeight": "600"
+    }
+  ],
+  "a11y": {
+    "lang": "es",
+    "title": "AI Builders Xela 2026 — archivo de la 1.ª edición",
+    "h1": "AI\nBUILDERS\nXELA",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "AI\nBUILDERS\nXELA"
+      },
+      {
+        "tag": "H2",
+        "text": "LO QUE PASÓ"
+      },
+      {
+        "tag": "H2",
+        "text": "LOS EQUIPOS"
+      },
+      {
+        "tag": "H2",
+        "text": "EL FIN DE SEMANA"
+      },
+      {
+        "tag": "H3",
+        "text": "Building with AI Summit"
+      },
+      {
+        "tag": "H4",
+        "text": "Aula Principal"
+      },
+      {
+        "tag": "H4",
+        "text": "Aula Principal"
+      },
+      {
+        "tag": "H3",
+        "text": "GrokBot Hackathon"
+      },
+      {
+        "tag": "H2",
+        "text": "SPEAKERS"
+      },
+      {
+        "tag": "H3",
+        "text": "GIOVANNI CASTILLO"
+      },
+      {
+        "tag": "H3",
+        "text": "CARLOS SOSA"
+      },
+      {
+        "tag": "H3",
+        "text": "CRISTIAN LAVARREDA"
+      },
+      {
+        "tag": "H3",
+        "text": "YEFFRI SALAZAR"
+      },
+      {
+        "tag": "H3",
+        "text": "CARLOS HUGO ESCOBAR GÓMEZ"
+      },
+      {
+        "tag": "H3",
+        "text": "EDWIN LUIS CARLOS SAC RECINOS"
+      },
+      {
+        "tag": "H3",
+        "text": "DIEGO ANDRÉS CUM CHAVEZ"
+      },
+      {
+        "tag": "H3",
+        "text": "ERICK PINEDA"
+      },
+      {
+        "tag": "H3",
+        "text": "CRISTINA DEL ROSARIO COUTIÑO ARRIAGA"
+      },
+      {
+        "tag": "H3",
+        "text": "DIEGO ROSALES"
+      },
+      {
+        "tag": "H2",
+        "text": "LA COMUNIDAD SIGUE EN XELA"
+      },
+      {
+        "tag": "H2",
+        "text": "ALIADOS"
+      },
+      {
+        "tag": "H2",
+        "text": "DÓNDE FUE"
+      },
+      {
+        "tag": "H2",
+        "text": "PREGUNTAS"
+      },
+      {
+        "tag": "H2",
+        "text": "YA PASÓ, PERO EL GRUPO SIGUE"
+      }
+    ],
+    "emptyAlt": 36,
+    "missingAlt": 0,
+    "iframes": [
+      {
+        "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6628.659181363057!2d-91.54277412306315!3d14.843519185672095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e9821d5d018bf%3A0xb35fd953c69529a9!2sFacultad%20de%20Ingenier%C3%ADa%20Universidad%20Mesoamericana!5e1!3m2!1ses!2sgt!4v1787904151989!5m2!1ses!2sgt",
+        "title": "Mapa — Facultad de Ingeniería, Universidad Mesoamericana",
+        "width": 340,
+        "height": 190.375
+      }
+    ],
+    "skipExists": true,
+    "landmarks": [
+      {
+        "tag": "HEADER",
+        "role": null,
+        "label": null
+      },
+      {
+        "tag": "NAV",
+        "role": null,
+        "label": "Pestañas del sitio"
+      },
+      {
+        "tag": "MAIN",
+        "role": null,
+        "label": null
+      },
+      {
+        "tag": "HEADER",
+        "role": null,
+        "label": null
+      },
+      {
+        "tag": "HEADER",
+        "role": null,
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "region",
+        "label": "Aliados del evento. El listado avanza solo; arrástralo para recorrer."
+      },
+      {
+        "tag": "DIV",
+        "role": "list",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "DIV",
+        "role": "listitem",
+        "label": null
+      },
+      {
+        "tag": "FOOTER",
+        "role": null,
+        "label": null
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "WhatsApp",
+        "href": "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t",
+        "w": 69,
+        "h": 20,
+        "small": true
+      },
+      {
+        "text": "@aibuilders.gt_",
+        "href": "https://instagram.com/aibuilders.gt_",
+        "w": 106,
+        "h": 20,
+        "small": true
+      },
+      {
+        "text": "eswinstuardporojcastro@gmail.com",
+        "href": "mailto:eswinstuardporojcastro@gmail.com",
+        "w": 240,
+        "h": 20,
+        "small": true
+      }
+    ],
+    "duplicateIds": [],
+    "ctas": [
+      {
+        "text": "ENTRÁ AL GRUPO",
+        "href": "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t",
+        "cta": "community-hero"
+      },
+      {
+        "text": "ENTRÁ AL GRUPO",
+        "href": "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t",
+        "cta": "community-mid"
+      },
+      {
+        "text": "ENTRÁ AL GRUPO",
+        "href": "https://chat.whatsapp.com/HAE68LzXZ29HZw2ShoAyTz?mode=gi_t",
+        "cta": "community-final"
+      }
+    ],
+    "issues": []
+  },
+  "finalUrl": "https://www.aibuildersgt.com/eventos/xela-2026"
+}

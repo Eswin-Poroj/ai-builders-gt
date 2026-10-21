@@ -93,6 +93,48 @@
   color: var(--paper);
 }
 
+.event-speaker-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.85rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.event-speaker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.event-speaker-avatar {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--brand) 28%, var(--ink));
+}
+
+.event-speaker-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.event-speaker-initials {
+  font-family: var(--font-display), sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: color-mix(in oklab, var(--paper) 55%, var(--brand));
+  user-select: none;
+}
+
 .event-card-books ul {
   margin: 0;
   padding: 0 0 0 1.1rem;
@@ -102,7 +144,46 @@
 }
 
 .event-card-books li + li {
-  margin-top: 0.2rem;
+  margin-top: 0.45rem;
+}
+
+.event-book--cover {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  list-style: none;
+  margin-left: -1.1rem;
+}
+
+.event-book-cover {
+  display: block;
+  flex: none;
+  width: 2.5rem;
+  overflow: hidden;
+  border-radius: var(--radius-xs);
+  background: color-mix(in oklab, var(--brand) 22%, var(--ink));
+}
+
+.event-book-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.event-book-copy {
+  min-width: 0;
+}
+
+.event-book-title {
+  color: var(--paper);
+  font-weight: 700;
+  text-underline-offset: 0.18em;
+}
+
+.event-book-title:hover,
+.event-book-title:focus-visible {
+  color: var(--paper);
 }
 
 .event-card-link {

@@ -82,6 +82,17 @@ export const communityEvents: CommunityEvent[] = [
     ],
     status: "past",
   },
+  {
+    id: "charla-2026-10-20",
+    date: "2026-10-20",
+    dateDisplay: "20 de octubre 2026",
+    format: "en-linea",
+    title: "Café con Victor",
+    topic:
+      "Tu infraestructura miente, y la IA le cree. Charla de Victor Marroquin, Cloud Infrastructure Engineer en Yalo.",
+    speakers: [{ name: "Victor Marroquin", role: "speaker" }],
+    status: "past",
+  },
 ]
 
 export function pastCommunityEvents(): CommunityEvent[] {

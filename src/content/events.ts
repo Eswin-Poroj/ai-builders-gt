@@ -6,12 +6,15 @@ export type EventFormat = "en-linea" | "presencial"
 export type EventSpeaker = {
   name: string
   role?: "speaker" | "co-speaker"
+  photoSrc?: string
 }
 
 export type RecommendedBook = {
   title: string
   author: string
   recommendedBy: string
+  href?: string
+  coverSrc?: string
 }
 
 export type CommunityEvent = {
@@ -44,7 +47,10 @@ export const communityEvents: CommunityEvent[] = [
       "Summit y GrokBot Hackathon en la Facultad de Ingeniería, Universidad Mesoamericana, Quetzaltenango.",
     speakers: event.speakers.items
       .filter((speaker) => speaker.confirmed)
-      .map((speaker) => ({ name: speaker.name })),
+      .map((speaker) => ({
+        name: speaker.name,
+        photoSrc: speaker.photoSrc ?? undefined,
+      })),
     recapHref: editionPath(event.slug),
     status: "past",
   },
@@ -55,8 +61,16 @@ export const communityEvents: CommunityEvent[] = [
     format: "en-linea",
     title: "Charla en línea con Ludwing Ixcayau",
     speakers: [
-      { name: "Ludwing Ixcayau", role: "speaker" },
-      { name: "Cristian", role: "co-speaker" },
+      {
+        name: "Ludwing Ixcayau",
+        role: "speaker",
+        photoSrc: "/speakers/ludwing-foto.jpg",
+      },
+      {
+        name: "Cristian Lavarreda",
+        role: "co-speaker",
+        photoSrc: "/speakers/lavarreda.png",
+      },
     ],
     recommendedBooks: [
       {
@@ -80,6 +94,43 @@ export const communityEvents: CommunityEvent[] = [
         recommendedBy: "Cristian",
       },
     ],
+    clipHref:
+      "https://drive.google.com/file/d/1WBO_27zmk27NyoDPPsDz76j0dX5KuXYd/view?usp=sharing",
+    status: "past",
+  },
+  {
+    id: "charla-2026-10-20",
+    date: "2026-10-20",
+    dateDisplay: "20 de octubre 2026",
+    format: "en-linea",
+    title: "Café con Victor",
+    topic:
+      "Tu infraestructura miente, y la IA le cree. Charla de Victor Marroquin, Cloud Infrastructure Engineer en Yalo.",
+    speakers: [
+      {
+        name: "Victor Marroquin",
+        role: "speaker",
+        photoSrc: "/speakers/victor-foto.png",
+      },
+    ],
+    recommendedBooks: [
+      {
+        title: "El Negociador",
+        author: "Carlos Fabián Murro",
+        recommendedBy: "Victor Marroquin",
+        href: "https://www.oceano.com.ar/LibroDetalle/EL-NEGOCIADOR-9789876097253",
+        coverSrc: "/books/el-negociador.jpg",
+      },
+      {
+        title: "Site Reliability Engineering (2.ª edición)",
+        author: "Google / O'Reilly",
+        recommendedBy: "Victor Marroquin",
+        href: "https://www.oreilly.com/library/view/site-reliability-engineering/9798341607675/",
+        coverSrc: "/books/site-reliability-engineering.jpg",
+      },
+    ],
+    clipHref:
+      "https://drive.google.com/file/d/15CYeP0OdzSvpKnaoxfq8LJWVyQeG3fiE/view?usp=sharing",
     status: "past",
   },
 ]

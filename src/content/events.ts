@@ -149,13 +149,21 @@ export const communityEvents: CommunityEvent[] = [
     date: "2026-10-27",
     dateDisplay: "27 de octubre 2026",
     format: "en-linea",
-    title: "Café con Marvin",
+    title: "Builders en Vivo con Marvin",
     topic:
       "¿Por qué la IA acierta… y por qué se equivoca con tanta seguridad? Charla de Marvin Mazariegos sobre las capacidades y limitaciones de los modelos de lenguaje y cómo tener un modelo mental para usarlos bien.",
     speakers: [
       {
         name: "Marvin Mazariegos",
         role: "speaker",
+        photoSrc: "/speakers/marvin-moises.png",
+      },
+    ],
+    recommendedBooks: [
+      {
+        title: "Co-Intelligence",
+        author: "Ethan Mollick",
+        recommendedBy: "Marvin Mazariegos",
       },
     ],
     clipHref:

@@ -133,6 +133,43 @@ export const communityEvents: CommunityEvent[] = [
       "https://drive.google.com/file/d/15CYeP0OdzSvpKnaoxfq8LJWVyQeG3fiE/view?usp=sharing",
     status: "past",
   },
+  {
+    id: "cowork-2026-10-21",
+    date: "2026-10-21",
+    dateDisplay: "21 de octubre 2026",
+    format: "presencial",
+    title: "Co-work en Xela: traé tu proyecto y construilo con IA",
+    topic:
+      "Co-work de networking en Sucrér coffee experience, Quetzaltenango: ronda de presentaciones, trabajo en grupos por intereses y demos opcionales.",
+    speakers: [],
+    status: "past",
+  },
+  {
+    id: "charla-2026-10-27",
+    date: "2026-10-27",
+    dateDisplay: "27 de octubre 2026",
+    format: "en-linea",
+    title: "Builders en Vivo con Marvin",
+    topic:
+      "¿Por qué la IA acierta… y por qué se equivoca con tanta seguridad? Charla de Marvin Mazariegos sobre las capacidades y limitaciones de los modelos de lenguaje y cómo tener un modelo mental para usarlos bien.",
+    speakers: [
+      {
+        name: "Marvin Mazariegos",
+        role: "speaker",
+        photoSrc: "/speakers/marvin-moises.png",
+      },
+    ],
+    recommendedBooks: [
+      {
+        title: "Co-Intelligence",
+        author: "Ethan Mollick",
+        recommendedBy: "Marvin Mazariegos",
+      },
+    ],
+    clipHref:
+      "https://drive.google.com/file/d/1s9_n5kCvJMYnZlTWLuR8bY0C3pk747E0/view?usp=sharing",
+    status: "past",
+  },
 ]
 
 export function pastCommunityEvents(): CommunityEvent[] {

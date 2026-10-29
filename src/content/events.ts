@@ -151,7 +151,7 @@ export const communityEvents: CommunityEvent[] = [
     format: "en-linea",
     title: "Builders en Vivo con Marvin",
     topic:
-      "¿Por qué la IA acierta… y por qué se equivoca con tanta seguridad? Charla de Marvin Mazariegos sobre las capacidades y limitaciones de los modelos de lenguaje y cómo tener un modelo mental para usarlos bien.",
+      "¿Por qué la IA acierta… y por qué se equivoca con tanta seguridad? Charla de Marvin Mazariegos, AI DevRel en DDR Innova, sobre las capacidades y limitaciones de los modelos de lenguaje y cómo tener un modelo mental para usarlos bien.",
     speakers: [
       {
         name: "Marvin Mazariegos",

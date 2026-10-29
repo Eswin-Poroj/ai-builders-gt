@@ -94,8 +94,7 @@ export const communityEvents: CommunityEvent[] = [
         recommendedBy: "Cristian",
       },
     ],
-    clipHref:
-      "https://drive.google.com/file/d/1WBO_27zmk27NyoDPPsDz76j0dX5KuXYd/view?usp=sharing",
+    clipHref: "https://www.youtube.com/watch?v=_Y1rS3lDpDE",
     status: "past",
   },
   {
@@ -129,8 +128,7 @@ export const communityEvents: CommunityEvent[] = [
         coverSrc: "/books/site-reliability-engineering.jpg",
       },
     ],
-    clipHref:
-      "https://drive.google.com/file/d/15CYeP0OdzSvpKnaoxfq8LJWVyQeG3fiE/view?usp=sharing",
+    clipHref: "https://www.youtube.com/watch?v=F9QWZ7SRf8U",
     status: "past",
   },
   {
@@ -166,8 +164,7 @@ export const communityEvents: CommunityEvent[] = [
         recommendedBy: "Marvin Mazariegos",
       },
     ],
-    clipHref:
-      "https://drive.google.com/file/d/1s9_n5kCvJMYnZlTWLuR8bY0C3pk747E0/view?usp=sharing",
+    clipHref: "https://youtu.be/gXzQXcZhrQw",
     status: "past",
   },
 ]

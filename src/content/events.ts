@@ -170,6 +170,32 @@ export const communityEvents: CommunityEvent[] = [
       "https://drive.google.com/file/d/1s9_n5kCvJMYnZlTWLuR8bY0C3pk747E0/view?usp=sharing",
     status: "past",
   },
+  {
+    id: "charla-2026-11-03",
+    date: "2026-11-03",
+    dateDisplay: "3 de noviembre 2026",
+    format: "en-linea",
+    title: "Builders en Vivo con Jossemar",
+    topic:
+      "Harness Engineering ABC con KAgent, ADK y AWS Bedrock. Charla de Jossemar Cordero, Staff Solutions Engineer en CTO.ai, sobre qué es un harness y cómo construir agentes de IA en Kubernetes: el modelo, el andamiaje, las herramientas y las instrucciones, con sus aprendizajes, pros y contras.",
+    speakers: [
+      {
+        name: "Jossemar Cordero",
+        role: "speaker",
+        photoSrc: "/speakers/jossemar-cordero.jpg",
+      },
+    ],
+    recommendedBooks: [
+      {
+        title: "The Phoenix Project",
+        author: "Gene Kim, Kevin Behr y George Spafford",
+        recommendedBy: "Jossemar Cordero",
+      },
+    ],
+    clipHref:
+      "https://drive.google.com/file/d/1WFxPxdFgBElKNq2-Ri-JBhHP0ZKBSJw5/view",
+    status: "past",
+  },
 ]
 
 export function pastCommunityEvents(): CommunityEvent[] {

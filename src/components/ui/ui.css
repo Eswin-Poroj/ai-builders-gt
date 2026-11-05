@@ -186,6 +186,77 @@
   color: var(--paper);
 }
 
+.youtube-facade {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  background: var(--ink);
+}
+
+.youtube-facade-button {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background: var(--ink);
+}
+
+.youtube-facade-button img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.youtube-facade-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--brand) 88%, var(--ink));
+  color: var(--paper);
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--teal) 70%, transparent);
+  pointer-events: none;
+}
+
+.youtube-facade-play svg {
+  display: block;
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-left: 0.14rem;
+}
+
+.youtube-facade-button:hover .youtube-facade-play,
+.youtube-facade-button:focus-visible .youtube-facade-play {
+  background: var(--teal);
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--brand) 55%, transparent);
+}
+
+.youtube-facade iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: var(--ink);
+}
+
 .event-card-link {
   width: fit-content;
   margin-top: 0.2rem;

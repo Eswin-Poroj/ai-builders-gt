@@ -6,6 +6,8 @@ import type {
   RecommendedBook,
 } from "@/content/events"
 import { FormatBadge } from "@/components/ui/format-badge"
+import { YoutubeFacade } from "@/components/ui/youtube-facade"
+import { youtubeVideoId } from "@/lib/youtube"
 
 function speakerInitials(name: string): string {
   const parts = name.trim().split(/\s+/).filter(Boolean)
@@ -87,6 +89,7 @@ export function EventCard({ event }: Props) {
   const books = event.recommendedBooks ?? []
   const speakersId = `${event.id}-speakers`
   const booksId = `${event.id}-books`
+  const videoId = event.clipHref ? youtubeVideoId(event.clipHref) : null
 
   return (
     <article className="event-card">
@@ -131,6 +134,7 @@ export function EventCard({ event }: Props) {
           Ver el recap
         </Link>
       ) : null}
+      {videoId ? <YoutubeFacade videoId={videoId} title={event.title} /> : null}
       {event.clipHref ? (
         <a
           className="event-card-link"
@@ -138,7 +142,7 @@ export function EventCard({ event }: Props) {
           target="_blank"
           rel="noreferrer"
         >
-          Ver la grabación completa
+          Ver la grabación en YouTube
         </a>
       ) : null}
     </article>

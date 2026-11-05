@@ -9,6 +9,7 @@ const frameSrc = [
   "https://www.google.com",
   "https://maps.google.com",
   "https://vercel.live",
+  "https://www.youtube-nocookie.com",
 ].join(" ")
 
 const cspHeaders = [

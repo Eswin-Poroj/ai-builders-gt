@@ -142,7 +142,7 @@ export function EventCard({ event }: Props) {
           target="_blank"
           rel="noreferrer"
         >
-          Ver la grabación en YouTube
+          {videoId ? "Ver la grabación en YouTube" : "Ver la grabación completa"}
         </a>
       ) : null}
     </article>

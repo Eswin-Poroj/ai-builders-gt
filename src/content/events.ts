@@ -192,6 +192,24 @@ export const communityEvents: CommunityEvent[] = [
     clipHref: "https://youtu.be/G0CYc40BWK4",
     status: "past",
   },
+  {
+    id: "charla-2026-11-10",
+    date: "2026-11-10",
+    dateDisplay: "10 de noviembre 2026",
+    format: "en-linea",
+    title: "Builders en Vivo con Kenneth",
+    topic:
+      "Funcionaba en el chat: IA en QA, del vibecoding al proceso formal. Charla de Kenneth André Martínez Molina, Fundador de DESDEGUA y Wokonik, ex Senior SDET en PayPal.",
+    speakers: [
+      {
+        name: "Kenneth André Martínez Molina",
+        role: "speaker",
+      },
+    ],
+    clipHref:
+      "https://drive.google.com/file/d/1UIWgDB-swEAupqjLGRna_BQdIPfHkfOG/view?usp=sharing",
+    status: "past",
+  },
 ]
 
 export function pastCommunityEvents(): CommunityEvent[] {

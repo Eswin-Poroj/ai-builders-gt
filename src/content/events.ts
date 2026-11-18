@@ -192,6 +192,22 @@ export const communityEvents: CommunityEvent[] = [
     clipHref: "https://youtu.be/G0CYc40BWK4",
     status: "past",
   },
+  {
+    id: "charla-2026-11-17",
+    date: "2026-11-17",
+    dateDisplay: "17 de noviembre 2026",
+    format: "en-linea",
+    title: "Builders en Vivo con Oscar",
+    topic:
+      "AI en equipos de Ingeniería. Charla de Oscar Barajas (@gndx), Software AI Engineer, profesor en Platzi y Microsoft MVP, sobre qué funciona en la práctica cuando un equipo de ingeniería trabaja con IA.",
+    speakers: [
+      {
+        name: "Oscar Barajas",
+        role: "speaker",
+      },
+    ],
+    status: "past",
+  },
 ]
 
 export function pastCommunityEvents(): CommunityEvent[] {
